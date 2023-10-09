@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap");
+
+:root
+{
+    --font: 'Nunito';
+}
+
+input 
+{
+    font-family: inherit;
+    font-weight: 700;
+}
+
+input:focus, select:focus
+{
+    outline: none;border: none;
+}
+
+a 
+{
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+}
+buttton
+{
+    border: none;
+}
+
+* 
+{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Nunito', 'sans-serif';
+    padding: 0;;
+}
+
+body 
+{
+    margin: 0;
+    font-family: 'Nunito', 'sans-serif';
+    padding: 0;
+}
+
+#pre_header
+{
+    width: 100%;
+    text-align: center;
+    padding: .3% 0;
+    background: rgb(255, 183, 0);
+}
+
+#pre_header i 
+{
+    padding: .5%;
+    text-align: center;
+    font-size: .8vw;
+    color: rgb(0, 0, 0);
+    /* border: 1px solid white; */
+    border-radius: 1em;
+}
+
+header 
+{
+    width: 100%;
+    display: flex;
+    align-content: center;
+    background: rgb(0, 0, 0);
+    justify-content: center;
+}
+
+#company_name 
+{
+    width: 30%;
+    height: auto;
+    display: flex;
+    color: rgb(245, 191, 12);
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+    width: 20%;
+}
+
+#searchbar
+{
+    width: 40%;
+    display: flex;
+    font-family: var(--font);
+    align-items: center;
+    justify-content: center;
+}
+
+#searchbar form {
+    width: 95%;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+}
+
+#searchbar select
+{
+    width: 30%;
+    padding-inline: 3%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.233);
+}
+
+
+#searchbar input[type="text"]
+{
+    width: 55%;
+    border: none;
+    padding: 0 2%;
+    height: 40px;
+    margin-right: .40%;
+}
+#searchbar input[type="submit"]
+{
+    width: 14%;
+    border-radius: 0 5px 5px 0;
+    border: none;
+    font-weight: bold;
+    height: 100%;
+    background-color: rgb(245, 191, 12);
+}
+
+#contact
+{
+    width: 30%;
+    display: grid;
+    place-items: center;
+}
+#contact section
+{
+    display: flex;align-items: center;
+    width:100%;padding: 1%;margin: 0;color: rgb(245, 191, 12)
+}
+
+#contact i 
+{
+    color: white;font-size: .8vw;;
+    padding: 0 3%;
+}
+
+#contact p:first-child
+{
+    color: white;font-size: 1vw;
+}
+
+nav
+{
+    width: 100%;display: flex;align-items: center;
+    justify-content: center;
+    height: 60px;border-bottom: 2px solid rgb(245, 191, 12);
+    margin-top: .5%;
+}
+nav ul
+{
+    width: 40%;display: flex;
+    height:100%;align-items: center;;
+}
+nav li
+{
+    width: 20%;list-style: none;text-align: center;height: 100%;;
+    display: flex;align-items: center;justify-content: center;border-radius: 5px 5px 0 0;
+    text-transform: uppercase;transition: .5s;cursor: pointer;
+}
+nav li:hover
+{
+    background-color: rgb(245, 191, 12);
+}
+nav div
+{
+    width: 20%;display: grid;background: rgb(245, 191, 12);
+    place-items: center;height: 100%;margin: 0 2%;
+}
+nav div select
+{
+    width: 80%;height: 100%;padding: 0 4%;;
+    border: none;background-color: inherit;
+}
+
+#intro
+{
+    width: 100%;
+    height: 70vh;
+    background-image: url('../img/hds.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+}
+
+#sections
+{
+    width: 100%;height: 20vw;display: flex;
+    align-items: center;justify-content: center;;
+}
+
+#sections div
+{
+    width: 20%;height: 70%;margin: 0 .5%;display: grid;place-items: center;
+    border-radius: 5px;background-repeat: no-repeat;background-position-y: 100%;
+    background-size: 60%;background-position-x: 100%;
+}
+
+#sections div:first-child
+{
+    background-color: rgb(255, 166, 0);
+    background-image: url('../img/bigstock-Various-hard-hats-safety-helm-145706012-removebg-preview.png')
+}
+
+#sections div:nth-child(2){
+    background-color: rgb(95, 131, 133);
+    background-image: url('../img/sgo_7001frt-removebg-preview.png')
+}
+
+#sections div:last-child
+{
+    background-color: orangered;background-size: 80%;
+    background-image: url('../img/wooden-floor-hand-tools-safety-glasses-wallpaper-preview-removebg-preview.png')
+}
+
+#sections div section
+{
+    color: white;
+    width: 95%;height: 90%;padding: 2% 4%;
+}
+
+#sections h1
+{
+    font-size: 1.5vw;font-weight: bolder;
+}
+
+#sections article 
+{
+    width: 80%;height: 60%;color: black;
+    text-transform: uppercase;font-weight: 700;
+
+}
+
+#sections button
+{
+    width: 40%;height: 20%;border-radius: 30px;color: white;
+    border: none;background: inherit;font-weight: bold;box-shadow: 0 0 24px 2px rgba(0, 0, 0, 0.178);
+}
