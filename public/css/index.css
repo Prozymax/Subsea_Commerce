@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap");
 
 :root
 {
@@ -185,6 +185,12 @@ nav div select
     border: none;background-color: inherit;
 }
 
+#btn-nav
+{
+    width:10%;height: 85%;margin: 2% 0;border-radius: 30px;
+    border: none;background: rgb(0, 0, 0);color: rgb(245, 191, 12);
+}
+
 #intro
 {
     width: 100%;
@@ -299,7 +305,7 @@ nav div select
    font-size: 1vw;height: 25%;
 }
 
-#featured div:hover
+#featured div:hover, .prod_cols section:hover
 {
     margin-top: -1%;height: 51%;
     box-shadow: 0 0 32px 2px rgba(0, 0, 0, 0.178);
@@ -312,7 +318,7 @@ nav div select
 
 #order
 {
-    width: 100%;height: 30vw;background-size: 100%;background-position:  center;
+    width: 100%;height: 40vw;background-size: 100%;background-position:  center;
     background-image: url('../img/pop-zebra-wp81DxKUd1E-unsplash.jpg');background-repeat:  no-repeat;
     background-color: rgba(0, 0, 0, 0.473);background-blend-mode: soft-light;
     display: flex;align-items: center;justify-content: center;
@@ -320,37 +326,37 @@ nav div select
 
 #order section
 {   
-    height: 80%;background: white;color: black;display: flex;
+    height: 70%;background: white;color: black;display: flex;
     align-items: center;border-radius: 5px;margin: 0 .5%;position: relative;;
 }
 
 #order section:first-of-type
 {
-    width: 45%;
+    width: 50%;
 }
 
 #order section:last-of-type
 {
     background-image: url('../img/wooden-floor-hand-tools-safety-glasses-wallpaper-preview-removebg-preview.png');
-    width: 18%;background-repeat: no-repeat;background-position: bottom;background-color: rgb(255, 115, 0);
+    width: 20%;background-repeat: no-repeat;background-position: bottom;background-color: rgb(255, 115, 0);
 }
 
 #abs_offer
 {
-    width: 38%;height: 50%;filter: saturate(500%);
+    width: 50%;height: 50%;filter: saturate(500%);
     position: absolute;top: 0;left: -15%;
 }
 
 #order figure
 {
-    width: 50%;height: 100%;background: rgb(212, 138, 0);background-size: 110%;
+    width: 50%;height: 100%;background: rgb(212, 138, 0);background-size: 120%;
     background-position: bottom;background-repeat:  no-repeat;
     background-image: url('../img/kisspng-personal-protective-equipment-safety-arc-flash-bus-general-category-services-sea-marine-services-lt-5d3c8bf78ccaa0.6100986715642490795767.png');
 }
 
 #order article
 {
-    width: 45%;height: 70%;margin: 0 auto;
+    width: 45%;height: 50%;margin: 0 auto;
 }
 
 #order span:first-of-type, #order span:first-of-type::after, #order span:first-of-type::before
@@ -388,10 +394,155 @@ nav div select
 
 #order section:last-of-type button
 {
-    background-color: inherit;box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.178);
-    border-radius: 30px;
+    background-color: inherit;box-shadow: 0 0 24px 2px rgba(0, 0, 0, 0.26);
+    border-radius: 30px;width: 60%;
 }
 #order h2
 {
     text-transform: uppercase;width: 50%;font-size: 2vw;
+}
+
+#col
+{
+    width: 100%;height: 50vw;background: rgb(245, 242, 242);
+}
+
+#col div:first-of-type
+{
+    text-align: center;height: 20%;display: grid;place-items: center;
+}
+
+#col span , #col span::after, #col span::before
+{
+    color: rgb(190, 70, 0);text-transform: uppercase;font-size: .7vw;
+    font-weight: bolder;content: " ~ ";
+}
+
+#col h1
+{
+    font-size: 2vw;font-weight: 900;
+}
+
+.prod_cols
+{
+    width: 75%;display: flex;align-items: center;margin: 0 auto;
+    justify-content: center;flex-wrap: wrap;height: 80%;
+}
+
+.prod_cols section 
+{
+    width: 30%;height: 45%;display: flex;transition: .5s;
+    margin-inline: 1%;align-items: center;background-color: white;
+}
+
+.prod_cols section figure
+{
+    width: 60%;height: 100%;background-repeat: no-repeat;background-size: 80%;
+    background-position: center;background-image: url('../img/sgo_7001frt-removebg-preview.png');
+}
+
+.prod_cols article
+{
+    width: 40%;height: 70%;cursor: pointer;;
+}
+
+.prod_cols h4
+{
+    text-transform: uppercase;font-weight: 700;
+}
+
+.prod_cols ul
+{
+    width: 80%;margin: 8% auto;color: rgb(105, 105, 105);
+}
+
+.prod_cols button
+{
+    width: 50%;border:none;background: black;color: white;
+    padding: 8% 0;transition: .5s;
+}
+
+.prod_cols button:hover
+{
+    background-color: rgb(245, 118, 0);border-radius: 30px;width: 70%;
+}
+
+.prod_cols li:hover { color: rgb(245, 118, 0);} .prod_cols section:hover { border-radius: 5px;}
+
+/* Blogs section */
+
+#blogs 
+{
+    width: 100%;height: 40vw;text-align: center;
+    padding-top: 2%;
+}
+
+#blogs span:first-child { color: orange; font-weight: bolder;font-size: .9vw; }
+#blogs p
+{ 
+    font-size: 2vw;text-align: center;;
+    width: 50%;margin: 0 auto;font-weight: 900;text-transform: uppercase; }
+
+    #blogs p::after, #blogs p::before  {color: rgb(255, 115, 0);content: " * ";font-size: 1vw;font-weight: 900;}
+
+.fa-posts
+{
+    width: 100%;height: 80%;text-align: start;
+    display: flex;justify-content: center;align-items: center;
+}
+
+.fa-posts section
+{
+    width: 20%;height: 80%;margin: 0 .5%;
+}
+
+.fa-posts figure
+{
+    width: 100%;height: 60%;background-repeat: no-repeat;background-size: 100%;margin: 1%;
+    background-position: center;background-image: url('../img/marianna-krzakiewicz-XPgJ19A7WnU-unsplash.jpg');;
+}
+.fa-posts article 
+{
+    height: 20%;margin: 0;
+}
+
+.fa-posts span { color: rgb(82, 82, 82);}
+
+.fa-posts button
+{
+    width: 40%;background-color: black;color: white;
+    height: 50px;border: none;border-radius: 5px;
+}
+.fa-posts h4 
+{
+    font-size: 1vw;text-transform: uppercase;padding: 1% 0;
+}
+.fa-posts b { color: orangered; }
+
+#policy 
+{
+    width: 100%;height: 10vw;background-color: whitesmoke;
+    display: flex;align-items: center;justify-content: center;
+}
+
+#policy section
+{
+    display: flex;align-items: center;justify-content: center;
+    width: 30%;height: 100%;;
+}
+
+#policy i 
+{
+    background-color: rgb(255, 255, 255);padding: 4%;border-radius: 50%;
+    border: 3px solid rgb(224, 217, 217);font-size: 1.2vw;color: rgb(190, 70, 0);
+}
+
+#policy h4 
+{
+    text-transform: uppercase;
+}
+
+#policy article 
+{
+    width: 80%;margin: 0 auto;
 }
