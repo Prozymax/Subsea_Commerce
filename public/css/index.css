@@ -189,7 +189,7 @@ nav div select
 {
     width: 100%;
     height: 70vh;
-    background-image: url('../img/hds.jpg');
+    background-image: url('../img/pop-zebra-wp81DxKUd1E-unsplash.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: bottom;
@@ -247,4 +247,151 @@ nav div select
 {
     width: 40%;height: 20%;border-radius: 30px;color: white;
     border: none;background: inherit;font-weight: bold;box-shadow: 0 0 24px 2px rgba(0, 0, 0, 0.178);
+}
+
+#products 
+{
+    width: 100%;height: 90vh;
+}
+
+#open_span 
+{
+    color: rgb(0, 0, 0);text-transform: uppercase;text-align: center;
+    font-weight: 500;width: 70%;margin: 2% auto;font-size: 2vw;
+}
+#open_span span, #open_span span::after, #open_span span::before
+{
+    color: rgb(255, 166, 0);font-weight: bolder;
+    font-size: .8vw;content:" ~ ";
+}
+
+#featured 
+{
+    width: 80%;height: 80%;display: flex;
+    flex-wrap: wrap;margin: 0 auto;justify-content: center;
+}
+
+#featured div
+{
+    width: 20%;height: 50%;text-align: center;border-radius: 5px;;
+    margin: .4%;transition: .5s;
+}
+
+#featured div figure
+{
+    width: 100%;height: 80%;
+    display: grid;place-items: center;
+}
+
+#featured div figure img
+{
+    width: 80%;
+}
+
+#featured section
+{
+    width: 100%;height: 20%;transition: .5s;
+    display: grid;place-items: center;
+}
+
+#featured h2
+{
+   font-size: 1vw;height: 25%;
+}
+
+#featured div:hover
+{
+    margin-top: -1%;height: 51%;
+    box-shadow: 0 0 32px 2px rgba(0, 0, 0, 0.178);
+}
+
+#featured div:hover section
+{
+    color: rgb(255, 166, 0);background: black;
+}
+
+#order
+{
+    width: 100%;height: 30vw;background-size: 100%;background-position:  center;
+    background-image: url('../img/pop-zebra-wp81DxKUd1E-unsplash.jpg');background-repeat:  no-repeat;
+    background-color: rgba(0, 0, 0, 0.473);background-blend-mode: soft-light;
+    display: flex;align-items: center;justify-content: center;
+}
+
+#order section
+{   
+    height: 80%;background: white;color: black;display: flex;
+    align-items: center;border-radius: 5px;margin: 0 .5%;position: relative;;
+}
+
+#order section:first-of-type
+{
+    width: 45%;
+}
+
+#order section:last-of-type
+{
+    background-image: url('../img/wooden-floor-hand-tools-safety-glasses-wallpaper-preview-removebg-preview.png');
+    width: 18%;background-repeat: no-repeat;background-position: bottom;background-color: rgb(255, 115, 0);
+}
+
+#abs_offer
+{
+    width: 38%;height: 50%;filter: saturate(500%);
+    position: absolute;top: 0;left: -15%;
+}
+
+#order figure
+{
+    width: 50%;height: 100%;background: rgb(212, 138, 0);background-size: 110%;
+    background-position: bottom;background-repeat:  no-repeat;
+    background-image: url('../img/kisspng-personal-protective-equipment-safety-arc-flash-bus-general-category-services-sea-marine-services-lt-5d3c8bf78ccaa0.6100986715642490795767.png');
+}
+
+#order article
+{
+    width: 45%;height: 70%;margin: 0 auto;
+}
+
+#order span:first-of-type, #order span:first-of-type::after, #order span:first-of-type::before
+{
+    color: rgb(190, 70, 0);text-transform: capitalize;
+    font-size: .8vw;content: " ~ ";
+}
+
+#order i { font-size: .8vw; color: rgb(212, 138, 0) }
+
+#order h3
+{
+    text-transform: uppercase;padding: 2% 0;transition: .5s;
+}
+
+#order h3:hover {color: rgb(255, 255, 255)}
+
+#order p
+{
+    font-size: .8vw;padding: 2% 0;
+}
+
+
+#order button
+{
+    width: 45%;height: 15%;margin: 2% 0;
+    border: none;background: rgb(212, 138, 0);color: white;
+}
+
+#order section:last-of-type article
+{
+    width: 80%;;
+}
+#order span:last-of-type, #order span:last-of-type::after, #order span:last-of-type::before {color: white}
+
+#order section:last-of-type button
+{
+    background-color: inherit;box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.178);
+    border-radius: 30px;
+}
+#order h2
+{
+    text-transform: uppercase;width: 50%;font-size: 2vw;
 }
