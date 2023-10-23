@@ -1,0 +1,30 @@
+.boot-breadcrumbs
+{
+    width: 100%;height: 3vw;
+    display: grid;place-items: center;
+}
+
+.boot-breadcrumbs section
+{
+    width: 70%;height: 100%;
+    display: grid;place-items: center;
+}
+
+.boot-breadcrumbs p
+{
+    width: 100%;
+}
+.boot-breadcrumbs span::before
+{
+    content: ' '
+}
+.boot-breadcrumbs b
+{
+    font-size: 1vw;;
+}
+.boot-breadcrumbs span:first-of-type{color: grey;transition: .5s;cursor: pointer;}
+.boot-breadcrumbs span:first-of-type:hover {color: black;text-decoration: underline}
+.boot-breadcrumbs span:last-of-type
+{
+    font-size: 1vw;
+}
