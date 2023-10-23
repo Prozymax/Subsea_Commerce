@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="website-icons" src="__webicons/editlogo.png">
+    <script defer src="js/index.js"></script>
+    <script src="https://kit.fontawesome.com/1e3c5331c9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="pre_header">
+        <p>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-facebook"></i>
+        </p>
+    </div>
+
+    <header>
+        <div id="company_name">
+            <img src="__webicons/IMG-20230929-WA0039-removebg-preview-removebg-preview.png" alt="aurum_logo_png">
+            <h1>AURUM</h1>
+        </div>
+        <div id="searchbar">
+            <form action="/search">
+                <select name="category" id="category">
+                    <option value="All Categories">All Categories</option>
+                    <option value="Wears">Wears</option>
+                    <option value="Footwears">FootWears</option>
+                </select>
+                <input type="text" placeholder="Search here" name="searchquery"><input type="submit" value="Search">
+            </form>
+        </div>
+        <div id="contact">
+            <section>
+                <i class="fa-solid fa-phone"></i> 
+                <article>
+            <p>+1 (987) 873 9874</p>
+            <p>Sales & Service Support</p>
+                </article>
+            </section>
+        </div>
+        </header>
+
+        <nav>
+            <div>
+                <select name="__category" id="__category">
+                    <option value="All Categories">All Categories</option>
+                    <option value="Wears">Wears</option>
+                    <option value="Footwears">FootWears</option>
+                </select>
+            </div>
+            <ul>
+                <li onclick="window.location = '/public'">Home</li>
+                <li onclick="window.location = 'company.html'">Pages</li>
+                <li>Shop</li>
+                <li>Blog</li>
+                <li onclick="window.location = 'contact.html'">Contact Us</li>
+            </ul>
+            <button id="btn-nav">Shop Now</button>
+        </nav>
+
+        <div id="hamburger-cnt">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    
+        <div id="contact_intro">
+            <section>
+                <span> <a href="/">Home</a> / <a href="/contact.html">Contact Us</a></span>
+                <h1>Get in <br> touch with us</h1>
+                <article>
+                    We would love to hear from you! Whether you have inquiries, require further information, or want to discuss potential
+                     business opportunities, our team is ready to assist you. We value open communication and are committed to providing exceptional customer service.
+                </article>
+            </section>
+        </div>
+    
+        <div id="forms">
+                <form class="contact_form" id="contact_us" action="/support-mail-sent" method="post">
+                    <span>Contact Us</span>
+                    <h2>Write a message</h2>
+    
+                    <input type="text" placeholder="Your Name" id="name" name="name">
+                    <input type="email" placeholder="Email Address" name="email" id="email">
+                    <input type="tel" placeholder="Phone Number" name="phone" id="phone">
+                    <input type="text" placeholder="Subject" id="subject" name="subject">
+                    <textarea name="message" placeholder="Message" id="mess" name="message"></textarea><br>
+                    <button id="btn">Submit</button>
+                </form>
+                
+                <form action="">
+                    <span>Reach out to us</span>
+                    <h2>Let's work together</h2>
+                    <p>Feel free to reach out to us using any of the contact methods below. Our dedicated 
+                        staff will promptly respond to your queries and ensure that you receive the assistance you need.</p><br>
+                    <section>
+                        <i class="fa-solid fa-phone"></i>
+                        <article>
+                            <h4>Have any questions?</h4>
+                            <a href="tel:+63977304265">+(63) 977 304 265</a>
+                        </article>
+                    </section>
+                    <section>
+                        <i class="fa-solid fa-envelope"></i>
+                        <article>
+                            <h4>Send Email</h4>
+                            <a target="_blank" href="mailto:info@aurumsafety.com" rel="noreferer">info@aurumsafety.com</a>
+                        </article>
+                    </section>
+                    <section>
+                        <i class="fa-solid fa-location"></i>
+                        <article>
+                            <h4>Visit Us</h4>
+                            <a target="_blank" href="https://goo.gl/maps/4P876bCY6qpKUTtu7" rel="noreferer">Valero St. Poblacion, San Rafael, Bulacan, Philippines</a>
+                        </article>
+                    </section>
+                </form>
+        </div>
+    
+        <!-- <div id="successful">
+            <p onclick="document.getElementById('successful').style.opacity = '0';">&times;</p>
+            <section>
+                <i class="fa-solid fa-check"></i>
+                <h3>Succesfull</h3>
+                <article>
+                    Your <span id="prefTitle">Mail </span>has been sent to us; we will get back to you shortly. <br>
+                    Thanks for <span id="prefEnd">reaching out</span> to us
+                </article>
+            </section>
+        </div> -->
+    
+        <div id="maps">
+            <p><i class="fa-solid fa-map-location-dot"></i>Locate Us today</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d647.7185658809393!2d7.045531307948384!3d4.837302870751152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069cd9f473683b5%3A0xf857a08960508579!2s5%20Chief%20Mgba%20Street%2C%20Rumurolu%20500102%2C%20Port%20Harcourt%2C%20Rivers!5e1!3m2!1sen!2sng!4v1698054347870!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         </div>
+
+
+
+        <div id="policy">
+            <section>
+                <i class="fa-solid fa-rotate"></i>
+                <article>
+                    <h4>Return within 30-days</h4>
+                    <p>30-Day Return Window</p>
+                </article>
+            </section>
+            <section>
+                <i class="fa-solid fa-lock"></i>
+                <article>
+                    <h4>Secure Shopping</h4>
+                    <p>Secure Shopping Experience</p>
+                </article>
+            </section>
+            <section>
+                <i class="fa-solid fa-users"></i>
+                <article>
+                    <h4>Safe delivery</h4>
+                    <p>Secure and Reliable</p>
+                </article>
+            </section>
+            <section>
+                <i class="fa-solid fa-users"></i>
+                <article>
+                    <h4>Internet Assistance</h4>
+                    <p>Online Help and Support</p>
+                </article>
+            </section>
+           </div>
+        <footer>
+            <div class="links">
+                <section>
+                    <h3>Contact Us</h3>
+                    <article>
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location"></i>No.5 Chief Mgba Street, Woji PH, Rivers State, Nigeria
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-phone"></i>+234 0912 934 6000 <br> +234 0801 324 2160
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>info@aurumsafety.com
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-clock"></i>7 Days a week from 10-00 am to 6-00 pm
+                            </li>
+                        </ul>
+                    </article>
+                </section>
+                <section>
+                    <h3>Quick Links</h3>
+                    <article>
+                        <ul>
+                            <li onclick="window.location = '/public'">Home</li>
+                            <li>Company</li>
+                            <li>Services</li>
+                            <li onclick="window.location = 'contact.html'">Contact Us</li>
+                            <li>Shop</li>
+                        </ul>
+                    </article>
+                </section>
+                <section>
+                    <h3>Information</h3>
+                    <article>
+                        <ul>
+                            <li>Deliver Information</li>
+                            <li>Privacy Policy</li>
+                            <li>Quality Policy</li>
+                            <li>Refund Policy</li>
+                        </ul>
+                    </article>
+                </section>
+                <section>
+                    <h3>Store</h3>
+                    <article>
+                        <ul>
+                            <li>Sale</li>
+                            <li>Discount Products</li>
+                            <li>Latest Products</li>
+                           </ul>
+                    </article>
+                </section>
+            </div>
+    
+            <div id="newsletter">
+                <section>
+                    <article>
+                        <i class="fa-brands fa-facebook"></i><i class="fa-brands fa-linkedin-in"></i><i class="fa-brands fa-twitter"></i>
+                    </article>
+                </section>
+                <section>
+                    <h3>Sign Up for newsletter</h3>
+                    <form action="/newsletter">
+                        <input type="email" name="email" id="email">
+                        <input type="submit" value="Subscribe">
+                    </form>
+                </section>
+            </div>
+    
+            <div id="copy">
+                <section>
+                    <article>&copy;&nbsp;Aurum. All rights reserved. Designed by PhilTech</article>
+                </section>
+                <section>
+                    <article>
+                        Terms and Conditions&nbsp;<span>Privacy Policy</span>&nbsp;Quality Policy
+                    </article>
+                </section>
+            </div>
+    
+        </footer>
+</body>
+</html>
