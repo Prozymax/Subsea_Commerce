@@ -28,3 +28,125 @@
 {
     font-size: 1vw;
 }
+
+.intro-heading-two
+{
+    width: 70%;margin: 0 auto;padding: 2% 0;font-weight: 500;
+    font-size: 1.5vw;text-transform: uppercase;
+}
+
+#shop-layout
+{
+    width: 100%;height: 100vh;
+    display: flex;align-items: center;justify-content: center;
+}
+
+main 
+{
+    width: 55%;height: inherit;margin: 0 1%;
+}
+
+.ph-floatbar 
+{
+    width: 15%;height: inherit;
+}
+
+.float-categories
+{
+    height: 30%;margin: 0 auto;padding-block: 5% 0;
+    border: 1px solid rgb(233, 225, 225);border-radius: 3px;
+}
+
+.float-categories p
+{
+    font-size: 1.2vw;width: 85%;margin: 3% auto;;
+}
+
+.float-categories ul{
+    width: 85%;height: 80%;margin: 0 auto;font-size: .9vw;
+}
+
+.float-categories li
+{
+    list-style-type: none;height: 15%;position: relative;
+    display: flex;align-items: center;font-weight: 500;
+}
+
+.float-categories span
+{
+    font-size: 1.5vw;position: absolute;top: 10%;right: 0;
+}
+
+.sort 
+{
+    display: flex;align-items: center;
+    height: 5%;width: 100%;background: rgb(230, 230, 230);
+}
+
+
+.sort p:first-of-type
+{
+    width: 75%;height: 90%;display: flex;
+    align-items: center;padding: 0 .5%;
+}
+.sort select
+{
+    width: 30%;height: 80%;background: white;
+    border: none;padding: 0 2%;
+}
+
+.new_prod
+{
+    background-image: url('../img/sgo_7001frt-removebg-preview.png');
+    background-size: 20%;background-repeat: no-repeat;background-position: center;
+    display: flex;align-items: center;width: 100%;height: 20%;margin: 1% 0;;
+    background-color: rgb(255, 205, 43);
+}
+
+.new_prod section:first-of-type
+{
+    width: 70%;height: 50%;display: block;margin: 0 auto;
+}
+
+.new_prod span
+{
+    padding: 1% 2%;background: var(--secondaryAccent);
+    color: white;border-radius: 10px;
+}
+
+.new_prod p
+{
+    font-size: 2vw;text-transform: uppercase;font-weight: bolder;
+}
+.new_prod small
+{
+    font-size: .9vw;
+}
+
+.new_prod section:last-of-type
+{
+    width: 20%;;height: 25%;
+}
+
+.new_prod section:last-of-type button
+{
+    width: 80%;height: 100%;border: none;border-radius: 30px;background: none;
+    box-shadow: 0 0 24px 1px rgba(0, 0, 0, 0.11);transition: .5s;
+}
+
+.new_prod section:last-of-type button:hover
+{
+    background-color: white;box-shadow: none;
+}
+
+.ph-shop
+{
+    width: 100%;height: auto;border: 1px solid black;
+    display: flex;flex-wrap: wrap;
+}
+
+.ph-shop div
+{
+    width: 25%;height: 400px;background: red;
+    border: 1px solid rgb(228, 228, 228);
+}
