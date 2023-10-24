@@ -1,0 +1,22 @@
+body{
+ margin: 0 auto;
+ padding: 0 auto;
+ width: 100%;
+ height: fit-content;
+}
+.firstSection{
+ width:100%;
+ height: auto;
+
+}
+article{
+ padding:4% 5% 1% 5%;
+ line-height: 234%;
+}
+article > h1{
+ font-size: 300%;
+ width: 100%;
+ text-align:center ;
+ font-weight: bold;
+ padding: 0px 0px 10px 0px;
+}
