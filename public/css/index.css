@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan&family=Merriweather+Sans&display=swap');
 :root
 {
-    --font: 'League Spartan'; --themeColor: rgb(245, 191, 12);--secondaryAccent: rgb(190, 70, 0);
+    --font: 'League Spartan'; --themeColor: rgb(245, 191, 12);--secondaryAccent: rgb(255, 205, 43);
     --primaryAccent: black;
 }
 
@@ -57,7 +57,6 @@ body
     padding: .5%;
     text-align: center;
     font-size: .8vw;
-    color: white;
     /* border: 1px solid white; */
     border-radius: 1em;
 }
@@ -174,7 +173,7 @@ nav li
 }
 nav li:hover
 {
-    background-color: var(--secondaryAccent);color: white;
+    background-color: var(--secondaryAccent);
 }
 nav div
 {
@@ -184,7 +183,7 @@ nav div
 nav div select
 {
     width: 80%;height: 100%;padding: 0 4%;;
-    border: none;background-color: inherit;color: white;
+    border: none;background-color: inherit;
 }
 
 #btn-nav
@@ -196,7 +195,7 @@ nav div select
 
 #btn-nav:hover
 {
-    background: var(--secondaryAccent);color: white;
+    background: var(--secondaryAccent);color: black;
 }
 
 #intro
@@ -546,7 +545,7 @@ nav div select
 
 #policy 
 {
-    width: 100%;height: 6vw;background-color: rgb(233, 228, 215);
+    width: 100%;height: 6vw;background-color: rgb(243, 243, 243);
     display: flex;align-items: center;justify-content: center;
 }
 
@@ -576,10 +575,10 @@ nav div select
 
 footer 
 {
-    width: 100%;height: 25vw;background-color: rgb(143, 52, 0);color: white;
+    width: 100%;height: 25vw;background-color: var(--secondaryAccent);color: rgb(0, 0, 0);
 }
 
-footer li { list-style-type: none;} 
+footer li { list-style-type: none;transition: .5s;} 
 footer h3 { 
     text-transform: uppercase; padding: 3% 0;
 }
@@ -608,7 +607,7 @@ footer h3 {
 
 .links i
 {
-    font-size: 1.2vw;color: rgb(255, 255, 255);padding:0% 6%;
+    font-size: 1.2vw;color: rgb(0, 0, 0);padding:0% 6%;
 }
 
 
@@ -663,7 +662,7 @@ footer h3 {
 #newsletter section:last-of-type input[type="submit"] 
 {
     width: 20%;height: 60%;border: none;border-radius:  0 5px 5px 0;
-    background: rgba(190, 70, 0, 0.726);color: white;transition: .5s;
+    background: rgba(245, 191, 12, 0.911);color: rgb(0, 0, 0);transition: .5s;
 }
 
 #copy
@@ -689,14 +688,14 @@ footer h3 {
 
 footer li:hover
 {
-    color: rgb(245, 118, 0);cursor: pointer;
+    cursor: pointer;padding-left: 10%;
 }
 
 #newsletter section:first-of-type i:hover
 {
-    background: rgb(245, 118, 0);color: white;cursor: pointer;
+    background: var(--secondaryAccent);color: rgb(0, 0, 0);cursor: pointer;
 }
 #newsletter section:last-of-type input[type="submit"]:hover
 {
-    background-color: rgb(190, 70, 0);
+    background-color: var(--secondaryAccent)
 }
