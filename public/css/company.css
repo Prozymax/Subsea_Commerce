@@ -1,6 +1,6 @@
 :root
 {
-    --themeColor: rgb(245, 191, 12);--secondaryAccent: rgb(190, 70, 0);
+    --themeColor: rgb(245, 191, 12);--secondaryAccent: rgb(255, 205, 43);
     --primaryAccent: black;
 }
 
@@ -30,7 +30,7 @@
 
 #comp_intro article
 {
-    width: 20%;;color: rgb(255, 255, 255);background: var(--secondaryAccent);
+    width: 20%;;color: rgb(0, 0, 0);background: var(--secondaryAccent);
     height: 20%;position: absolute;bottom: -10%;;display: flex;
     align-items: center;justify-content: center;
 }
@@ -62,7 +62,7 @@
 
 .overview-section span, .overview-section section > span:first-of-type:before, .overview-section section > span:first-of-type:after
 {
-    color: var(--secondaryAccent);content: ' ~ ';
+    color: rgb(201, 40, 0);content: ' ~ ';
 }
 
 .ov-section h2
@@ -79,7 +79,7 @@
 .ov-section button
 {
     width: 40%;height: 60px;background: var(--secondaryAccent);
-    color: white;border: none;margin-inline-end: 4%;
+    color: rgb(0, 0, 0);border: none;margin-inline-end: 4%;
 }
 
 .overview-section article ~ span
@@ -95,7 +95,7 @@
 
 .overview-section i:hover
 {
-    background: var(--secondaryAccent);color: white;
+    background: rgb(201, 40, 0);color: rgb(255, 255, 255);
     cursor: pointer;box-shadow: none;
 }
 
@@ -147,7 +147,7 @@
 .exp-info div:last-of-type
 {
     display: flex;align-items: center;justify-content: center;
-    height: 60%;background: var(--secondaryAccent);color: white;
+    height: 60%;background: var(--secondaryAccent);color: rgb(0, 0, 0);
 }
 
 .exp-info div:last-of-type section
@@ -232,7 +232,7 @@
 .li-board-layout div:last-of-type p i 
 {
     padding: 2%;margin: 0 2%;font-size: 1vw;transition: .5s;
-    box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.411);color: white;
+    box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.247);color: rgb(0, 0, 0);
 }
 .li-board-layout div:last-of-type p
 {
@@ -241,12 +241,12 @@
 
 .li-board-layout div:last-of-type section:hover article
 {
-    background-color: var(--secondaryAccent);color: white;
+    background-color: var(--secondaryAccent);color: rgb(0, 0, 0);
 }
 
 .li-board-layout div:last-of-type p i:hover
 {
-    background: white;color: var(--secondaryAccent);box-shadow: none;border-radius: 50%;
+    background: rgb(0, 0, 0);color: var(--secondaryAccent);box-shadow: none;border-radius: 50%;
 }
 
 .li-board-layout div:last-of-type section:hover article p
