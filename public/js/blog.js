@@ -4,4 +4,5 @@ const closebtn = document.getElementById("closebtn");
 closebtn.addEventListener("click", function() {
   const popup = document.getElementById("popup");
   popup.style.display = "none";
+  alert("chjiheci")
 });
