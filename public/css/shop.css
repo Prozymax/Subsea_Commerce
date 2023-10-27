@@ -80,7 +80,7 @@ main
 
 .float-categories span
 {
-    font-size: 1.5vw;position: absolute;top: 10%;right: 5%;
+    font-size: 1.5vw;position: absolute;top: 0%;right: 5%;
 }
 
 .sort 
@@ -88,7 +88,6 @@ main
     display: flex;align-items: center;
     height: 50px;width: 100%;background: rgb(230, 230, 230);
 }
-
 
 .sort p:first-of-type
 {
