@@ -22,7 +22,7 @@ font-size: 250%;
 #popup{
  position: fixed;
  top: 0;
- display: flex;
+ display: none;
  align-items: center;
  justify-content: center;
  padding: 2%;
@@ -55,6 +55,10 @@ color: red;
  backdrop-filter: blur(5px);
  border-radius: 50%;
  font-size: 250%;
+}
+
+#popup #content p:hover{
+      cursor: pointer;
 }
 #popup #content img{
  width: 100%;
@@ -97,6 +101,17 @@ padding: 2% 2% 0% 2%;
  margin-top: 20px;
 
 }
+.firstSection .grids:hover{
+  cursor: pointer;
+  /* background-color: rgb(245, 191, 12); */
+    background-color: rgb(245, 191, 12);
+  transition: 1s;
+
+}
+/* 
+.firstSection .grids h3:hover{
+  color: white;
+} */
 
 .firstSection .grids img{
  width: 100%;
