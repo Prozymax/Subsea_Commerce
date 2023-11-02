@@ -125,7 +125,7 @@ header img {
     width: 14%;
     border-radius: 0 5px 5px 0;
     border: none;
-    font-weight: bold;
+    font-weight: bold;outline: 0px solid black;
     height: 100%;
     background-color: var(--secondaryAccent);
 }
