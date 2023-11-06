@@ -17,32 +17,39 @@ window.addEventListener("scroll", () => {
     }
 });
 
-for (i = 0; i < items.length; ++i) {
+
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    const fetchData = async () => {
+        const prodName = prodNameVar();
+        console.log(prodName)
+         const queryURL = `/shop/product?productName=${prodName}`;
+            try {
+        alert(prodNameVar.productName)
+                const response = await fetch(queryURL);
+                if (!response.ok) {
+                    throw new Error('Network is not okay or may have been interrupted . Please check your internet connection')
+                }
+                const data = await response.json();
+                const jsonObject = data.message;
+                // console.log(jsonObject)
+            }
+            catch (error) {
+                console.log(error)
+            }
+        }
+        fetchData()
+    })
+const prodNameVar = () => {
+    for (i = 0; i < items.length; ++i) {
     items[i].addEventListener('click', (e) => {
         const ClickedItem = e.currentTarget,
         newLabel = ClickedItem.firstElementChild,
         productImage = newLabel.nextElementSibling,
         productName = productImage.nextElementSibling.firstElementChild.innerHTML,
         getQuotebutton = productImage.nextElementSibling.lastElementChild.firstElementChild;
-        // prodNameQuery = DOM.ConvertToURLQueryParam(productName);
-        console.log(productImage);console.log(productName);console.log(getQuotebutton)
     window.location = `/shop/product?productName=${DOM.ConvertToURLQueryParam(productName)}`
-    })
-}
-
-document.addEventListener('DOMContentLoaded', (event) => {
-   event.preventDefault()
-    fetch('/shop/product')
-    .then((response => {
-        if (response.ok) {
-            return response.json()
-        }
-        else {
-            throw new Error('Network is not okay, may have been interrupted; Check your data connection..')
-        }
-    }))
-    .then((data) => {
-        const message = data.message;
-        console.log(message)
-    })
+    return productName;
 })
+}
+}

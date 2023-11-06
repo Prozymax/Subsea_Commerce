@@ -32,4 +32,6 @@ router.get('/services', (request, response) => {
 router.get('/delivery', (request, response) => {
     response.sendFile(path.join(__dirname, '../public/delivery.html'))
 })
+
+router.post('mail-us,', )
 module.exports = router;
