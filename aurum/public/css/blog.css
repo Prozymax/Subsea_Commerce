@@ -1,0 +1,137 @@
+body{
+ margin:o auto;
+ padding: o auto;
+ overflow-x: hidden;
+ width: 100%;
+ height: max-content;
+}
+.infoTab{
+ width: 100%;
+ height: fit-content;
+ padding:2% 0% 0% 6%;
+}
+.infoTab p{
+ margin-bottom: 20px;
+ font-size: 130%;
+}
+
+
+#firsthead{
+font-size: 250%;
+}
+#popup{
+ position: fixed;
+ top: 0;
+ display: none;
+ align-items: center;
+ justify-content: center;
+ padding: 2%;
+ width: 100%;
+ height:100vh;
+ background-color: rgba(93, 83, 47, 0.8); 
+  backdrop-filter: blur(5px); 
+}
+#popup #content{
+ width: 50%;
+ height: 100%;
+ position: relative;
+ overflow-y: scroll;
+ background-color: white;
+ border-radius:10px;
+}
+#popup #content p{
+ position: absolute;
+ top: 2%;
+ right: 2%;
+color: red;
+ padding:0.5% 0% 0% 0%;
+ margin: 0 auto;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 30px;
+ height: auto;
+ background-color: white;
+ backdrop-filter: blur(5px);
+ border-radius: 50%;
+ font-size: 250%;
+}
+
+#popup #content p:hover{
+      cursor: pointer;
+}
+#popup #content img{
+ width: 100%;
+ height: auto;
+ object-fit: contain;
+ /* aspect-ratio:4/3; */
+}
+#popup #content h1{
+font-size: 300%;
+padding: 2% 2% 0% 2%;
+/* margin-block: 10px; */
+
+}
+#popup #content article{
+ line-height: 150%;
+ padding:3% 6% 6% 6%;
+ text-align: justify;
+ font-size: 130%;
+
+}
+
+.firstSection{
+ width: 100%;
+ height: 100%;
+ padding: 0% 3% 3% 3%;
+ display: flex;
+
+ flex-wrap: wrap;
+ align-items: center;
+ justify-content: space-evenly;
+
+}
+.firstSection .grids{
+ width: 30%;
+ height: 30%;
+ border-radius:5px;
+ padding: 0px;
+ padding: 10px;
+ box-shadow: 0px 0px 3px rgba(128, 128, 128, 0.829);
+ margin-top: 20px;
+
+}
+.firstSection .grids:hover{
+  cursor: pointer;
+  /* background-color: rgb(245, 191, 12); */
+    background-color: rgb(245, 191, 12);
+  transition: 1s;
+
+}
+/* 
+.firstSection .grids h3:hover{
+  color: white;
+} */
+
+.firstSection .grids img{
+ width: 100%;
+ height: 40%;
+ object-fit:contain;
+ aspect-ratio:4/3;
+}
+.firstSection .grids article{
+ margin-top: 0px;
+ font-size: 105%;
+ line-height: 130%;
+
+}
+.firstSection .grids h2{
+ font-size: 250%;
+ margin-block: 10px;
+}
+.firstSection .grids h3{
+ margin-top: 10px;
+ color:rgb(245, 191, 12);
+ font-size: 130%;
+ font-weight: lighter;
+}

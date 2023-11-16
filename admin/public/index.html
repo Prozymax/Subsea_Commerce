@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="title">Product Name: </label>
+        <input type="text" id="title" name="prodname" required>
+        <br>
+        
+        <label for="description">Product Description: </label>
+        <textarea id="description" name="description" required></textarea>
+        <br>
+        
+        <label for="prodCat">Product Category</label>
+        <select name="prodCategory" id="prdc">
+            <option value="Hand Tools">Hand Tools</option>
+            <option value="Head Safety Gear">Head safety Gear</option>
+            <option value="Boots">Boots</option>
+            <option value="Gloves">Gloves</option>
+            <option value="PPEs">PPEs</option>
+        </select>
+        <br>
+      
+        <label for="image">Select an image:</label>
+        <input type="file" id="image" name="image" accept="image/jpeg, image/jpg, image/png, image/gif" required>
+        <br>
+        
+        <input type="submit" value="Upload">
+      </form>
+</body>
+</html>

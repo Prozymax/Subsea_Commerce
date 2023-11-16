@@ -1,0 +1,11 @@
+
+Todo:
+  ☐ create all the database various categories
+  ☐ create user database for the website and various columns
+  ☐ Authenticate the jwt for the logins
+  ☐ file reading (fs) and (multer) for file storage for admin and products update
+  ☐ make the product on shop page a form to be submitted
+  ☐ Create a table for all images with their names and categories as columns
+  ☐ add features and description words to the admin form 
+  ☐ create a file input for 2 images for the same product 
+  uncomment shop.js

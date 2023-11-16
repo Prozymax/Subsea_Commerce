@@ -1,0 +1,701 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&family=Merriweather+Sans&display=swap');
+:root
+{
+    --font: 'League Spartan'; --themeColor: rgb(245, 191, 12);--secondaryAccent: rgb(255, 205, 43);
+    --primaryAccent: black;
+}
+
+input 
+{
+    font-family: inherit;
+    font-weight: 700;
+}
+
+input:focus, select:focus
+{
+    outline: none;border: none;
+}
+
+a 
+{
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+}
+buttton
+{
+    border: none;
+}
+
+* 
+{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'League Spartan', 'sans-serif';
+    padding: 0;;
+}
+
+body 
+{
+    margin: 0;
+    font-family: 'Nunito', 'sans-serif';
+    padding: 0;
+}
+
+#pre_header
+{
+    width: 100%;
+    text-align: center;
+    padding: .3% 0;
+    background: var(--secondaryAccent);
+}
+
+#pre_header i 
+{
+    padding: .5%;
+    text-align: center;
+    font-size: .8vw;
+    /* border: 1px solid white; */
+    border-radius: 1em;
+}
+
+header 
+{
+    width: 100%;
+    display: flex;
+    align-content: center;
+    background: rgb(0, 0, 0);
+    justify-content: center;
+}
+
+#company_name 
+{
+    width: 30%;
+    height: auto;
+    display: flex;
+    color: var(--secondaryAccent);
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+    width: 20%;
+}
+
+#searchbar
+{
+    width: 40%;
+    display: flex;
+    font-family: var(--font);
+    align-items: center;
+    justify-content: center;
+}
+
+#searchbar form {
+    width: 95%;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+}
+
+#searchbar select
+{
+    width: 30%;
+    padding-inline: 3%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.233);
+}
+
+
+#searchbar input[type="text"]
+{
+    width: 55%;
+    border: none;
+    padding: 0 2%;
+    height: 40px;
+    margin-right: .40%;
+}
+#searchbar input[type="submit"]
+{
+    width: 14%;
+    border-radius: 0 5px 5px 0;
+    border: none;
+    font-weight: bold;outline: 0px solid black;
+    height: 100%;
+    background-color: var(--secondaryAccent);
+}
+
+#contact
+{
+    width: 30%;
+    display: grid;
+    place-items: center;
+}
+#contact section
+{
+    display: flex;align-items: center;
+    width:100%;padding: 1%;margin: 0;color: var(--secondaryAccent);
+}
+
+#contact i 
+{
+    color: white;font-size: .8vw;;
+    padding: 0 3%;
+}
+
+#contact p:first-child
+{
+    color: white;font-size: 1vw;
+}
+
+nav
+{
+    width: 100%;display: flex;align-items: center;
+    justify-content: center;
+    height: 60px;border-bottom: 2px solid var(--secondaryAccent);
+    margin-top: .5%;
+}
+nav ul
+{
+    width: 40%;display: flex;
+    height:100%;align-items: center;;
+}
+nav li
+{
+    width: 20%;list-style: none;text-align: center;height: 100%;;
+    display: flex;align-items: center;justify-content: center;border-radius: 5px 5px 0 0;
+    text-transform: uppercase;transition: .5s;cursor: pointer;
+}
+nav li:hover
+{
+    background-color: var(--secondaryAccent);
+}
+nav div
+{
+    width: 20%;display: grid;background: var(--secondaryAccent);
+    place-items: center;height: 100%;margin: 0 2%;
+}
+nav div select
+{
+    width: 80%;height: 100%;padding: 0 4%;;
+    border: none;background-color: inherit;
+}
+
+#btn-nav
+{
+    width:10%;height: 85%;margin: 2% 0;border-radius: 30px;transition: .5s;
+    border: none;background: rgb(0, 0, 0);color: white;
+    cursor: pointer;font-weight: bolder;
+}
+
+#btn-nav:hover
+{
+    background: var(--secondaryAccent);color: black;
+}
+
+#intro
+{
+    width: 100%;
+    height: 70vh;
+    background-image: url('../img/pop-zebra-wp81DxKUd1E-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+}
+
+#sections
+{
+    width: 100%;height: 20vw;display: flex;
+    align-items: center;justify-content: center;;
+}
+
+#sections div
+{
+    width: 20%;height: 70%;margin: 0 .5%;display: grid;place-items: center;
+    border-radius: 5px;background-repeat: no-repeat;background-position-y: 100%;
+    background-size: 60%;background-position-x: 100%;
+}
+
+#sections div:first-child
+{
+    background-color: rgb(255, 166, 0);
+    background-image: url('../img/bigstock-Various-hard-hats-safety-helm-145706012-removebg-preview.png')
+}
+
+#sections div:nth-child(2){
+    background-color: rgb(95, 131, 133);
+    background-image: url('../img/sgo_7001frt-removebg-preview.png')
+}
+
+#sections div:last-child
+{
+    background-color: orangered;background-size: 80%;
+    background-image: url('../img/wooden-floor-hand-tools-safety-glasses-wallpaper-preview-removebg-preview.png')
+}
+
+#sections div section
+{
+    color: white;
+    width: 95%;height: 90%;padding: 2% 4%;
+}
+
+#sections h1
+{
+    font-size: 1.5vw;font-weight: bolder;
+}
+
+#sections article 
+{
+    width: 80%;height: 60%;color: black;
+    text-transform: uppercase;font-weight: 700;
+
+}
+
+#sections button
+{
+    width: 40%;height: 20%;border-radius: 10px;color: white;transition: .5s;
+    border: none;background: inherit;font-weight: bold;
+    box-shadow: 0 0 24px 2px rgba(0, 0, 0, 0.178);
+}
+
+#sections button:hover
+{
+    box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.212);border-radius: 30px;
+}
+
+#products 
+{
+    width: 100%;height: 90vh;
+}
+
+#open_span 
+{
+    color: rgb(0, 0, 0);text-transform: uppercase;text-align: center;
+    font-weight: 500;width: 70%;margin: 2% auto;font-size: 2vw;
+}
+#open_span span, #open_span span::after, #open_span span::before
+{
+    color: rgb(255, 166, 0);font-weight: bolder;
+    font-size: .8vw;content:" ~ ";
+}
+
+#featured 
+{
+    width: 80%;height: 80%;display: flex;
+    flex-wrap: wrap;margin: 0 auto;justify-content: center;
+}
+
+#featured div
+{
+    width: 20%;height: 50%;text-align: center;border-radius: 5px;;
+    margin: .4%;transition: .5s;
+}
+
+#featured div figure
+{
+    width: 100%;height: 80%;
+    display: grid;place-items: center;
+}
+
+#featured div figure img
+{
+    width: 80%;
+}
+
+#featured section
+{
+    width: 100%;height: 20%;transition: .5s;
+    display: grid;place-items: center;
+}
+
+#featured h2
+{
+   font-size: 1vw;height: 25%;
+}
+
+#featured div:hover, .prod_cols section:hover
+{
+    margin-top: -1%;height: 51%;
+    box-shadow: 0 0 32px 2px rgba(0, 0, 0, 0.178);
+}
+
+#featured div:hover section
+{
+    color: rgb(255, 166, 0);background: black;
+}
+
+#order
+{
+    width: 100%;height: 40vw;background-size: 100%;background-position:  center;
+    background-image: url('../img/pop-zebra-wp81DxKUd1E-unsplash.jpg');background-repeat:  no-repeat;
+    background-color: rgba(0, 0, 0, 0.473);background-blend-mode: soft-light;
+    display: flex;align-items: center;justify-content: center;
+}
+
+#order section
+{   
+    height: 70%;background: white;color: black;display: flex;
+    align-items: center;border-radius: 5px;margin: 0 .5%;position: relative;;
+}
+
+#order section:first-of-type
+{
+    width: 50%;
+}
+
+#order section:last-of-type
+{
+    background-image: url('../img/wooden-floor-hand-tools-safety-glasses-wallpaper-preview-removebg-preview.png');
+    width: 20%;background-repeat: no-repeat;background-position: bottom;background-color: rgb(255, 115, 0);
+}
+
+#abs_offer
+{
+    width: 50%;height: 50%;filter: saturate(500%);
+    position: absolute;top: 0;left: -15%;
+}
+
+#order figure
+{
+    width: 50%;height: 100%;background: rgb(212, 138, 0);background-size: 120%;
+    background-position: bottom;background-repeat:  no-repeat;
+    background-image: url('../img/kisspng-personal-protective-equipment-safety-arc-flash-bus-general-category-services-sea-marine-services-lt-5d3c8bf78ccaa0.6100986715642490795767.png');
+}
+
+#order article
+{
+    width: 45%;height: 50%;margin: 0 auto;
+}
+
+#order span:first-of-type, #order span:first-of-type::after, #order span:first-of-type::before
+{
+    color: rgb(190, 70, 0);text-transform: capitalize;
+    font-size: .8vw;content: " ~ ";
+}
+
+#order i { font-size: .8vw; color: rgb(212, 138, 0) }
+
+#order h3
+{
+    text-transform: uppercase;padding: 2% 0;transition: .5s;
+}
+
+#order p
+{
+    font-size: .8vw;padding: 2% 0;
+}
+
+
+#order button
+{
+    width: 45%;height: 55px;margin: 2% 0;transition: .5s;cursor: pointer;
+    border: none;background: rgb(212, 138, 0);color: white;
+}
+
+#order button:hover, #order section:last-of-type button:hover
+{
+    background: white;color: rgb(212, 138, 0);border-radius: 30px;
+    box-shadow: 0 0 24px 3px rgba(80, 66, 66, 0.192);font-weight: bolder;
+}
+
+#order section:last-of-type article
+{
+    width: 80%;;
+}
+#order span:last-of-type, #order span:last-of-type::after, #order span:last-of-type::before {color: white}
+
+#order section:last-of-type button
+{
+    background-color: inherit;box-shadow: 0 0 24px 2px rgba(0, 0, 0, 0.26);
+    border-radius: 30px;width: 60%;
+}
+#order h2
+{
+    text-transform: uppercase;width: 50%;font-size: 2vw;
+}
+
+#col
+{
+    width: 100%;height: 50vw;background: rgb(245, 242, 242);
+}
+
+#col div:first-of-type
+{
+    text-align: center;height: 20%;display: grid;place-items: center;
+}
+
+#col span , #col span::after, #col span::before
+{
+    color: rgb(190, 70, 0);text-transform: uppercase;font-size: .7vw;
+    font-weight: bolder;content: " ~ ";
+}
+
+#col h1
+{
+    font-size: 2vw;font-weight: 900;
+}
+
+.prod_cols
+{
+    width: 75%;display: flex;align-items: center;margin: 0 auto;
+    justify-content: center;flex-wrap: wrap;height: 80%;
+}
+
+.prod_cols section 
+{
+    position: relative;
+    width: 30%;height: 45%;display: flex;transition: .5s;
+    margin-inline: 1%;align-items: center;background-color: white;
+}
+
+.prod_cols section figure
+{
+    width: 60%;height: 100%;background-repeat: no-repeat;background-size: 80%;
+    background-position: center;background-image: url('../img/sgo_7001frt-removebg-preview.png');
+}
+
+.prod_cols article
+{
+    width: 40%;height: 70%;cursor: pointer;;
+}
+
+.prod_cols h4
+{
+    text-transform: uppercase;font-weight: 700;
+}
+
+.prod_cols ul
+{
+    width: 80%;margin: 8% auto;color: rgb(105, 105, 105);
+}
+
+.prod_cols button
+{
+    width: 50%;border:none;background: black;color: white;
+    padding: 8% 0;transition: .5s;
+}
+
+.prod_cols button:hover
+{
+    background-color: rgb(245, 118, 0);border-radius: 30px;width: 70%;
+}
+
+.prod_cols li:hover { color: rgb(245, 118, 0);} .prod_cols section:hover { border-radius: 5px;}
+
+/* Blogs section */
+
+#blogs 
+{
+    width: 100%;height: 40vw;text-align: center;
+    padding-top: 2%;
+}
+
+#blogs span:first-child { color: orange; font-weight: bolder;font-size: .9vw; }
+#blogs p
+{ 
+    font-size: 2vw;text-align: center;;
+    width: 50%;margin: 0 auto;font-weight: 900;text-transform: uppercase; }
+
+    #blogs p::after, #blogs p::before  {color: rgb(255, 115, 0);content: " * ";font-size: 1vw;font-weight: 900;}
+
+.fa-posts
+{
+    width: 100%;height: 80%;text-align: start;
+    display: flex;justify-content: center;align-items: center;
+}
+
+.fa-posts section
+{
+    width: 20%;height: 80%;margin: 0 .5%;
+}
+
+.fa-posts figure
+{
+    width: 100%;height: 60%;background-repeat: no-repeat;background-size: 100%;margin: 1%;
+    background-position: center;background-image: url('../img/marianna-krzakiewicz-XPgJ19A7WnU-unsplash.jpg');;
+}
+.fa-posts article 
+{
+    height: 20%;margin: 0;
+}
+
+.fa-posts span { color: rgb(82, 82, 82);}
+
+.fa-posts button
+{
+    width: 40%;background-color: black;color: white;cursor: pointer;
+    height: 50px;border: none;border-radius: 5px;transition: .5s;
+}
+
+.fa-posts button:hover
+{
+    border-radius: 30px;
+}
+
+.fa-posts h4 
+{
+    font-size: 1vw;text-transform: uppercase;padding: 1% 0;
+}
+.fa-posts b { color: orangered; }
+
+#policy 
+{
+    width: 100%;height: 6vw;background-color: rgb(243, 243, 243);
+    display: flex;align-items: center;justify-content: center;
+}
+
+#policy section
+{
+    display: flex;align-items: center;justify-content: center;
+    width: 15%;height: 100%;
+}
+
+#policy i 
+{
+    background-color: rgb(255, 255, 255);padding: 5%;border-radius: 50%;margin: 0 3%;;
+    border: 3px solid rgb(224, 217, 217);font-size: 1.4vw;color: rgb(190, 70, 0);
+}
+
+#policy h4 
+{
+    text-transform: uppercase;
+}
+
+#policy article 
+{
+    width: 80%;margin: 0 auto;
+}
+
+/*  footer  */
+
+footer 
+{
+    width: 100%;height: 25vw;background-color: var(--secondaryAccent);color: rgb(0, 0, 0);
+}
+
+footer li { list-style-type: none;transition: .5s;} 
+footer h3 { 
+    text-transform: uppercase; padding: 3% 0;
+}
+
+.links
+{
+    width: 100%;height: 75%;display: flex;margin-left: 3%;
+    align-items: center;justify-content: center;
+}
+
+.links section
+{
+    width: 15%;height: 80%;
+}
+
+.links section:first-of-type
+{
+    width: 20%;margin-right: 1%;;
+}
+
+.links li 
+{
+    display: flex;align-items: center;margin-block: 0 5%;
+    line-height: 150%;width: 95%;
+}
+
+.links i
+{
+    font-size: 1.2vw;color: rgb(0, 0, 0);padding:0% 6%;
+}
+
+
+#newsletter
+{
+    width: 60%;height: 15%;margin: 0 auto;
+    display: flex;align-items: center;
+}
+
+#newsletter section:first-of-type
+{
+    width: 30%;height: 100%;text-align: center;
+    display: grid;height: 100%;background-color: rgb(43, 38, 38);
+    
+}
+
+#newsletter section:first-of-type article
+{
+    height: 100%;width: 100%;display: flex;align-items: center;justify-content: center;
+}
+
+#newsletter section:first-of-type i
+{
+    padding: 4%;background:rgb(255, 255, 255);color: black;
+    border-radius: 5px;margin: 0 1%;transition: .5s;
+}
+
+#newsletter section:last-of-type
+{
+    width: 70%;background-color: rgb(0, 0, 0);display: flex;
+    align-items: center;height: 100%;;
+}
+
+#newsletter section:last-of-type h3
+{
+    width: 40%;height: 100%;font-size: .9vw;color: white;
+    display: flex;align-items: center;justify-content: center;
+}
+
+#newsletter section:last-of-type form
+{
+    width: 70%;background: rgb(8, 5, 5);height: 100%;display: flex;
+    align-items: center;
+}
+
+#newsletter section:last-of-type input[type="email"]
+{
+    width: 70%;height: 60%;border: none;padding: 0 2%;
+    background: white;border-radius: 5px 0 0 5px;
+}
+
+#newsletter section:last-of-type input[type="submit"] 
+{
+    width: 20%;height: 60%;border: none;border-radius:  0 5px 5px 0;
+    background: rgba(245, 191, 12, 0.911);color: rgb(0, 0, 0);transition: .5s;
+}
+
+#copy
+{
+    width: 100%;height: 10%;margin: 0 auto;
+    display: flex;align-items: center;justify-content: center;color: rgb(0, 0, 0);
+}
+
+#copy section
+{
+    width: 30%;font-size: .7vw;
+}
+
+#copy section:last-of-type
+{
+    text-align: right;
+}
+
+#copy span::after, #copy span::before
+{
+    content: " | ";
+}
+
+footer li:hover
+{
+    cursor: pointer;padding-left: 3%;
+}
+
+#newsletter section:first-of-type i:hover
+{
+    background: var(--secondaryAccent);color: rgb(0, 0, 0);cursor: pointer;
+}
+#newsletter section:last-of-type input[type="submit"]:hover
+{
+    background-color: var(--secondaryAccent)
+}
