@@ -47,13 +47,13 @@ const Mailmiddleware = async (request, response, next) => {
     }
     else {
         const quoteData = {
-            fullname: request.body.name || 'prosper',
-            email: request.body.email || 'propermaxcwek@gmail.com',
-            phone: request.body.phone || '09183927487284',
-            orderName: request.body.ordername || 'piweod',
-            color: request.body.color || 'red',
-            size: request.body.bodySize || '43',
-            numnerOfOrder: request.body.number || '32',
+            fullname: request.body.name,
+            email: request.body.email,
+            phone: request.body.phone,
+            orderName: request.body.quoteprod_name,
+            color: request.body.color,
+            size: request.body.size,
+            numnerOfOrder: request.body.qty,
             subject: 'Quote Order',
             }
         const quoteMailOptions = { 

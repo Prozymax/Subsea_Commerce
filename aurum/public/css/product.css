@@ -1,3 +1,10 @@
+::selection
+{
+    background-color: var(--secondaryAccent);
+    color: rgb(100, 100, 100);
+}
+
+
 input { border: none }
 #product-cont
 {
@@ -23,7 +30,7 @@ input { border: none }
 
 #product-cont div:first-of-type section
 {
-    width: 80%;margin: 1% auto;;height: 20%;display: flex;;
+    width: 80%;margin: 1% auto;;height: 20%;display: none;
 }
 
 #product-cont div:first-of-type section article
@@ -42,10 +49,12 @@ input { border: none }
 
 #product-cont div:last-of-type
 {
-    margin-inline-start: 2%;height:70%;
+    margin-inline-start: 2%;height:95%;
 }
 
-#product-cont div:last-of-type h1 { padding: 1.5% 0;width: 80%;font-size: 2vw;; }
+#product-cont div:last-of-type input[type="text"] { 
+    padding: 1% 0;width: 80%;font-size: 2vw;; 
+}
 
 #product-cont div:last-of-type > p:first-of-type
 {
@@ -54,14 +63,14 @@ input { border: none }
 
 #product-cont div:last-of-type form
 {
-    height: 70%;padding-block: 4% 0;width: 80%;
-    border-block: 2px solid rgb(238, 238, 238);margin: 2% 0;;
+    height: 100%;padding-block: 2% 0;width: 80%;
+    border-block: 2px solid rgb(238, 238, 238);margin: 1% 0;;
 }
 
 #product-cont div:last-of-type form p:first-of-type,
 #product-cont div:last-of-type form p:nth-of-type(2)
 {
-    width: 60%;height: 8%;margin: 4% 0;;
+    width: 60%;height: 4%;margin: 4% 0;;
     display: flex;align-items: center;font-size: 1vw;;
 }
 
@@ -76,10 +85,23 @@ input { border: none }
     margin: 0 2%;border-radius: 8px;font-size: .8vw;;
 }
 
+
+textarea {
+    border: none;box-shadow: 0 0 8px 1px rgba(5, 5, 5, 0.24);
+    font-family: inherit;font-size: .9vw;;padding: 2%;
+    margin-block: 3% 0;height: 100px;resize: none;width: 60%;transition: .5s;
+}
+
+textarea:hover, textarea:focus
+{
+    border: none;box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.11);
+    outline: none;
+}
+
 #product-cont div:last-of-type form p:last-of-type
 {
-    width: 60%;height: 40%;;background-color: rgb(241, 241, 241);
-    display: flex;align-items: center;justify-content: center;margin: 6% 0;
+    width: 60%;height: 15%;;background-color: rgb(241, 241, 241);
+    display: flex;align-items: center;justify-content: center;margin: 3% 0;
 }
 
 #product-cont div:last-of-type form p:last-of-type input[type="number"]
@@ -88,7 +110,7 @@ input { border: none }
     margin: 0 1%;text-align: center;font-size: 1vw;font-weight: 500;
 }
 
-#product-cont div:last-of-type form p:last-of-type input[type="button"]
+#product-cont div:last-of-type form p:last-of-type input[type="submit"]
 {
     width: 60%;height: 65%;background: var(--secondaryAccent);
 }
@@ -103,21 +125,23 @@ input { border: none }
     width: 70%;margin: 2% auto;
 }
 
+#product-cont i{color: rgb(255, 174, 0)}
+
 #desc
 {
-    width: 73%;height: 25vw;margin: 1% auto;
+    width: 50%;height: 25vw;margin: 1% auto;
 }
 
 .tabs 
 {
-    width: 100%;height: 10%;
-    display: flex;align-items: center;
+    width: 100%;height: 10%;text-align: center;
+    display: flex;align-items: center;justify-content: center;
 }
 
 .tabs span
 {
-    font-size: 1.2vw;padding: 0 4%;height: 100%;
-    display: grid;place-content: center;
+    font-size: 1.2vw;height: 100%;
+    display: grid;place-content: center;width: 30%;
 }
 
 .tabs span:first-of-type
@@ -132,7 +156,8 @@ input { border: none }
 
 .desc_article, .addInfo
 {
-    width: 100%;height: 90%;box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.11);
+    width: 100%;height: 90%;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.11);
     font-size: 1vw;padding: 1.5% 3%;line-height: 120%;border-radius: 3px;
 }
 
@@ -142,3 +167,15 @@ input { border: none }
 }
 
 .addInfo {display: none;}
+
+
+#product-cont p:nth-child(5)
+{
+    padding: 1.5% 0;border-top: 1px solid rgba(5, 5, 5, 0.24);
+    margin-block: 2% 0;
+}
+
+#product-cont p:nth-child(5) ~ input
+{
+    width: 50%;
+}

@@ -70,8 +70,13 @@
                 <p><span>Home</span>&nbsp;&nbsp&nbsp;<b>&#8250;</b>&nbsp;&nbsp;&nbsp;<span>Aurum Shop</span></p>
             </section>
         </div>
-        <img src="http://localhost:3000/uploads/image-1699973765038-124693151.png" alt="drfg">
         <h2 class="intro-heading-two">Aurum Shop</h2>
+
+        <div id="loader">
+            <div>
+                <section><i class="fa-solid fa-start"></i></section>
+            </div>
+        </div>
 
        <div id="shop-layout">
         <div class="ph-floatbar">
@@ -81,26 +86,19 @@
                     Content
                 </p>
                 <ul>
-                    <li><i get="fa-solid fa-screwdriver-wrench"></i>&nbsp;&nbsp;Hand Tools<span>&#8250;</span></li>
-                    <li><i class="fa-solid fa-helmet-safety"></i>&nbsp;&nbsp;Head Safety Gears<span>&#8250;</span></li>
-                    <li><i class="fa-solid fa-vest"></i>&nbsp;&nbsp;PPEs<span>&#8250;</span></li>
-                    <li><i class="fa-solid fa-shoe-prints"></i>&nbsp;&nbsp;Boots<span>&#8250;</span></li>
-                    <li><i class="fa-solid fa-mitten"></i>&nbsp;&nbsp;Gloves<span>&#8250;</span></li>
+                    <li class="navCategory"><i class="fa-solid fa-screwdriver-wrench"></i>&nbsp;&nbsp;Hand Tools<span>&#8250;</span></li>
+                    <li class="navCategory"><i class="fa-solid fa-helmet-safety"></i>&nbsp;&nbsp;Head Safety Gears<span>&#8250;</span></li>
+                    <li class="navCategory"><i class="fa-solid fa-vest"></i>&nbsp;&nbsp;PPEs<span>&#8250;</span></li>
+                    <li class="navCategory"><i class="fa-solid fa-shoe-prints"></i>&nbsp;&nbsp;Boots<span>&#8250;</span></li>
+                    <li class="navCategory"><i class="fa-solid fa-mitten"></i>&nbsp;&nbsp;Gloves<span>&#8250;</span></li>
                 </ul>
             </section>
         </div>
 
         <main>
             <section class="sort">
-                <p>
-                    <select name="sort" idgetsort">
-                        <option value="">Sort</option>
-                        <option value="">Sort</option>
-                        <option value="">Sort</option>
-                        <option value="">Sort</option>
-                    </select>
-                </p>
-                <p>Showing 1 of 24 of 106 results</p>
+                
+                <p>&nbsp;Showing&nbsp;<span id="dbcount"></span> &nbsp;results</p>
             </section>
             <div class="new_prod">
                 <section>
@@ -113,12 +111,12 @@
                 </section>
             </div>
             <div class="ph-shop">
-                <div class="items">
+                <!-- <div class="items">
                     <span>Sale</span>
-                    <figure></figure>
+                    <figure id="fig-prod" class="fig_prod"></figure>
                     <section>
                         <form action="shop/product" method="post" class="product-form">
-                        <input type="text" name="prodname" value="Iron Wrench" readonly/>
+                        <input type="text" class="prod_name" name="prodname" value="Iron Wrench" id="prodname" readonly/>
                         <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
                         <article>
                             <button>Get Quote</button>
@@ -128,10 +126,10 @@
                 </div>
                 <div class="items">
                     <span>Sale</span>
-                    <figure></figure>
+                    <figure id="fig-prod" class="fig_prod"></figure>
                     <section>
                         <form action="shop/product" method="post" class="product-form">
-                        <input type="text" name="prodname" value="Blue Safety Coverall" readonly/>
+                        <input type="text" class="prod_name" name="prodname" value="Blue Safety Coverall" id="prodname" readonly/>
                         <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
                         <article>
                             <button>Get Quote</button>
@@ -141,10 +139,10 @@
                 </div>
                 <div class="items">
                     <span>Sale</span>
-                    <figure></figure>
+                    <figure id="fig-prod" class="fig_prod"></figure>
                     <section>
                         <form action="shop/product" method="post" class="product-form">
-                        <input type="text" name="prodname" value="Name Description" readonly/>
+                        <input type="text" class="prod_name" name="prodname" value="Name Description" id="prodname" readonly/>
                         <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
                         <article>
                             <button>Get Quote</button>
@@ -154,10 +152,23 @@
                 </div>
                 <div class="items">
                     <span>Sale</span>
-                    <figure></figure>
+                    <figure id="fig-prod" class="fig_prod"></figure>
                     <section>
                         <form action="shop/product" method="post" class="product-form">
-                        <input type="text" name="prodname" value="Product Name Description" readonly/>
+                        <input type="text" class="prod_name" name="prodname" value="Product Name Description" id="prodname" readonly/>
+                        <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                        <article>
+                            <button>Get Quote</button>
+                        </article>
+                        </form>
+                    </section>
+                </div> -->
+                <!-- <div class="items">
+                    <span>Sale</span>
+                    <figure id="fig-prod" class="fig_prod"></figure>
+                    <section>
+                        <form action="shop/product" method="post" class="product-form">
+                        <input type="text" class="prod_name" name="prodname" value="Product Name Description" id="prodname" readonly/>
                         <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
                         <article>
                             <button>Get Quote</button>
@@ -167,10 +178,10 @@
                 </div>
                 <div class="items">
                     <span>Sale</span>
-                    <figure></figure>
+                    <figure id="fig-prod" class="fig_prod"></figure>
                     <section>
                         <form action="shop/product" method="post" class="product-form">
-                        <input type="text" name="prodname" value="Product Name Description" readonly/>
+                        <input type="text" class="prod_name" name="prodname" value="Product Name Description" id="prodname" readonly/>
                         <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
                         <article>
                             <button>Get Quote</button>
@@ -180,10 +191,10 @@
                 </div>
                 <div class="items">
                     <span>Sale</span>
-                    <figure></figure>
+                    <figure id="fig-prod" class="fig_prod"></figure>
                     <section>
                         <form action="shop/product" method="post" class="product-form">
-                        <input type="text" name="prodname" value="Product Name Description" readonly/>
+                        <input type="text" class="prod_name" name="prodname" value="Product Name Description" id="prodname" readonly/>
                         <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
                         <article>
                             <button>Get Quote</button>
@@ -193,10 +204,10 @@
                 </div>
                 <div class="items">
                     <span>Sale</span>
-                    <figure></figure>
+                    <figure id="fig-prod" class="fig_prod"></figure>
                     <section>
                         <form action="shop/product" method="post" class="product-form">
-                        <input type="text" name="prodname" value="Product Name Description" readonly/>
+                        <input type="text" class="prod_name" name="prodname" value="Product Name Description" id="prodname" readonly/>
                         <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
                         <article>
                             <button>Get Quote</button>
@@ -206,10 +217,10 @@
                 </div>
                 <div class="items">
                     <span>Sale</span>
-                    <figure></figure>
+                    <figure id="fig-prod" class="fig_prod"></figure>
                     <section>
                         <form action="shop/product" method="post" class="product-form">
-                        <input type="text" name="prodname" value="Product Name Description" readonly/>
+                        <input type="text" class="prod_name" name="prodname" value="Product Name Description" id="prodname" readonly/>
                         <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
                         <article>
                             <button>Get Quote</button>
@@ -219,10 +230,10 @@
                 </div>
                 <div class="items">
                     <span>Sale</span>
-                    <figure></figure>
+                    <figure id="fig-prod" class="fig_prod"></figure>
                     <section>
                         <form action="shop/product" method="post" class="product-form">
-                        <input type="text" name="prodname" value="Product Name Description" readonly/>
+                        <input type="text" class="prod_name" name="prodname" value="Product Name Description" id="prodname" readonly/>
                         <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
                         <article>
                             <button>Get Quote</button>
@@ -232,10 +243,10 @@
                 </div>
                 <div class="items">
                     <span>Sale</span>
-                    <figure></figure>
+                    <figure id="fig-prod" class="fig_prod"></figure>
                     <section>
                         <form action="shop/product" method="post" class="product-form">
-                        <input type="text" name="prodname" value="Product Name Description" readonly/>
+                        <input type="text" class="prod_name" name="prodname" value="Product Name Description" id="prodname" readonly/>
                         <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
                         <article>
                             <button>Get Quote</button>
@@ -245,10 +256,10 @@
                 </div>
                 <div class="items">
                     <span>Sale</span>
-                    <figure></figure>
+                    <figure id="fig-prod" class="fig_prod"></figure>
                     <section>
                         <form action="shop/product" method="post" class="product-form">
-                        <input type="text" name="prodname" value="Product Name Description" readonly/>
+                        <input type="text" class="prod_name" name="prodname" value="Product Name Description" id="prodname" readonly/>
                         <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
                         <article>
                             <button>Get Quote</button>
@@ -258,10 +269,10 @@
                 </div>
                 <div class="items">
                     <span>Sale</span>
-                    <figure></figure>
+                    <figure id="fig-prod" class="fig_prod"></figure>
                     <section>
                         <form action="shop/product" method="post" class="product-form">
-                        <input type="text" name="prodname" value="Product Name Description" readonly/>
+                        <input type="text" class="prod_name" name="prodname" value="Product Name Description" id="prodname" readonly/>
                         <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
                         <article>
                             <button>Get Quote</button>
@@ -271,10 +282,10 @@
                 </div>
                 <div class="items">
                     <span>Sale</span>
-                    <figure></figure>
+                    <figure id="fig-prod" class="fig_prod"></figure>
                     <section>
                         <form action="shop/product" method="post" class="product-form">
-                        <input type="text" name="prodname" value="Product Name Description" readonly/>
+                        <input type="text" class="prod_name" name="prodname" value="Product Name Description" id="prodname" readonly/>
                         <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
                         <article>
                             <button>Get Quote</button>
@@ -284,10 +295,10 @@
                 </div>
                 <div class="items">
                     <span>Sale</span>
-                    <figure></figure>
+                    <figure id="fig-prod" class="fig_prod"></figure>
                     <section>
                         <form action="shop/product" method="post" class="product-form">
-                        <input type="text" name="prodname" value="Product Name Description" readonly/>
+                        <input type="text" class="prod_name" name="prodname" value="Product Name Description" id="prodname" readonly/>
                         <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
                         <article>
                             <button>Get Quote</button>
@@ -297,10 +308,10 @@
                 </div>
                 <div class="items">
                     <span>Sale</span>
-                    <figure></figure>
+                    <figure id="fig-prod" class="fig_prod"></figure>
                     <section>
                         <form action="shop/product" method="post" class="product-form">
-                        <input type="text" name="prodname" value="Product Name Description" readonly/>
+                        <input type="text" class="prod_name" name="prodname" value="Product Name Description" id="prodname" readonly/>
                         <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
                         <article>
                             <button>Get Quote</button>
@@ -310,10 +321,10 @@
                 </div>
                 <div class="items">
                     <span>Sale</span>
-                    <figure></figure>
+                    <figure id="fig-prod" class="fig_prod"></figure>
                     <section>
                         <form action="shop/product" method="post" class="product-form">
-                        <input type="text" name="prodname" value="Product Name Description" readonly/>
+                        <input type="text" class="prod_name" name="prodname" value="Product Name Description" id="prodname" readonly/>
                         <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
                         <article>
                             <button>Get Quote</button>
@@ -323,10 +334,10 @@
                 </div>
                 <div class="items">
                     <span>Sale</span>
-                    <figure></figure>
+                    <figure id="fig-prod" class="fig_prod"></figure>
                     <section>
                         <form action="shop/product" method="post" class="product-form">
-                        <input type="text" name="prodname" value="Product Name Description" readonly/>
+                        <input type="text" class="prod_name" name="prodname" value="Product Name Description" id="prodname" readonly/>
                         <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
                         <article>
                             <button>Get Quote</button>
@@ -336,10 +347,10 @@
                 </div>
                 <div class="items">
                     <span>Sale</span>
-                    <figure></figure>
+                    <figure id="fig-prod" class="fig_prod"></figure>
                     <section>
                         <form action="shop/product" method="post" class="product-form">
-                        <input type="text" name="prodname" value="Product Name Description" readonly/>
+                        <input type="text" class="prod_name" name="prodname" value="Product Name Description" id="prodname" readonly/>
                         <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
                         <article>
                             <button>Get Quote</button>
@@ -349,10 +360,10 @@
                 </div>
                 <div class="items">
                     <span>Sale</span>
-                    <figure></figure>
+                    <figure id="fig-prod" class="fig_prod"></figure>
                     <section>
                         <form action="shop/product" method="post" class="product-form">
-                        <input type="text" name="prodname" value="Product Name Description" readonly/>
+                        <input type="text" class="prod_name" name="prodname" value="Product Name Description" id="prodname" readonly/>
                         <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
                         <article>
                             <button>Get Quote</button>
@@ -362,10 +373,10 @@
                 </div>
                 <div class="items">
                     <span>Sale</span>
-                    <figure></figure>
+                    <figure id="fig-prod" class="fig_prod"></figure>
                     <section>
                         <form action="shop/product" method="post" class="product-form">
-                        <input type="text" name="prodname" value="Product Name Description" readonly/>
+                        <input type="text" class="prod_name" name="prodname" value="Product Name Description" id="prodname" readonly/>
                         <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
                         <article>
                             <button>Get Quote</button>
@@ -375,10 +386,10 @@
                 </div>
                 <div class="items">
                     <span>Sale</span>
-                    <figure></figure>
+                    <figure id="fig-prod" class="fig_prod"></figure>
                     <section>
                         <form action="shop/product" method="post" class="product-form">
-                        <input type="text" name="prodname" value="Product Name Description" readonly/>
+                        <input type="text" class="prod_name" name="prodname" value="Product Name Description" id="prodname" readonly/>
                         <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
                         <article>
                             <button>Get Quote</button>
@@ -388,10 +399,10 @@
                 </div>
                 <div class="items">
                     <span>Sale</span>
-                    <figure></figure>
+                    <figure id="fig-prod" class="fig_prod"></figure>
                     <section>
                         <form action="shop/product" method="post" class="product-form">
-                        <input type="text" name="prodname" value="Product Name Description" readonly/>
+                        <input type="text" class="prod_name" name="prodname" value="Product Name Description" id="prodname" readonly/>
                         <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
                         <article>
                             <button>Get Quote</button>
@@ -401,10 +412,10 @@
                 </div>
                 <div class="items">
                     <span>Sale</span>
-                    <figure></figure>
+                    <figure id="fig-prod" class="fig_prod"></figure>
                     <section>
                         <form action="shop/product" method="post" class="product-form">
-                        <input type="text" name="prodname" value="Product Name Description" readonly/>
+                        <input type="text" class="prod_name" name="prodname" value="Product Name Description" id="prodname" readonly/>
                         <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
                         <article>
                             <button>Get Quote</button>
@@ -414,10 +425,10 @@
                 </div>
                 <div class="items">
                     <span>Sale</span>
-                    <figure></figure>
+                    <figure id="fig-prod" class="fig_prod"></figure>
                     <section>
                         <form action="shop/product" method="post" class="product-form">
-                        <input type="text" name="prodname" value="Product Name Description" readonly/>
+                        <input type="text" class="prod_name" name="prodname" value="Product Name Description" id="prodname" readonly/>
                         <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
                         <article>
                             <button>Get Quote</button>
@@ -427,10 +438,10 @@
                 </div>
                 <div class="items">
                     <span>Sale</span>
-                    <figure></figure>
+                    <figure id="fig-prod" class="fig_prod"></figure>
                     <section>
                         <form action="shop/product" method="post" class="product-form">
-                        <input type="text" name="prodname" value="Product Name Description" readonly/>
+                        <input type="text" class="prod_name" name="prodname" value="Product Name Description" id="prodname" readonly/>
                         <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
                         <article>
                             <button>Get Quote</button>
@@ -440,10 +451,10 @@
                 </div>
                 <div class="items">
                     <span>Sale</span>
-                    <figure></figure>
+                    <figure id="fig-prod" class="fig_prod"></figure>
                     <section>
                         <form action="shop/product" method="post" class="product-form">
-                        <input type="text" name="prodname" value="Product Name Description" readonly/>
+                        <input type="text" class="prod_name" name="prodname" value="Product Name Description" id="prodname" readonly/>
                         <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
                         <article>
                             <button>Get Quote</button>
@@ -453,30 +464,17 @@
                 </div>
                 <div class="items">
                     <span>Sale</span>
-                    <figure></figure>
+                    <figure id="fig-prod" class="fig_prod"></figure>
                     <section>
                         <form action="shop/product" method="post" class="product-form">
-                        <input type="text" name="prodname" value="Product Name Description" readonly/>
+                        <input type="text" class="prod_name" name="prodname" value="Product Name Description" id="prodname" readonly/>
                         <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
                         <article>
                             <button>Get Quote</button>
                         </article>
                         </form>
                     </section>
-                </div>
-                <div class="items">
-                    <span>Sale</span>
-                    <figure></figure>
-                    <section>
-                        <form action="shop/product" method="post" class="product-form">
-                        <input type="text" name="prodname" value="Product Name Description" readonly/>
-                        <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
-                        <article>
-                            <button>Get Quote</button>
-                        </article>
-                        </form>
-                    </section>
-                </div>
+                </div> -->
                 </div>
         </main>
     </div>
