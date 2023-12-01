@@ -54,7 +54,7 @@ if (typeof(ProductDetails) === 'object') {
     let pd = ProductDetails
     spanProductname.innerHTML = pd.product_name;
     spanCategory.innerHTML = pd.product_category
-    headerProdName.innerHTML = pd.product_name
+    headerProdName.value = pd.product_name
     descriptionDOM.innerHTML = pd.productImageDescription
     figProdImage.src = `http://localhost:3000${pd.productImageUrl}`
 }

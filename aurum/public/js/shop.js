@@ -6,6 +6,7 @@ const phSop = document.getElementsByClassName('ph-shop')[0]
 const dbCount = document.getElementById('dbcount');
 const prodTitle = document.querySelectorAll('#prodname');
 const figProd = document.querySelectorAll('#fig-prod');
+const savedlocal = localStorage.getItem('Category')
 window.addEventListener("scroll", () => {
     if (window.scrollY >= offset) {
         navbar.classList.add("sticky");
@@ -58,6 +59,12 @@ const DOM = {
                 dbCount.innerHTML = document.getElementsByClassName('items').length
             }
         })
+    },
+    backgroundManipulation: (args) => {
+        for(let num = 0; num < 5; num++) {
+            navCategory[num].style.backgroundColor = 'inherit';
+        }
+        navCategory[args].style.backgroundColor = 'var(--secondaryAccent)';
     }
 }
 
@@ -93,25 +100,57 @@ const appendProduct = (productarray) => {
     })
 }
 
-appendProduct()
-
-
+document.getElementsByClassName('all_Category')[0].addEventListener('click', () => {
+    localStorage.clear();
+    document.getElementById('loader').style.display = 'grid'
+        document.body.style.overflow = 'hidden'
+        setTimeout(() => {
+            document.getElementById('loader').style.display = 'none'
+            document.body.style.overflow = 'scroll'
+            document.body.style.overflowX = 'hidden'
+            window.scrollTo({
+                top: 100,
+                behavior: 'smooth'
+            })
+            appendProduct()
+        }, 3000)
+})
 
 navCategory[0].addEventListener('click', () =>{
     DOM.navOperation(productListArray, 'Hand Tools')
+    DOM.backgroundManipulation(0);
 })
 navCategory[1].addEventListener('click', () =>{
     DOM.navOperation(productListArray, 'Head Safety Gear')
+    DOM.backgroundManipulation(1)
 })
 navCategory[2].addEventListener('click', () =>{
     DOM.navOperation(productListArray, 'PPEs')
+    DOM.backgroundManipulation(2)
 })
 navCategory[3].addEventListener('click', () =>{
     DOM.navOperation(productListArray, 'Boots')
+    DOM.backgroundManipulation(3)
 })
 navCategory[4].addEventListener('click', () =>{
     DOM.navOperation(productListArray, 'Gloves')
+    DOM.backgroundManipulation(4)
 })
+
+appendProduct()
+
+const savedArray = ['Hand Tools', 'Head Safety Gears', 'PPEs', 'Boots', 'Gloves']
+
+if(savedlocal) {
+    const savedItem = localStorage.getItem('Category').trim()
+    console.log(true)
+for(let i = 0; i < savedArray.length; i++) {
+    if(savedItem === savedArray[i]) {
+        DOM.navOperation(productListArray, savedArray[i])
+        console.log(savedArray[i])
+    }
+}
+}
 
     const productForm = document.querySelectorAll('.product-form');
     console.log(productForm)

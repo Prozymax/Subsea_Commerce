@@ -53,7 +53,7 @@ input { border: none }
 }
 
 #product-cont div:last-of-type input[type="text"] { 
-    padding: 1% 0;width: 80%;font-size: 2vw;; 
+    padding: 1% 0;width: 100%;font-size: 1.5vw;
 }
 
 #product-cont div:last-of-type > p:first-of-type

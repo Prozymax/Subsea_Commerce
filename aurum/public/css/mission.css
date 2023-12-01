@@ -1,0 +1,235 @@
+
+#about_intro
+{
+    width: 100%;
+    height: 75vh;
+    background-image: url('/img/truck-with-white-trailer-that-says-scania-side.jpg');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: rgba(0, 21, 44, 0.99);;;
+    color: white;
+    background-blend-mode: soft-light;
+}
+
+#about_intro section span a:hover
+{
+    text-decoration: underline;
+}
+
+#about_intro div
+{
+    width: 50%;
+    margin: 0 auto;;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#about_intro section
+{
+    text-align: center;
+    width: 80%;;
+}
+
+
+#about_intro section h1
+{
+    padding: 2% 0;
+    font-size: 5vw;
+}
+
+#about_intro nav
+{
+    width: 100%;
+    height: 10%;
+    border-top: .1px solid grey;
+}
+
+#about_intro ul
+{
+    margin: 0 auto;
+    font-size: 1vw;
+    justify-content: center;
+}
+
+#about_intro ul a {
+    position: relative;
+    margin: 0;
+    height: 100%;
+    overflow-x: hidden; 
+}
+
+#about_intro ul a::before
+{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: var(--accentColor);
+    position: absolute;
+    transform: translateX(-100%);
+    transition: .3s;
+    top: 0%;;
+}
+
+#about_intro a:hover::before
+{
+    animation: enter .2s linear .1s both;
+}
+
+@keyframes enter {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes exit {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+#facts 
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+
+#facts div
+{
+    width: 25%;
+    height: 90%;
+    margin: 0 .5%;
+}
+
+#facts div figure
+{
+    width: 100%;
+    height: 50%;
+}
+
+#facts section
+{
+    width: 95%;
+    padding-block: 5% 0;
+    margin: 0 auto;
+    text-align: justify;
+    height: auto;
+}
+
+#facts article
+{
+    font-size: .8vw;
+    line-height: 150%;
+}
+
+#facts div:first-child figure
+{
+    background: url('/img/young-manual-worker-presenting-new-business-strategy-company-managers-his-colleagues-factory.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    text-align: justify;
+    background-size: 100%;
+}
+
+
+#facts div:nth-child(2) figure
+{
+    background: url('/img/happy-courier-handshaking-with-african-american-woman-while-delivering-her-package.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    text-align: justify;
+    background-size: 100%;
+}
+
+#facts div:last-child figure
+{
+    background: url('/img/business-hands-joined-together-teamwork.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    text-align: justify;
+    background-size: 100%;
+}
+
+
+#mission-cont
+{
+    width: 100%;
+    height: 90vh;
+}
+#mission-cont > section
+{
+    width: 60%;
+    height: 5%;
+    margin: 0 auto;
+    text-align: center;
+}
+#mission-cont > section span, 
+#mission-cont > section span::after
+, #mission-cont > section span::before
+{
+    color: var(--themeColor);
+    content: " ~ ";
+}
+
+#mission-cont > section h2
+{
+    font-size: 3vw;
+}
+#mission-cont div
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45%;
+}
+
+#mission-cont div figure
+{
+    width: 40%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 2%;
+    background-size: 100%;
+}
+
+#mission-cont div section
+{
+    width: 40%;
+}
+
+#mission-cont div section h2
+{
+    font-size: 2vw;
+    color: var(--themeColor);
+}
+#mission-cont div section article
+{
+    font-size: .8vw;
+    line-height: 150%;
+}
+#mission-cont div:first-of-type figure
+{
+    background-image: url('/img/3d-render-freight-container-forklift.jpg');
+}
+#mission-cont div:last-of-type figure
+{
+    background-image: url('/img/supply-chain-representation-still-life.jpg');
+}
+
+model-viewer
+{
+    width: 100%;;
+    height: 50vh;
+    background-color: red;
+}

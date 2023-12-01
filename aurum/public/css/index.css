@@ -42,6 +42,7 @@ body
     margin: 0;
     font-family: 'Nunito', 'sans-serif';
     padding: 0;
+    overflow-x: hidden;
 }
 
 #pre_header
@@ -177,18 +178,50 @@ nav li:hover
 }
 nav div
 {
-    width: 20%;display: grid;background: var(--secondaryAccent);
-    place-items: center;height: 100%;margin: 0 2%;
+    width: 15%;background: var(--secondaryAccent);
+    height: 100%;margin: 0 2%;position: relative;
 }
 nav div select
 {
-    width: 80%;height: 100%;padding: 0 4%;;
+    width: 80%;height: 100%;padding: 0 4%;;transition: .5s;
     border: none;background-color: inherit;
+}
+
+nav div select option
+{
+    content-visibility: hidden;
+}
+
+nav select ~ ul
+{
+    all: initial;height: 0%;background: var(--secondaryAccent);
+    width: 100%;display: block;font-size: 0;transition: .2s;
+    box-shadow: 0 0 12px 1px rgba(80, 66, 66, 0.192);position: absolute;z-index: 2;
+}
+
+.hove
+{
+    font-size: .8vw;height: 500%;
+}
+nav select ~ ul li
+{
+    width: 100%;display: flex;align-items: center;height: 20%;transition: .5s;
+    align-items: center;justify-content: flex-start;padding: 0 10%;position: relative;
+}
+
+nav select ~ ul li:hover
+{
+    background: white
+}
+
+nav div select ~ ul span
+{
+    font-size: 1.5vw;position: absolute;top: 25%;right: 5%;
 }
 
 #btn-nav
 {
-    width:10%;height: 85%;margin: 2% 0;border-radius: 30px;transition: .5s;
+    width:10%;height: 85%;margin: 2% 0;border-radius: 30px;
     border: none;background: rgb(0, 0, 0);color: white;
     cursor: pointer;font-weight: bolder;
 }
@@ -286,14 +319,14 @@ nav div select
 
 #featured 
 {
-    width: 80%;height: 80%;display: flex;
+    width: 60%;height: 80%;display: flex;
     flex-wrap: wrap;margin: 0 auto;justify-content: center;
 }
 
 #featured div
 {
     width: 20%;height: 50%;text-align: center;border-radius: 5px;;
-    margin: .4%;transition: .5s;
+    margin: 2%;transition: .5s;
 }
 
 #featured div figure
@@ -321,7 +354,7 @@ nav div select
 #featured div:hover, .prod_cols section:hover
 {
     margin-top: -1%;height: 51%;
-    box-shadow: 0 0 32px 2px rgba(0, 0, 0, 0.178);
+    box-shadow: 0 0 18px 1px rgba(0, 0, 0, 0.13);
 }
 
 #featured div:hover section
@@ -461,17 +494,18 @@ nav div select
 
 .prod_cols article
 {
-    width: 40%;height: 70%;cursor: pointer;;
+    width: 40%;height: 70%;cursor: pointer;margin-block-start: 8%;
 }
 
 .prod_cols h4
 {
-    text-transform: uppercase;font-weight: 700;
+    text-transform: uppercase;font-weight: 700;margin: 3% 0;
 }
 
 .prod_cols ul
 {
-    width: 80%;margin: 8% auto;color: rgb(105, 105, 105);
+    width: 100%;margin: 2% auto;color: rgb(105, 105, 105);
+    line-height: 120%;height: 50%;
 }
 
 .prod_cols button

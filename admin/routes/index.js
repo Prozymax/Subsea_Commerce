@@ -19,7 +19,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/uploads', express.static('uploads'));
 
 router.post('/upload', upload.single('image'), (request, response) => {
-  const { prodname, description, prodCategory } = request.body;
+  const { prodname, description, prodCategory, featured } = request.body;
   const imageUrl = `/uploads/${request.file.filename}`;
 
   const productData = {
@@ -27,10 +27,11 @@ router.post('/upload', upload.single('image'), (request, response) => {
     product_category: prodCategory,
     productImageDescription: description,
     productImageUrl: imageUrl,
+    isFeatured: featured,
   }
 
   // Handle other form data and the image URL as needed
-  console.log(`Title: ${prodname}, Description: ${description}, Other Form Data: ${prodCategory}, Image URL: ${imageUrl}`);
+  console.log(`Title: ${prodname}, Description: ${description}, Other Form Data: ${prodCategory}, Image URL: ${imageUrl}, Featured: ${featured}`);
 
   let insertQuery = 'INSERT INTO all_products SET ?'
   connection.query(insertQuery, [productData], (err, result) => {

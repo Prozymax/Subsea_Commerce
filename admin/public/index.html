@@ -18,6 +18,7 @@
         
         <label for="prodCat">Product Category</label>
         <select name="prodCategory" id="prdc">
+            <option value="">--Choose--</option>
             <option value="Hand Tools">Hand Tools</option>
             <option value="Head Safety Gear">Head safety Gear</option>
             <option value="Boots">Boots</option>
@@ -25,7 +26,12 @@
             <option value="PPEs">PPEs</option>
         </select>
         <br>
-      
+        Featured:&nbsp;<select name="featured" id="feat"> 
+            <option value="">--Choose--</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+        <br>
         <label for="image">Select an image:</label>
         <input type="file" id="image" name="image" accept="image/jpeg, image/jpg, image/png, image/gif" required>
         <br>

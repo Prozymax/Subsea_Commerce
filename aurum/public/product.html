@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/product.css">
     <link rel="icon" href="./__webicons/editlogo.png" type="image/icon"> 
     <script defer src="js/index.js"></script>
-    <script defer src="js/shop.js"></script>
+    <script async src="js/shop.js"></script>
     <script defer src="js/product.js"></script>
     <script src="https://kit.fontawesome.com/1e3c5331c9.js" crossorigin="anonymous"></script>
 </head>
@@ -58,18 +58,18 @@
                 </select>
             </div>
             <ul>
-                <li onclick="window.location = 'public/'">Home</li>
+                <li onclick="window.location = '/'">Home</li>
                 <li onclick="window.location = '/company'">Pages</li>
                 <li onclick="window.location='/shop'">Shop</li>
                 <li onclick="window.location='/blog'">Blog</li>
                 <li onclick="window.location = '/contact-us'">Contact Us</li>
             </ul>
-            <button id="btn-nav">Shop Now</button>
+            <button id="btn-nav" onclick="window.location = '/shop'">Shop Now</button>
         </nav>
 <br>
         <div class="boot-breadcrumbs">
             <section>
-                <p><span>Home</span>&nbsp;&nbsp&nbsp;<b>&#8250;</b>&nbsp;&nbsp;&nbsp;<span>Aurum Shop</span>&nbsp;&nbsp&nbsp;<b>&#8250;</b>&nbsp;&nbsp;&nbsp;<span>Products</span>
+                <p><a href="/"><span>Home</span></a>&nbsp;&nbsp&nbsp;<b>&#8250;</b>&nbsp;&nbsp;&nbsp;<a href="/shop"><span>Aurum Shop</span></a>&nbsp;&nbsp&nbsp;<b>&#8250;</b>&nbsp;&nbsp;&nbsp;<span>Products</span>
                     &nbsp;&nbsp&nbsp;<b>&#8250;</b>&nbsp;&nbsp;&nbsp;<span id="sp-category">Safety Wear</span>&nbsp;&nbsp&nbsp;<b>&#8250;</b>&nbsp;&nbsp;&nbsp;<span id="sp-prodname">Safety Jacket</span></p>
             </section>
         </div>
@@ -176,7 +176,7 @@
                 <span>Sale</span>
                 <figure id="fig-prod" class="fig_prod"></figure>
                 <section>
-                    <form action="/quote-sent" method="post" class="product-form">
+                    <form action="shop/product" method="post" class="product-form">
                     <input type="text" class="prod_name" name="prodname" value="Blue Safety Coverall" id="prodname" readonly/>
                     <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
                     <article>
@@ -189,7 +189,7 @@
                 <span>Sale</span>
                 <figure id="fig-prod" class="fig_prod"></figure>
                 <section>
-                    <form action="/quote-sent" method="post" class="product-form">
+                    <form action="shop/product" method="post" class="product-form">
                     <input type="text" class="prod_name" name="prodname" value="Blue Safety Coverall" id="prodname" readonly/>
                     <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
                     <article>
@@ -202,7 +202,7 @@
                 <span>Sale</span>
                 <figure id="fig-prod" class="fig_prod"></figure>
                 <section>
-                    <form action="/quote-sent" method="post" class="product-form">
+                    <form action="shop/product" method="post" class="product-form">
                     <input type="text" class="prod_name" name="prodname" value="Blue Safety Coverall" id="prodname" readonly/>
                     <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
                     <article>
@@ -250,7 +250,7 @@
                         <h3>Quick Links</h3>
                         <article>
                             <ul>
-                                <li onclick="window.location = 'public/'">Home</li>
+                                <li onclick="window.location = '/'">Home</li>
                     <li onclick="window.location = '/company'">Company</li>
                     <li onclick="window.location = '/services'">Services</li>
                     <li onclick="window.location = '/contact'">Contact Us</li>

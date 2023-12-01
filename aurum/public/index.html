@@ -46,20 +46,25 @@
 
         <nav>
             <div>
-                <select name="__category" id="__category">
-                    <option value="All Categories">All Categories</option>
-                    <option value="Wears">Wears</option>
-                    <option value="Footwears">FootWears</option>
+                <select name="__category" id="__category" value="All Categories">
+                    <option hidden value="All Categories">All Categories</option>
                 </select>
+                <ul id="navItem">
+                    <li class="nav_Category"><i class="fa-solid fa-screwdriver-wrench"></i>&nbsp;&nbsp;Hand Tools<span>&#8250;</span></li>
+                    <li class="nav_Category"><i class="fa-solid fa-helmet-safety"></i>&nbsp;&nbsp;Head Safety Gears<span>&#8250;</span></li>
+                    <li class="nav_Category"><i class="fa-solid fa-vest"></i>&nbsp;&nbsp;PPEs<span>&#8250;</span></li>
+                    <li class="nav_Category"><i class="fa-solid fa-shoe-prints"></i>&nbsp;&nbsp;Boots<span>&#8250;</span></li>
+                    <li class="nav_Category"><i class="fa-solid fa-mitten"></i>&nbsp;&nbsp;Gloves<span>&#8250;</span></li>
+                </ul>
             </div>
             <ul>
-                <li onclick="window.location = 'public/'">Home</li>
+                <li onclick="window.location = '/'">Home</li>
                 <li onclick="window.location = '/company'">Pages</li>
                 <li onclick="window.location='/shop'">Shop</li>
                 <li onclick="window.location='/blog'">Blog</li>
                 <li onclick="window.location = '/contact-us'">Contact Us</li>
             </ul>
-            <button id="btn-nav">Shop Now</button>
+            <button id="btn-nav" onclick="window.location = '/shop'">Shop Now</button>
         </nav>
 
         <div id="intro">
@@ -73,7 +78,7 @@
                 <article>
                     Protecting Your Most Valuable Asset – Your Head
                 </article>
-                <button>Shop Now</button>
+                <button class="sec-btn">Shop Now</button>
             </section>
         </div>
         <div>
@@ -82,7 +87,7 @@
                 <article>
                     Stay Safe, Look Smart 
                 </article>
-                <button>Shop Now</button>
+                <button class="sec-btn">Shop Now</button>
             </section>
         </div>
         <div>
@@ -91,7 +96,7 @@
                 <article>
                     Empower Your Workforce
                 </article>
-                <button>Shop Now</button>
+                <button class="sec-btn">Shop Now</button>
             </section>
         </div>
        </div>
@@ -99,66 +104,66 @@
 <div id="products">
     <p id="open_span"><span>Our Products</span><br>Featured Products</p>
        <div id="featured">
-        <div>
-            <figure><img src="img/sgo_7001frt-removebg-preview.png" alt=""></figure>
+        <div class="f-div">
+            <figure><img class="f-img" src="img/sgo_7001frt-removebg-preview.png" alt=""></figure>
             <section>
-                <h2>Product Name</h2>
+                <h2 class="f-title">Product Name</h2>
                 <!-- <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p> -->
                 <!-- <a href="">Add To Cart</a> -->
             </section>
         </div>
-                <div>
-            <figure><img src="img/pngwing.com (2).png" alt=""></figure>
+                <div class="f-div">
+            <figure><img class="f-img" src="img/pngwing.com (2).png" alt=""></figure>
             <section>
-                <h2>Product Name</h2>
+                <h2 class="f-title">Product Name</h2>
                 <!-- <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p> -->
                 <!-- <a href="">Add To Cart</a> -->
             </section>
         </div>
-        <div>
-            <figure><img src="img/pngwing.com (2).png" alt=""></figure>
+        <div class="f-div">
+            <figure><img class="f-img" src="img/pngwing.com (2).png" alt=""></figure>
             <section>
-                <h2>Product Name</h2>
+                <h2 class="f-title">Product dsvdv  Name</h2>
                 <!-- <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p> -->
                 <!-- <a href="">Add To Cart</a> -->
             </section>
         </div>
-        <div>
-            <figure><img src="img/pngwing.com (2).png" alt=""></figure>
+        <div class="f-div">
+            <figure><img class="f-img" src="img/pngwing.com (2).png" alt=""></figure>
             <section>
-                <h2>Product Name</h2>
+                <h2 class="f-title">Product Name and Desc</h2>
                 <!-- <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p> -->
                 <!-- <a href="">Add To Cart</a> -->
             </section>
         </div>
-        <div>
-            <figure><img src="img/pngwing.com (2).png" alt=""></figure>
+        <div class="f-div">
+            <figure><img class="f-img" src="img/pngwing.com (2).png" alt=""></figure>
             <section>
-                <h2>Product Name</h2>
+                <h2 class="f-title">Product Name</h2>
                 <!-- <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p> -->
                 <!-- <a href="">Add To Cart</a> -->
             </section>
         </div>
-        <div>
-            <figure><img src="img/pngwing.com (2).png" alt=""></figure>
+        <div class="f-div">
+            <figure><img class="f-img" src="img/pngwing.com (2).png" alt=""></figure>
             <section>
-                <h2>Product Name</h2>
+                <h2 class="f-title">Product Name</h2>
                 <!-- <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p> -->
                 <!-- <a href="">Add To Cart</a> -->
             </section>
         </div>
-        <div>
-            <figure><img src="img/pngwing.com (2).png" alt=""></figure>
+        <div class="f-div">
+            <figure><img class="f-img" src="img/pngwing.com (2).png" alt=""></figure>
             <section>
-                <h2>Product Name</h2>
+                <h2 class="f-title">Product Name</h2>
                 <!-- <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p> -->
                 <!-- <a href="">Add To Cart</a> -->
             </section>
         </div>
-        <div>
-            <figure><img src="img/pngwing.com (2).png" alt=""></figure>
+        <div class="f-div">
+            <figure><img class="f-img" src="img/pngwing.com (2).png" alt=""></figure>
             <section>
-                <h2>Product Name</h2>
+                <h2 class="f-title">Product Name</h2>
                 <!-- <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p> -->
                 <!-- <a href="">Add To Cart</a> -->
             </section>
@@ -175,17 +180,17 @@
                 <h3>Marine Personal Protective Equipment</h3>
                 <span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Minima quia neque voluptatem voluptas maiores sed possimus tenetur magni natus! Repellat laboriosam eos iusto non ea rerum totam. Magnam, deserunt tenetur!
-                </p>
-                <button>Get Now</button>
+                    Special Package Wear including; One Coverall, One Hard Hat, Pair of Boots,
+                    Two Gloves, a Headset for noise reduction and finally a water safety jacket. This package is perfect for any marine worker
+                    </p>
+                <button class="sp-btn">Get Now</button>
             </article>
         </section>
         <section>
             <article>
                 <span>Shop</span>
                 <h2>Order Now</h2>
-                <button>Shop Now</button>
+                <button class="sh-btn">Shop Now</button>
             </article>
         </section>
        </div>
@@ -201,87 +206,78 @@
             <section>
                 <figure></figure>
                 <article>
-                    <h4>Wheels & Tires</h4>
+                    <h4>Hand Tools</h4>
                     <ul>
-                        <li>Category Types</li>
-                        <li>Category Types</li>
-                        <li>Category Types</li>
-                        <li>Category Types</li>
-                        <li>Category Types</li>
+                        <li>Screwdrivers</li>
+                        <li>Pliers</li>
+                        <li>Wrenches</li>
+                        <li>Hammers</li>
+                        <li>Tape Measures</li>
                     </ul>
-                    <button>View More</button>
+                    <button class="view-btn">View</button>
                 </article>
             </section>
+
             <section>
                 <figure></figure>
                 <article>
-                    <h4>Wheels & Tires</h4>
+                    <h4>Head Safety Gears</h4>
                     <ul>
-                        <li>Category Types</li>
-                        <li>Category Types</li>
-                        <li>Category Types</li>
-                        <li>Category Types</li>
-                        <li>Category Types</li>
+                        <li>Safety Helmets</li>
+                        <li>Hard Hats</li>
+                        <li>Bump Caps</li>
+                        <li>Face Shields</li>
+                        <li>Welding Helmets</li>
                     </ul>
-                    <button>View More</button>
+                    <button class="view-btn">View</button>
                 </article>
             </section>
+            
             <section>
                 <figure></figure>
                 <article>
-                    <h4>Wheels & Tires</h4>
+                    <h4>PPES</h4>
                     <ul>
-                        <li>Category Types</li>
-                        <li>Category Types</li>
-                        <li>Category Types</li>
-                        <li>Category Types</li>
-                        <li>Category Types</li>
+                        <li>Safety Glasses</li>
+                        <li>Ear Protection (Earplugs, Earmuffs)</li>
+                        <li>Respirators</li>
+                        <li>High-Visibility Clothing</li>
+                        <li>Safety Vests</li>
                     </ul>
-                    <button>View More</button>
+                    <button class="view-btn">View</button>
                 </article>
             </section>
+            
             <section>
                 <figure></figure>
                 <article>
-                    <h4>Wheels & Tires</h4>
+                    <h4>Gloves</h4>
                     <ul>
-                        <li>Category Types</li>
-                        <li>Category Types</li>
-                        <li>Category Types</li>
-                        <li>Category Types</li>
-                        <li>Category Types</li>
+                        <li>Work Gloves</li>
+                        <li>Cut-Resistant Gloves</li>
+                        <li>Impact-Resistant Gloves</li>
+                        <li>Chemical-Resistant Gloves</li>
+                        <li>Heat-Resistant Gloves</li>
                     </ul>
-                    <button>View More</button>
+                    <button class="view-btn">View</button>
                 </article>
             </section>
+            
             <section>
                 <figure></figure>
                 <article>
-                    <h4>Wheels & Tires</h4>
+                    <h4>Boots</h4>
                     <ul>
-                        <li>Category Types</li>
-                        <li>Category Types</li>
-                        <li>Category Types</li>
-                        <li>Category Types</li>
-                        <li>Category Types</li>
+                        <li>Steel-Toe Boots</li>
+                        <li>Composite-Toe Boots</li>
+                        <li>Work Boots</li>
+                        <li>Slip-Resistant Boots</li>
+                        <li>Waterproof Boots</li>
                     </ul>
-                    <button>View More</button>
+                    <button class="view-btn">View</button>
                 </article>
             </section>
-            <section>
-                <figure></figure>
-                <article>
-                    <h4>Wheels & Tires</h4>
-                    <ul>
-                        <li>Category Types</li>
-                        <li>Category Types</li>
-                        <li>Category Types</li>
-                        <li>Category Types</li>
-                        <li>Category Types</li>
-                    </ul>
-                    <button>View More</button>
-                </article>
-            </section>
+            
         </div>
        </div>
 
@@ -376,7 +372,7 @@
                 <h3>Quick Links</h3>
                 <article>
                     <ul>
-                        <li onclick="window.location = 'public/'">Home</li>
+                        <li onclick="window.location = '/'">Home</li>
                     <li onclick="window.location = '/company'">Company</li>
                     <li onclick="window.location = '/services'">Services</li>
                     <li onclick="window.location = '/contact'">Contact Us</li>
