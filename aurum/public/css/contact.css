@@ -123,6 +123,7 @@ body
     height: 30%;font-family: inherit;
     border: none;
     resize: none;
+    outline: none;
     margin-block: 1%;
     color: var(--themeColor);
     padding: 1%;
