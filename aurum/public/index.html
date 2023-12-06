@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="css/index.css">
+ <link rel="stylesheet" href="css/shop.css">
     <link rel="icon" href="./__webicons/editlogo.png" type="image/icon"> 
     <script defer src="js/index.js"></script>
     <script src="https://kit.fontawesome.com/1e3c5331c9.js" crossorigin="anonymous"></script>
-</head>
+ </head>
 <body>
     <div id="pre_header">
         <p>
@@ -30,7 +31,7 @@
                     <option value="Wears">Wears</option>
                     <option value="Footwears">FootWears</option>
                 </select>
-                <input type="text" placeholder="Search here" name="searchquery"><input type="submit" value="Search">
+                <input type="text" placeholder="Search here" name="searchquery"><input class="sub-btn" type="submit" value="Search">
             </form>
         </div>
         <div id="contact">
@@ -46,10 +47,10 @@
 
         <nav>
             <div>
-                <select name="__category" id="__category" value="All Categories">
+                <select name="__category" id="__category" class="__category" value="All Categories">
                     <option hidden value="All Categories">All Categories</option>
                 </select>
-                <ul id="navItem">
+                <ul id="navItem" class="navItem">
                     <li class="nav_Category"><i class="fa-solid fa-screwdriver-wrench"></i>&nbsp;&nbsp;Hand Tools<span>&#8250;</span></li>
                     <li class="nav_Category"><i class="fa-solid fa-helmet-safety"></i>&nbsp;&nbsp;Head Safety Gears<span>&#8250;</span></li>
                     <li class="nav_Category"><i class="fa-solid fa-vest"></i>&nbsp;&nbsp;PPEs<span>&#8250;</span></li>
@@ -59,7 +60,15 @@
             </div>
             <ul>
                 <li onclick="window.location = '/'">Home</li>
-                <li onclick="window.location = '/company'">Pages</li>
+                <li class="li-drop-down">
+                    Pages
+                    <ul>
+                        <figure></figure>
+                        <li onclick="window.location = '/company'"><span><i class="fa-solid fa-industry"></i></span>&nbsp;&nbsp;Company</li>
+                        <li onclick="window.location = '/services'"><span><i class="fa-solid fa-hands-holding-circle"></i></span>&nbsp;&nbsp;Services</li>
+                        <li onclick="window.location = '/mission'"><span><i class="fa-solid fa-person-circle-exclamation"></i></span>&nbsp;&nbsp;Mission</li>
+                    </ul>
+                </li>
                 <li onclick="window.location='/shop'">Shop</li>
                 <li onclick="window.location='/blog'">Blog</li>
                 <li onclick="window.location = '/contact-us'">Contact Us</li>
@@ -67,6 +76,7 @@
             <button id="btn-nav" onclick="window.location = '/shop'">Shop Now</button>
         </nav>
 
+        
         <div id="intro">
             
         </div>
@@ -105,7 +115,7 @@
     <p id="open_span"><span>Our Products</span><br>Featured Products</p>
        <div id="featured">
         <div class="f-div">
-            <figure><img class="f-img" src="img/sgo_7001frt-removebg-preview.png" alt=""></figure>
+            <figure><img class="f-img" src="./__webicons/editlogo.png" alt=""></figure>
             <section>
                 <h2 class="f-title">Product Name</h2>
                 <!-- <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p> -->
@@ -113,7 +123,7 @@
             </section>
         </div>
                 <div class="f-div">
-            <figure><img class="f-img" src="img/pngwing.com (2).png" alt=""></figure>
+            <figure><img class="f-img" src="./__webicons/editlogo.png" alt=""></figure>
             <section>
                 <h2 class="f-title">Product Name</h2>
                 <!-- <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p> -->
@@ -121,23 +131,7 @@
             </section>
         </div>
         <div class="f-div">
-            <figure><img class="f-img" src="img/pngwing.com (2).png" alt=""></figure>
-            <section>
-                <h2 class="f-title">Product dsvdv  Name</h2>
-                <!-- <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p> -->
-                <!-- <a href="">Add To Cart</a> -->
-            </section>
-        </div>
-        <div class="f-div">
-            <figure><img class="f-img" src="img/pngwing.com (2).png" alt=""></figure>
-            <section>
-                <h2 class="f-title">Product Name and Desc</h2>
-                <!-- <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p> -->
-                <!-- <a href="">Add To Cart</a> -->
-            </section>
-        </div>
-        <div class="f-div">
-            <figure><img class="f-img" src="img/pngwing.com (2).png" alt=""></figure>
+            <figure><img class="f-img" src="./__webicons/editlogo.png" alt=""></figure>
             <section>
                 <h2 class="f-title">Product Name</h2>
                 <!-- <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p> -->
@@ -145,7 +139,7 @@
             </section>
         </div>
         <div class="f-div">
-            <figure><img class="f-img" src="img/pngwing.com (2).png" alt=""></figure>
+            <figure><img class="f-img" src="./__webicons/editlogo.png" alt=""></figure>
             <section>
                 <h2 class="f-title">Product Name</h2>
                 <!-- <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p> -->
@@ -153,7 +147,7 @@
             </section>
         </div>
         <div class="f-div">
-            <figure><img class="f-img" src="img/pngwing.com (2).png" alt=""></figure>
+            <figure><img class="f-img" src="./__webicons/editlogo.png" alt=""></figure>
             <section>
                 <h2 class="f-title">Product Name</h2>
                 <!-- <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p> -->
@@ -161,7 +155,23 @@
             </section>
         </div>
         <div class="f-div">
-            <figure><img class="f-img" src="img/pngwing.com (2).png" alt=""></figure>
+            <figure><img class="f-img" src="./__webicons/editlogo.png" alt=""></figure>
+            <section>
+                <h2 class="f-title">Product Name</h2>
+                <!-- <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p> -->
+                <!-- <a href="">Add To Cart</a> -->
+            </section>
+        </div>
+        <div class="f-div">
+            <figure><img class="f-img" src="./__webicons/editlogo.png" alt=""></figure>
+            <section>
+                <h2 class="f-title">Product Name</h2>
+                <!-- <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p> -->
+                <!-- <a href="">Add To Cart</a> -->
+            </section>
+        </div>
+        <div class="f-div">
+            <figure><img class="f-img" src="./__webicons/editlogo.png" alt=""></figure>
             <section>
                 <h2 class="f-title">Product Name</h2>
                 <!-- <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p> -->
@@ -289,30 +299,30 @@
         <div class="fa-posts ph-post-blocks">
             <section>
                 <figure></figure>
-                <span>June 18th, 2023</span><span>By <b>Aurum</b></span>
+                <span>June 18th, 2023</span>&nbsp;<span>By <b>Aurum</b></span>
                 <article>
-                    <h4>Lorem Ipsum</h4>
+                    <h4>CAC Registration event</h4>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad nisi fugiat saepe....
                 </article>
-                <button>Read More</button>
+                <button class="read_more">Read More</button>
             </section>
             <section>
                 <figure></figure>
-                <span>June 18th, 2023</span><span>By <b>Aurum</b></span>
+                <span>June 18th, 2023</span>&nbsp;<span>By <b>Aurum</b></span>
                 <article>
                     <h4>Lorem Ipsum</h4>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad nisi fugiat saepe....
                 </article>
-                <button>Read More</button>
+                <button class="read_more">Read More</button>
             </section>
             <section>
                 <figure></figure>
-                <span>June 18th, 2023</span><span>By <b>Aurum</b></span>
+                <span>June 18th, 2023</span>&nbsp;<span>By <b>Aurum</b></span>
                 <article>
                     <h4>Lorem Ipsum</h4>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad nisi fugiat saepe....
                 </article>
-                <button>Read More</button>
+                <button class="read_more">Read More</button>
             </section>
         </div>
        </div>

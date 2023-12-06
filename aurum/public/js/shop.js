@@ -21,6 +21,18 @@ const DOM = {
     createProductDiv: (product) => {
         let div = document.createElement('div')
         div.classList.add('items');
+        switch (product.product_category) {
+            case 'Hand Tools':
+                div.id = `hand-tools`;
+                break;
+            case 'Head Safety Gear':
+                div.id = `hsg`;
+                break;
+            default:
+                div.id = product.product_category
+        }
+        
+        console.log(div.id)
         div.innerHTML = `
         <span>Sale</span>
                 <figure id="fig-prod" style="background-image: url('http://localhost:3000${product.productImageUrl}')" class="fig_prod"></figure>
@@ -36,9 +48,13 @@ const DOM = {
         `;
         return div;
     },
-    navOperation: (productListArray, category) => {
+    navOperation: (category) => {
         document.getElementById('loader').style.display = 'grid'
         document.body.style.overflow = 'hidden'
+        const itemsDiv = document.getElementsByClassName('items');
+        for(let n = 0; n < itemsDiv.length; n++) {
+            itemsDiv[n].style.display = 'none'
+        }
         setTimeout(() => {
             document.getElementById('loader').style.display = 'none'
             document.body.style.overflow = 'scroll'
@@ -48,24 +64,31 @@ const DOM = {
                 behavior: 'smooth'
             })
         }, 3000)
-        while(phSop.firstChild) {
-            phSop.removeChild(phSop.firstChild)
+        // while(phSop.firstChild) {
+        //     phSop.removeChild(phSop.firstChild)
+        // }
+        // productListArray.forEach((product) => {
+        //     if(product.product_category == category) {
+        //         console.log(product.product_name + product.product_category)
+        //         const catDiv = DOM.createProductDiv(product);
+        //         phSop.appendChild(catDiv);
+        //         dbCount.innerHTML = document.getElementsByClassName('items').length
+        //     }
+        // })
+        
+        const divCategory = document.querySelectorAll(`#${category}`)
+        console.log(divCategory)
+        for (let i = 0; i < divCategory.length; i++) {
+            divCategory[i].style.display = 'block'
+            dbCount.innerHTML = document.getElementsByClassName('items').length
         }
-        productListArray.forEach((product) => {
-            if(product.product_category == category) {
-                console.log(product.product_name + product.product_category)
-                const catDiv = DOM.createProductDiv(product);
-                phSop.appendChild(catDiv);
-                dbCount.innerHTML = document.getElementsByClassName('items').length
-            }
-        })
     },
     backgroundManipulation: (args) => {
         for(let num = 0; num < 5; num++) {
             navCategory[num].style.backgroundColor = 'inherit';
         }
         navCategory[args].style.backgroundColor = 'var(--secondaryAccent)';
-    }
+    },
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
@@ -88,11 +111,10 @@ const productList = fetch(endpoint)
 .catch(error => {
     console.error('There was a problem with the fetch operation:', error);
 });
+
 const productListArray = await productList;
 
-
-
-const appendProduct = (productarray) => {
+const appendProduct = () => {
     productListArray.forEach((product) => {
         const productDiv = DOM.createProductDiv(product);
         phSop.appendChild(productDiv);
@@ -116,24 +138,25 @@ document.getElementsByClassName('all_Category')[0].addEventListener('click', () 
         }, 3000)
 })
 
-navCategory[0].addEventListener('click', () =>{
-    DOM.navOperation(productListArray, 'Hand Tools')
+navCategory[0].addEventListener('click', async () =>{
+    DOM.navOperation('hand-tools')
+    // appendProducts()
     DOM.backgroundManipulation(0);
 })
 navCategory[1].addEventListener('click', () =>{
-    DOM.navOperation(productListArray, 'Head Safety Gear')
+    DOM.navOperation('hsg')
     DOM.backgroundManipulation(1)
 })
 navCategory[2].addEventListener('click', () =>{
-    DOM.navOperation(productListArray, 'PPEs')
+    DOM.navOperation('PPEs')
     DOM.backgroundManipulation(2)
 })
 navCategory[3].addEventListener('click', () =>{
-    DOM.navOperation(productListArray, 'Boots')
+    DOM.navOperation('Boots')
     DOM.backgroundManipulation(3)
 })
 navCategory[4].addEventListener('click', () =>{
-    DOM.navOperation(productListArray, 'Gloves')
+    DOM.navOperation('Gloves')
     DOM.backgroundManipulation(4)
 })
 
@@ -146,8 +169,17 @@ if(savedlocal) {
     console.log(true)
 for(let i = 0; i < savedArray.length; i++) {
     if(savedItem === savedArray[i]) {
-        DOM.navOperation(productListArray, savedArray[i])
         console.log(savedArray[i])
+        switch(savedArray[i]) {
+            case 'Hand Tools':
+                DOM.navOperation('hand-tools')
+                break;
+                case 'Head Safety Gears':
+                    DOM.navOperation('hsg')
+                    break;
+            default:
+                DOM.navOperation(savedArray[i])
+        }
     }
 }
 }
@@ -156,6 +188,7 @@ for(let i = 0; i < savedArray.length; i++) {
     console.log(productForm)
     productForm.forEach((form) => {
         form.addEventListener('submit', async (event) => {
+            if(event.target.classList.contains('product-form')) {
             event.preventDefault();
     
             const formData = new FormData(form);
@@ -187,13 +220,21 @@ for(let i = 0; i < savedArray.length; i++) {
             .catch(error => {
                 console.error('There was a problem with the fetch operation:', error);
             });
+        }
         });;
 })
  
 })
 
-
-
+const dealBtn = document.getElementsByClassName('deal-btn')[0];
+dealBtn.addEventListener('click', () => {
+    const data = {
+        message: 'Marine Personal Protective Equipment'
+    }
+    console.log(data)
+    localStorage.setItem('ProductData', JSON.stringify(data))
+    window.location = '/product'
+})
 
 
 

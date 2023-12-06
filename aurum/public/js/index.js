@@ -1,6 +1,6 @@
-const selectNav = document.getElementById('__category')
+const selectNav = document.getElementsByClassName('__category')[0]
 const secBtn = document.getElementsByClassName('sec-btn');
-const navItem = document.getElementById('navItem')
+const navItem = document.getElementsByClassName('navItem')[0]
 const navCategories = document.querySelectorAll('.nav_Category');
 const fTitle = document.getElementsByClassName('f-title');
 const fImg = document.getElementsByClassName('f-img');
@@ -9,12 +9,25 @@ const viewBtn = document.querySelectorAll('.view-btn');
 const fDiv = document.querySelectorAll('.f-div');
 const shBtn = document.getElementsByClassName('sh-btn')[0];
 const btnNV = document.getElementById('btn-nav');
+const readMore = document.getElementsByClassName('read_more');
 
 shBtn.addEventListener('click', () =>{
     localStorage.clear()
     window.location = '/shop'
 })
 
+setTimeout(() => {
+    if(localStorage.length > 0) {
+        localStorage.clear()
+    }
+}, 20000)
+
+selectNav.addEventListener('mouseover', (e) => {
+    navItem.classList = 'hove'
+    navItem.addEventListener('mouseleave', () => navItem.classList.remove('hove'))
+})
+
+document.getElementsByClassName('sub-btn')[0].disabled = true;
 
 document.addEventListener('DOMContentLoaded', async () => {
     const featProd = fetch('/get-featured')
@@ -57,10 +70,6 @@ spBtn.addEventListener('click', () => {
     window.location = '/product'
 })
 
-selectNav.addEventListener('mouseover', (e) => {
-    navItem.classList = 'hove'
-    navItem.addEventListener('mouseleave', () => navItem.classList.remove('hove'))
-})
 
 for(let i = 0; i <= navCategories.length; i++) {
     const myCategories = ['Head Safety Gears', 'PPEs', 'Hand Tools']
@@ -93,11 +102,9 @@ for(let i = 0; i <= navCategories.length; i++) {
         viewBtn[4].addEventListener('click', () => {
             viewfunc(4)
         })
+
+        readMore[i].addEventListener('click', () => {
+            localStorage.setItem('BlogNumber', i)
+            window.location = '/blog'
+        })
 }
-
-
-// localStorage.setItem('ProductData', JSON.stringify(data))
-//                 console.log(data)
-//                 alert(data)
-//                 window.location = '/product'
-

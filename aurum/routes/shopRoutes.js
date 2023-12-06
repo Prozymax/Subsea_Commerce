@@ -32,6 +32,25 @@ shopRouter.get('/get_all_products', (request, response) => {
   })
 })
 
+shopRouter.get('/category_products', (request, response) => {
+  const categoryProductVariable = request.query.categoryVariable;
+  console.log('Caatgeory: ' + categoryProductVariable)
+  let getProducts = `SELECT * FROM all_products WHERE product_category = ?`;
+  connection.query(getProducts, [categoryProductVariable], (err, results) => {
+    if (err) {
+      console.log(err)
+      response.json({ result: 'Error encountered while connecting with database'})
+    }
+    else if(results.length > 0) {
+      console.log(results)
+      response.json({ result: results })
+    }
+    else {
+      response.json({ result: 'No Products Found in this Category'})
+    }
+  })
+})
+
 // shopRouter.get('/hello', (request, response) => {
 //   const rs = 'hello';
 //   response.json(rs)

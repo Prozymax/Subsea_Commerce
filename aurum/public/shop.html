@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aurum Shop</title>
     <link rel="stylesheet" href="css/index.css">
+ <link rel="stylesheet" href="css/shop.css">
     <link rel="stylesheet" href="css/shop.css">
     <link rel="icon" href="./__webicons/editlogo.png" type="image/icon"> 
     <script defer src="js/index.js"></script>
     <script defer src="js/shop.js"></script>
     <script src="https://kit.fontawesome.com/1e3c5331c9.js" crossorigin="anonymous"></script>
-</head>
+ </head>
 <body>
     <div id="pre_header">
         <p>
@@ -33,7 +34,7 @@
                     <option value="Wears">Wears</option>
                     <option value="Footwears">FootWears</option>
                 </select>
-                <input type="text" placeholder="Search here" name="searchquery"><input type="submit" value="Search">
+                <input type="text" placeholder="Search here" name="searchquery"><input type="submit" class="sub-btn" value="Search">
             </form>
         </div>
         <div id="contact">
@@ -55,7 +56,15 @@
                     </div>
             <ul>
                 <li onclick="window.location = '/'">Home</li>
-                <li onclick="window.location = '/company'">Pages</li>
+                <li class="li-drop-down">
+                    Pages
+                    <ul>
+                        <figure></figure>
+                        <li onclick="window.location = '/company'"><span><i class="fa-solid fa-industry"></i></span>&nbsp;&nbsp;Company</li>
+                        <li onclick="window.location = '/services'"><span><i class="fa-solid fa-hands-holding-circle"></i></span>&nbsp;&nbsp;Services</li>
+                        <li onclick="window.location = '/mission'"><span><i class="fa-solid fa-person-circle-exclamation"></i></span>&nbsp;&nbsp;Mission</li>
+                    </ul>
+                </li>
                 <li onclick="window.location='/shop'">Shop</li>
                 <li onclick="window.location='/blog'">Blog</li>
                 <li onclick="window.location = '/contact-us'">Contact Us</li>
@@ -101,12 +110,12 @@
             </section>
             <div class="new_prod">
                 <section>
-                    <span>New</span><br><br>
-                    <get>Product Name</p>
-                    <small>lorem ipsum et odor all</small>
+                    <span>Special Deal</span><br><br>
+                    <p>Marine Personal Protective Equipment</p>
+                    <small>Limited offer. T&Cs Apply</small>
                 </section>
                 <section>
-                    <button>Get Now</button>
+                    <button class="deal-btn">Get Now</button>
                 </section>
             </div>
             <div class="ph-shop">

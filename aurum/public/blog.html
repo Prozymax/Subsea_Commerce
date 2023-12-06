@@ -1,102 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
- <link rel="stylesheet" href="./css/index.css"/>
- <link rel="stylesheet" href="./css/blog.css"/>
- <script defer src="./js/index.js"></script>
- <script defer src="./js/blog.js"></script>
- <link rel="icon" href="./__webicons/editlogo.png" type="image/icon"> 
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <script src="https://kit.fontawesome.com/1e3c5331c9.js" crossorigin="anonymous"></script>
- <title>Aurum Blog page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/shop.css">
+    <link rel="icon" href="./__webicons/editlogo.png" type="image/icon"> 
+    <script defer src="js/index.js"></script>
+    <script defer src="js/blog.js"></script>
+    <script src="https://kit.fontawesome.com/1e3c5331c9.js" crossorigin="anonymous"></script>
  </head>
-  <body>
-   <div id="pre_header">
-    <p>
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-linkedin-in"></i>
-        <i class="fa-brands fa-facebook"></i>
-    </p>
-</div>
+<body>
+    <div id="pre_header">
+        <p>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-facebook"></i>
+        </p>
+    </div>
 
-<header>
-    <div id="company_name">
-        <img src="__webicons/IMG-20230929-WA0039-removebg-preview-removebg-preview.png" alt="aurum_logo_png">
-        <h1>AURUM</h1>
-    </div>
-    <div id="searchbar">
-        <form action="/search">
-            <select name="category" id="category">
-                <option value="All Categories">All Categories</option>
-                <option value="Wears">Wears</option>
-                <option value="Footwears">FootWears</option>
-            </select>
-            <input type="text" placeholder="Search here" name="searchquery"><input type="submit" value="Search">
-        </form>
-    </div>
-    <div id="contact">
-        <section>
-            <i class="fa-solid fa-phone"></i> 
-            <article>
-        <p>+1 (987) 873 9874</p>
-        <p>Sales & Service Support</p>
-            </article>
-        </section>
-    </div>
-    </header>
-
-    <nav>
-        <div>
-            <select name="__category" id="__category">
-                <option value="All Categories">All Categories</option>
-                <option value="Wears">Wears</option>
-                <option value="Footwears">FootWears</option>
-            </select>
+    <header>
+        <div id="company_name">
+            <img src="__webicons/IMG-20230929-WA0039-removebg-preview-removebg-preview.png" alt="aurum_logo_png">
+            <h1>AURUM</h1>
         </div>
-        <ul>
-            /
-            <li onclick="window.location = 'company.html'">Pages</li>
-            <li onclick="window.location='shop.html'">Shop</li>
-            <li onclick="window.location='blog.html'">Blog</li>
-            <li onclick="window.location = 'contact.html'">Contact Us</li>
-        </ul>
-        <button id="btn-nav" onclick="window.location = '/shop'">Shop Now</button>
-    </nav>
+        <div id="searchbar">
+            <form action="/search">
+                <select name="category" id="category">
+                    <option value="All Categories">All Categories</option>
+                    <option value="Wears">Wears</option>
+                    <option value="Footwears">FootWears</option>
+                </select>
+                <input type="text" placeholder="Search here" name="searchquery"><input type="submit" class="sub-btn" value="Search">
+            </form>
+        </div>
+        <div id="contact">
+            <section>
+                <i class="fa-solid fa-phone"></i> 
+                <article>
+            <p>+1 (987) 873 9874</p>
+            <p>Sales & Service Support</p>
+                </article>
+            </section>
+        </div>
+        </header>
+
+        <nav>
+            <div>
+                <select name="__category" id="__category" value="All Categories">
+                    <option hidden value="All Categories">All Categories</option>
+                </select>
+                <ul id="navItem">
+                    <li class="nav_Category"><i class="fa-solid fa-screwdriver-wrench"></i>&nbsp;&nbsp;Hand Tools<span>&#8250;</span></li>
+                    <li class="nav_Category"><i class="fa-solid fa-helmet-safety"></i>&nbsp;&nbsp;Head Safety Gears<span>&#8250;</span></li>
+                    <li class="nav_Category"><i class="fa-solid fa-vest"></i>&nbsp;&nbsp;PPEs<span>&#8250;</span></li>
+                    <li class="nav_Category"><i class="fa-solid fa-shoe-prints"></i>&nbsp;&nbsp;Boots<span>&#8250;</span></li>
+                    <li class="nav_Category"><i class="fa-solid fa-mitten"></i>&nbsp;&nbsp;Gloves<span>&#8250;</span></li>
+                </ul>
+            </div>
+            <ul>
+                <li onclick="window.location = '/'">Home</li>
+                <li class="li-drop-down">
+                    Pages
+                    <ul>
+                        <figure></figure>
+                        <li onclick="window.location = '/company'"><span><i class="fa-solid fa-industry"></i></span>&nbsp;&nbsp;Company</li>
+                        <li onclick="window.location = '/services'"><span><i class="fa-solid fa-hands-holding-circle"></i></span>&nbsp;&nbsp;Services</li>
+                        <li onclick="window.location = '/mission'"><span><i class="fa-solid fa-person-circle-exclamation"></i></span>&nbsp;&nbsp;Mission</li>
+                    </ul>
+                </li>
+                <li onclick="window.location='/shop'">Shop</li>
+                <li onclick="window.location='/blog'">Blog</li>
+                <li onclick="window.location = '/contact-us'">Contact Us</li>
+            </ul>
+            <button id="btn-nav" onclick="window.location = '/shop'">Shop Now</button>
+        </nav>
+
+        <div class="boot-breadcrumbs">
+            <section>
+                <p><span onclick="window.location = '/'">Home</span>&nbsp;&nbsp&nbsp;<b>&#8250;</b>&nbsp;&nbsp;&nbsp;<span>Blog</span></p>
+            </section>
+        </div>
 
 
-     <div class="infoTab">
-        <P>Home > Blog</P>
-      <h1 id="firsthead">Blog</h1>
-    
-     </div>
-     <div id="popup">
+        <div id="popup">
 
       <div id="content">
        <p id="closebtn">&times;</p>
-       <img src="./img/231-2316040_safety.jpg" alt="" srcset="">
-       <h1>Tinubu dies after election.</h1>
-       <article>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam dolore voluptates natus cu
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui officiis nihil non dolore enim hic voluptatem odit minima culpa. Doloremque tempora eveniet expedita commodi dicta accusantium mollitia quisquam libero iure!
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora eius quidem corrupti accusantium soluta dignissimos eos magnam provident quod distinctio ullam nam a labore earum hic doloremque, fugiat, minima aspernatur.
-        oluptates natus cu
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui officiis nihil non dolore enim hic voluptatem odit minima culpa. Doloremque tempora eveniet expedita commodi dicta accusantium mollitia quisquam libero iure!
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora eius quidem corrupti accusantium soluta dignissimos eos magnam provident quod distinctio ullam nam a labore earum hic doloremque, fugiat, minima aspernatur.
-        oluptates natus cu
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui officiis nihil non dolore enim hic voluptatem odit minima culpa. Doloremque tempora eveniet expedita commodi dicta accusantium mollitia quisquam libero iure!
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora eius quidem corrupti accusantium soluta dignissimos eos magnam provident quod distinctio ullam nam a labore earum hic doloremque, fugiat, minima aspernatur.
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores a placeat quaerat similique voluptas. Eo
-        
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores a placeat quaerat similique voluptas. Eo
-        oluptates natus cu
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui officiis nihil non dolore enim hic voluptatem odit minima culpa. Doloremque tempora eveniet expedita commodi dicta accusantium mollitia quisquam libero iure!
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora eius quidem corrupti accusantium soluta dignissimos eos magnam provident quod distinctio ullam nam a labore earum hic doloremque, fugiat, minima aspernatur.
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores a placeat quaerat similique voluptas. Eo
-        
-
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores a placeat quaerat similique voluptas. Eos voluptatibus ipsum vel, ducimus esse, vitae eaque earum perferendis officiis inventore possimus culpa ut sunt!
-        lpa amet non quaerat expedita ducimus sequi tempora. Ullam sequi ex est laudantium officia quisquam tempore quibusdam eos.
+       <img class="pop_image" src="./img/231-2316040_safety.jpg" alt="" srcset="">
+       <h1 class="pop_h2">Lorem</h1>
+       <article class="pop_article">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui officiis nihil non dolore enim hic voluptatem odit minima culpa. Doloremque tempora eveniet expedita commodi dicta accusantium mollitia quisquam libero iure!
+               lpa amet non quaerat expedita ducimus sequi tempora. Ullam sequi ex est laudantium officia quisquam tempore quibusdam eos.
        </article>
 
       </div>
@@ -109,53 +106,50 @@
  
        <section class="grids">
 
-          <img src="./img/231-2316040_safety.jpg" alt="">
-          <h2>Tinubu killed by hoodlums.</h2>
-          <article>
-           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum adipisci enim beatae eligendi assumenda dolorum eum, minima veritatis quis cupiditate at mollitia dolore corporis repellat obcaecati, ratione error dignissimos ducimus.
+          <img src="./img/231-2316040_safety.jpg" class="imgs" alt="">
+          <h2 class="headings">Tinubu killed by hoodlums.</h2>
+          <article class="articles">
            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet aliquam iure doloribus error fugit, maiores accusantium quam, sequi, eaque eius ullam dignissimos suscipit magnam eveniet reprehenderit a soluta voluptatibus ab.
           </article>
-          <h3>Read more</h3>
+          <button class="rd-btn">Read more</button>
        </section>
 
 
        <section class="grids">
 
-        <img src="./img/bigstock-Various-hard-hats-safety-helm-145706012-removebg-preview.png" alt="">
-        <h2>helment turning into aliens</h2>
-        <article>
-         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum adipisci enim beatae eligendi assumenda dolorum eum, minima veritatis quis cupiditate at mollitia dolore corporis repellat obcaecati, ratione error dignissimos ducimus.
+        <img src="./img/bigstock-Various-hard-hats-safety-helm-145706012-removebg-preview.png" class="imgs" alt="">
+        <h2 class="headings">helment turning into aliens</h2>
+        <article class="articles">
          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet aliquam iure doloribus error fugit, maiores accusantium quam, sequi, eaque eius ullam dignissimos suscipit magnam eveniet reprehenderit a soluta voluptatibus ab.
         </article>
-        <h3>Read more</h3>
+        <button class="rd-btn">Read more</button>
 
      </section>
 
 
      <section class="grids">
 
-      <img src="./img/christopher-burns-8KfCR12oeUM-unsplash.jpg" alt="">
-      <h2>man kills his life</h2>
-      <article>
-       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum adipisci enim beatae eligendi assumenda dolorum eum, minima veritatis quis cupiditate at mollitia dolore corporis repellat obcaecati, ratione error dignissimos ducimus.
+      <img src="./img/christopher-burns-8KfCR12oeUM-unsplash.jpg" class="imgs" alt="">
+      <h2 class="headings">man kills his life</h2>
+      <article class="articles">
        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet aliquam iure doloribus error fugit, maiores accusantium quam, sequi, eaque eius ullam dignissimos suscipit magnam eveniet reprehenderit a soluta voluptatibus ab.
       </article>
-      <h3>Read more</h3>
+      <button class="rd-btn">Read more</button>
 
    </section>
 
 
    <section class="grids">
 
-    <img src="./img/fons-heijnsbroek-4xLxkDeiJC0-unsplash.jpg" alt="">
+    <img src="./img/fons-heijnsbroek-4xLxkDeiJC0-unsplash.jpg" class="imgs" alt="">
 
-    <h2> developer kills designer </h2>
+    <h2 class="headings"> developer kills designer </h2> 
 
-          <article>
-           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum adipisci enim beatae eligendi assumenda dolorum eum, minima veritatis quis cupiditate at mollitia dolore corporis repellat obcaecati, ratione error dignissimos ducimus.
+          <article class="articles">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit repudiandae libero, voluptatem voluptatum molestiae debitis minus animi maxime repellat expedita! Excepturi vitae sunt unde. Dignissimos aut tenetur eligendi neque repellat.
            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet aliquam iure doloribus error fugit, maiores accusantium quam, sequi, eaque eius ullam dignissimos suscipit magnam eveniet reprehenderit a soluta voluptatibus ab.
           </article>
-          <h3>Read more</h3>
+          <button class="rd-btn">Read more</button>
 
  </section>
 
@@ -163,13 +157,12 @@
 
  <section class="grids">
 
-  <img src="./img/colleagues-with-safety-equipment-working-with-blueprints.jpg" alt="">
-  <h2>designer did nonsense</h2>
-  <article>
-   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum adipisci enim beatae eligendi assumenda dolorum eum, minima veritatis quis cupiditate at mollitia dolore corporis repellat obcaecati, ratione error dignissimos ducimus.
+  <img src="./img/colleagues-with-safety-equipment-working-with-blueprints.jpg" class="imgs" alt="">
+  <h2 class="headings">designer did nonsense</h2>
+  <article class="articles">
    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet aliquam iure doloribus error fugit, maiores accusantium quam, sequi, eaque eius ullam dignissimos suscipit magnam eveniet reprehenderit a soluta voluptatibus ab.
   </article>
-  <h3>Read more</h3>
+  <button class="rd-btn">Read more</button>
 
 </section>
 
@@ -177,13 +170,12 @@
 
 <section class="grids">
 
- <img src="./img/231-2316040_safety.jpg" alt="">
- <h2>south african girl loves Nigeria</h2>
-          <article>
-           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum adipisci enim beatae eligendi assumenda dolorum eum, minima veritatis quis cupiditate at mollitia dolore corporis repellat obcaecati, ratione error dignissimos ducimus.
+ <img src="./img/231-2316040_safety.jpg" class="imgs" alt="">
+ <h2 class="headings">south african girl loves Nigeria</h2>
+          <article class="articles">
            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet aliquam iure doloribus error fugit, maiores accusantium quam, sequi, eaque eius ullam dignissimos suscipit magnam eveniet reprehenderit a soluta voluptatibus ab.
           </article>
-          <h3>Read more</h3>
+          <button class="rd-btn">Read more</button>
 
 </section>
 
@@ -191,13 +183,12 @@
 
 <section class="grids">
 
- <img src="./img/231-2316040_safety.jpg" alt="">
- <h2>Doller now 2000 naira</h2>
-          <article>
+ <img src="./img/231-2316040_safety.jpg" class="imgs" alt="">
+ <h2 class="headings">Doller now 2000 naira</h2>
+          <article class="articles">
            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum adipisci enim beatae eligendi assumenda dolorum eum, minima veritatis quis cupiditate at mollitia dolore corporis repellat obcaecati, ratione error dignissimos ducimus.
-           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet aliquam iure doloribus error fugit, maiores accusantium quam, sequi, eaque eius ullam dignissimos suscipit magnam eveniet reprehenderit a soluta voluptatibus ab.
           </article>
-          <h3>Read more</h3>
+          <button class="rd-btn">Read more</button>
 
 </section>
 
@@ -205,13 +196,12 @@
 
 <section class="grids">
 
- <img src="./img/231-2316040_safety.jpg" alt="">
- <h2>life is not hard</h2>
-          <article>
-           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum adipisci enim beatae eligendi assumenda dolorum eum, minima veritatis quis cupiditate at mollitia dolore corporis repellat obcaecati, ratione error dignissimos ducimus.
+ <img src="./img/231-2316040_safety.jpg" class="imgs" alt="">
+ <h2 class="headings">life is not hard</h2>
+          <article class="articles">
            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet aliquam iure doloribus error fugit, maiores accusantium quam, sequi, eaque eius ullam dignissimos suscipit magnam eveniet reprehenderit a soluta voluptatibus ab.
           </article>
-          <h3>Read more</h3>
+          <button class="rd-btn">Read more</button>
 
 </section>
 
@@ -219,13 +209,12 @@
 
    <section class="grids">
 
-    <img src="./img/231-2316040_safety.jpg" alt="">
-      <h2>just forget life</h2>
-          <article>
+    <img src="./img/231-2316040_safety.jpg" class="imgs" alt="">
+      <h2 class="headings">just forget life</h2>
+          <article class="articles">
            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum adipisci enim beatae eligendi assumenda dolorum eum, minima veritatis quis cupiditate at mollitia dolore corporis repellat obcaecati, ratione error dignissimos ducimus.
-           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet aliquam iure doloribus error fugit, maiores accusantium quam, sequi, eaque eius ullam dignissimos suscipit magnam eveniet reprehenderit a soluta voluptatibus ab.
           </article>
-       <h3>Read more</h3>
+       <button class="rd-btn">Read more</button>
 
    </section>
 

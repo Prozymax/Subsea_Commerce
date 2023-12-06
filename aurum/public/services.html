@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="css/index.css">
+ <link rel="stylesheet" href="css/shop.css">
     <link rel="stylesheet" href="css/shop.css">
     <link rel="stylesheet" href="css/services.css">
     <link rel="icon" href="./__webicons/editlogo.png" type="image/icon"> 
     <script defer src="js/index.js"></script>
     <script defer src="js/shop.js"></script>
     <script src="https://kit.fontawesome.com/1e3c5331c9.js" crossorigin="anonymous"></script>
-</head>
+ <script defer src="js/index.js"></script>
+ </head>
 <body>
     <div id="pre_header">
         <p>
@@ -34,7 +36,7 @@
                     <option value="Wears">Wears</option>
                     <option value="Footwears">FootWears</option>
                 </select>
-                <input type="text" placeholder="Search here" name="searchquery"><input type="submit" value="Search">
+                <input type="text" placeholder="Search here" name="searchquery"><input type="submit" class="sub-btn" value="Search">
             </form>
         </div>
         <div id="contact">
@@ -50,15 +52,28 @@
 
         <nav>
             <div>
-                <select name="__category" id="__category">
-                    <option value="All Categories">All Categories</option>
-                    <option value="Wears">Wears</option>
-                    <option value="Footwears">FootWears</option>
+                <select name="__category" id="__category" value="All Categories">
+                    <option hidden value="All Categories">All Categories</option>
                 </select>
+                <ul id="navItem">
+                    <li class="nav_Category"><i class="fa-solid fa-screwdriver-wrench"></i>&nbsp;&nbsp;Hand Tools<span>&#8250;</span></li>
+                    <li class="nav_Category"><i class="fa-solid fa-helmet-safety"></i>&nbsp;&nbsp;Head Safety Gears<span>&#8250;</span></li>
+                    <li class="nav_Category"><i class="fa-solid fa-vest"></i>&nbsp;&nbsp;PPEs<span>&#8250;</span></li>
+                    <li class="nav_Category"><i class="fa-solid fa-shoe-prints"></i>&nbsp;&nbsp;Boots<span>&#8250;</span></li>
+                    <li class="nav_Category"><i class="fa-solid fa-mitten"></i>&nbsp;&nbsp;Gloves<span>&#8250;</span></li>
+                </ul>
             </div>
             <ul>
                 <li onclick="window.location = '/'">Home</li>
-                <li onclick="window.location = '/company'">Pages</li>
+                <li class="li-drop-down">
+                    Pages
+                    <ul>
+                        <figure></figure>
+                        <li onclick="window.location = '/company'"><span><i class="fa-solid fa-industry"></i></span>&nbsp;&nbsp;Company</li>
+                        <li onclick="window.location = '/services'"><span><i class="fa-solid fa-hands-holding-circle"></i></span>&nbsp;&nbsp;Services</li>
+                        <li onclick="window.location = '/mission'"><span><i class="fa-solid fa-person-circle-exclamation"></i></span>&nbsp;&nbsp;Mission</li>
+                    </ul>
+                </li>
                 <li onclick="window.location='/shop'">Shop</li>
                 <li onclick="window.location='/blog'">Blog</li>
                 <li onclick="window.location = '/contact-us'">Contact Us</li>
@@ -68,7 +83,7 @@
 
         <div class="boot-breadcrumbs">
             <section>
-                <p><span>Home</span>&nbsp;&nbsp&nbsp;<b>&#8250;</b>&nbsp;&nbsp;&nbsp;<span>Services</span></p>
+                <p><span>Home</span>&nbsp;&nbsp&nbsp;<b>&#8250;</b>&nbsp;&nbsp;&nbsp;<span>Aurum Shop</span></p>
             </section>
         </div>
 

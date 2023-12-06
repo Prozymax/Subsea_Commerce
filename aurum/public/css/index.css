@@ -131,6 +131,8 @@ header img {
     background-color: var(--secondaryAccent);
 }
 
+.sub-btn {cursor:not-allowed}
+
 #contact
 {
     width: 30%;
@@ -209,14 +211,67 @@ nav select ~ ul li
     align-items: center;justify-content: flex-start;padding: 0 10%;position: relative;
 }
 
-nav select ~ ul li:hover
-{
-    background: white
-}
-
 nav div select ~ ul span
 {
-    font-size: 1.5vw;position: absolute;top: 25%;right: 5%;
+    font-size: 0;position: absolute;top: 25%;right: 5%;
+}
+nav select:hover ~ ul span
+{
+    font-size: 1.5vw;
+}
+
+nav div select ~ ul:hover span
+{
+    font-size: 1.5vw;
+
+}
+
+nav select ~ ul li:hover
+{
+    background: white;
+}
+
+
+.li-drop-down 
+{
+    position: relative;overflow: hidden;
+}
+
+.li-drop-down ul {
+    position: absolute;top: 100%;width: 200%;display: block;padding-top: 4%;z-index: 1;
+    background: var(--secondaryAccent);height: 0%;overflow: hidden;transition: .5s;
+}
+
+.li-drop-down figure {
+    width: 95%;height: 55%;margin: 0 auto;
+    background-image: url('../img/colleagues-with-safety-equipment-working-with-blueprints.jpg');
+    margin-block-end: 1%;background-repeat: no-repeat;background-size: cover;
+}
+
+.li-drop-down li 
+{
+    width: 100%;color: black;height: 15%;text-align: start;justify-content:flex-start;
+    border-bottom: 1px solid rgba(255, 255, 255, 0);padding: 0 5%;font-size: .7vw;
+    border-radius: 0;
+}
+.li-drop-down span 
+{
+    font-weight: bolder;transition: .5s;font-size: .9vw;
+}
+
+.li-drop-down li:hover
+{
+    padding: 0 4%;box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.336);border: none;
+}
+
+.li-drop-down li:hover span
+{
+    transform: translateX(10%); padding: 0 4%;
+}
+.li-drop-down:hover {overflow: visible}
+.li-drop-down:hover ul 
+{
+    height: 600%;;box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.116);
 }
 
 #btn-nav
@@ -489,9 +544,22 @@ nav div select ~ ul span
 .prod_cols section figure
 {
     width: 60%;height: 100%;background-repeat: no-repeat;background-size: 80%;
-    background-position: center;background-image: url('../img/sgo_7001frt-removebg-preview.png');
+    background-position: center;background-image: url('../img/tools-table-removebg-preview.png');
 }
 
+.prod_cols section:nth-child(2) figure {
+    background-image: url('../img/yellow-helmet-table-removebg-preview.png')
+}
+
+.prod_cols section:nth-child(3) figure {
+    background-image: url('../img/plumber-back-position-removebg-preview.png')
+}
+.prod_cols section:nth-child(4) figure {
+    background-image: url('../img/rubber-glove-isolated-white-removebg-preview.png')
+}
+.prod_cols section:nth-child(5) figure {
+    background-image: url('../img/leather-boots-removebg-preview.png')
+}
 .prod_cols article
 {
     width: 40%;height: 70%;cursor: pointer;margin-block-start: 8%;
@@ -550,8 +618,8 @@ nav div select ~ ul span
 
 .fa-posts figure
 {
-    width: 100%;height: 60%;background-repeat: no-repeat;background-size: 100%;margin: 1%;
-    background-position: center;background-image: url('../img/marianna-krzakiewicz-XPgJ19A7WnU-unsplash.jpg');;
+    width: 100%;height: 60%;background-repeat: no-repeat;background-size: 80%;margin: 1%;
+    background-position: center;background-image: url('../blog/CAC-Logo-2511889977.png');;
 }
 .fa-posts article 
 {
