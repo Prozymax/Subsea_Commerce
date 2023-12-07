@@ -8,6 +8,7 @@ const popTwos = document.getElementsByClassName('pop_h2');
 const popArticle = document.getElementsByClassName('pop_article')
 const popImage = document.getElementsByClassName('pop_image');
 
+
 // Add a click event listener to close the popup
 closebtn.addEventListener("click", function() {
   popup.style.display = "none";
