@@ -1,0 +1,29 @@
+@media screen and (max-width: 950px) {
+    body {
+       margin: 1%;
+       padding: 0;
+    }
+    * 
+    {
+    box-sizing: border-box;
+    }
+
+    header, nav, #pre_header
+    {
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

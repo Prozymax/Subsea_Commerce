@@ -1,0 +1,394 @@
+@media screen and (max-width: 950px) {
+    header, nav, #pre_header
+    {
+        display: none;
+    }
+
+    #intro
+    {
+        height: 60vh;background-color: rgba(0, 0, 0, 0.493);
+        background-size: cover;background-blend-mode: soft-light;
+        background-position: top;
+    }
+    
+    #sections
+    {
+        width: 100%;height: auto;display: block;
+}
+    
+    #sections div
+    {
+        width: 100%;height: 300px;border-radius: 0;margin: 0;padding: 0;
+        background-size: 45%;background-position-x: 90%;
+    }
+       
+    #sections div section
+    {
+        width: 80%;height: 50%;padding: 2% 4%;
+    }
+    
+    #sections h1
+    {
+        font-size: 120%;padding: 2% 0;
+    }
+    
+    #sections article 
+    {
+        width: 80%;height: 50%;
+    
+    }
+    
+    #sections button
+    {
+        width: 50%;height: 60px;border-radius: 10px;color: white;
+        box-shadow: 30px;
+    }
+        
+    #products 
+    {
+        height: auto;padding: 3% 0;
+    }
+    
+    #open_span 
+    {
+        font-size: 150%;
+    }
+    #open_span span, #open_span span::after, #open_span span::before
+    {
+        font-weight: bolder;
+        font-size: 60%;
+    }
+    
+    #featured 
+    {
+        width: 100%;height: 80%;
+    }
+    
+    #featured div
+    {
+        width: 47%;height:200px;text-align: center;
+        margin: 1%;
+    }
+    
+    #featured div figure
+    {
+        width: 100%;height: 80%;
+    }
+    
+    #featured div figure img
+    {
+        width: 100%;
+    }
+        
+    #featured h2
+    {
+       font-size: 100%;
+    }
+    
+    #featured div:hover, .prod_cols section:hover
+    {
+        margin-top: -1%;height: 210px;
+        box-shadow: 0 0 18px 1px rgba(0, 0, 0, 0.13);
+    }
+    
+    
+    #order
+    {
+        width: 100%;height: auto;background-size: 100%;background-position:  center;
+        background-color: rgba(0, 0, 0, 0.473);background-blend-mode: soft-light;
+        display: block;padding: 5% 0;
+        background-size: cover;
+    }
+    
+    #order section
+    {   
+        background: white;color: black;
+        border-radius: 5px;margin: 0 .5%;
+    }
+    
+    #order section:first-of-type
+    {
+        display: block;width: 90%;height: 500px;
+        margin: 5% auto;
+    }
+    
+    #order section:last-of-type
+    {
+        width: 90%;margin: 0 auto;height: 400px;background-position-x: 100%;;background-position-y: 100%;
+        background-size: 90%;background-image: url('../../img/engineer-work-tools-isolated-white-background-removebg-preview.png')
+    }
+    
+    #abs_offer
+    {
+        width: 60%;height: 30%;left: -25%;
+}
+    
+    #order figure
+    {
+        width: 100%;height: 50%;background-size: 80%;
+        background-position: right;;
+    }
+    
+    #order article
+    {
+        width: 90%;height: 45%;padding: 2% 0;
+    }
+    
+    #order span:first-of-type, #order span:first-of-type::after, #order span:first-of-type::before
+    {
+        font-size: 70%;
+    }
+    
+    #order i { font-size: 80%;}
+    
+    #order h3
+    {
+        padding: 2% 0;font-size: 120%;
+    }
+    
+    #order p
+    {
+        font-size: 80%;
+    }
+    
+    
+    #order button
+    {
+        width: 45%;height: 60px;margin: 0;
+    }
+    
+    
+    #order section:last-of-type button
+    {
+        width: 50%;
+    }
+    #order h2
+    {
+        width: 50%;font-size: 200%;padding-block: 2%;
+    }
+    
+    #col
+    {
+        width: 100%;height: auto;padding: 2% 0;
+    }
+    
+    #col div:first-of-type
+    {
+        height: 100px;
+    }
+    
+    #col span , #col span::after, #col span::before
+    {
+        font-size: 70%;
+    }
+    
+    #col h1
+    {
+        font-size: 150%;
+    }
+    
+    .prod_cols
+    {
+        width: 100%;display: block;margin: 0 auto;
+        height: auto;
+    }
+    
+    .prod_cols section 
+    {
+        width: 90%;margin: 3% auto;height: 300px;
+    }
+
+
+    .prod_cols section:hover {height: 350px;}
+    
+    .prod_cols section figure
+    {
+        width: 60%;height: 100%;background-repeat: no-repeat;background-size: 80%;
+        background-position: center;
+    }
+    
+    
+    .prod_cols article
+    {
+        height: 90%;margin-block-start: 8%;
+    }
+    
+    .prod_cols h4
+    {
+        font-size: 100%;
+    }
+    
+    .prod_cols ul
+    {
+        width: 100%;margin: 2% auto;color: rgb(105, 105, 105);
+        line-height: 120%;height: 50%;
+    }
+    
+    .prod_cols button
+    {
+        width: 50%;border:none;background: black;color: white;
+        padding: 8% 0;transition: .5s;
+    }
+    
+    .prod_cols button:hover
+    {
+        background-color: rgb(245, 118, 0);border-radius: 30px;width: 70%;
+    }
+    
+    .prod_cols li:hover { color: rgb(245, 118, 0);} .prod_cols section:hover { border-radius: 5px;}
+    
+    /* Blogs section */
+    
+    #blogs 
+    {
+        height: auto;padding-top: 4%;
+    }
+    
+    #blogs span:first-child { color: orange; font-weight: bolder;font-size: 90%; }
+    #blogs p
+    { 
+        font-size: 150%;width: 100%;
+     }
+    
+        #blogs p::after, #blogs p::before  {font-size: 100%;
+        }
+    
+    .fa-posts
+    {
+        width: 80%;height: auto;margin-block: 4%;;
+        display: block;margin: 0 auto;
+    }
+    
+    .fa-posts section
+    {
+        width: 100%;height: 400px;margin: 0;
+    }
+    
+    .fa-posts figure
+    {
+        width: 100%;background-size: 80%;margin: 1%;
+    }
+    .fa-posts article 
+    {
+        height: 20%;margin: 0;
+    }
+    
+    .fa-posts span { font-size: 80%;;}
+    
+        
+    .fa-posts h4 
+    {
+        font-size: 100%;
+    }
+        
+    #policy 
+    {
+        height: auto;display: block;
+        background: var(--secondaryAccent);
+    }
+    
+    #policy section
+    {
+        width: 85%;height: 100px;margin: 0 auto;
+        border-bottom: 1px solid black;
+    }
+    
+    #policy section:last-child {border: none;}
+
+    #policy i 
+    {
+        background-color: rgba(0, 0, 0);;
+        font-size: 120%;color: var(--secondaryAccent);border-color: var(--secondaryAccent);
+        box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.336);
+    }
+    
+    #policy h4 
+    {
+        font-size: 120%;
+    }
+    
+    #policy article 
+    {
+        width: 80%;margin: 0 auto;
+    }
+
+
+    footer{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        margin: 0 auto;
+        padding: 20px 5% 10px 5%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: left;
+        border-top: 1px solid black;
+       }
+       
+       .links i
+       {
+        font-size: 120%;
+       }
+
+       footer .links{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: left;
+       }
+      footer .links section:nth-of-type(1),
+      footer .links section:nth-of-type(2),
+      footer .links section:nth-of-type(3),
+      footer .links section:nth-of-type(4)
+      {
+        width: 100%;
+        border-bottom: 2px solid black;
+        height: fit-content;
+       }
+       footer .links section:nth-of-type(4){border: none;}
+       #newsletter{
+        width: 100%;
+        border-radius: 15px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+      
+        
+       }
+       #newsletter section article{
+        display: flex;
+        gap: 5px;
+       }
+       #newsletter section:nth-of-type(2){
+        font-size: 50%;
+        display: none;
+       }
+      
+       
+#copy
+{
+    width: 100%;height: auto;margin: 0% auto;
+    display: block;color: rgb(0, 0, 0);margin-block-start: 4% 0;
+}
+
+#copy section
+{
+    width: 100%;font-size: 70%;text-align: center;padding-block: 1%;
+}
+
+#copy section:last-of-type
+{
+    text-align: center;
+}
+
+#copy span::after, #copy span::before
+{
+    content: " | ";
+}
+
+      
+}
