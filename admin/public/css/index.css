@@ -9,18 +9,139 @@ body
 {
     display: flex;
     height: 100vh;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
+body #headerSection{
+    width: 80%;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    background-color:black ;
+    align-self: center;
+    justify-content: center;
+}
+body #headerSection h1{
+    width: 90%;
+    height: 100%;
+    color: rgb(229, 158, 26);
+    margin: 0 auto;
+    padding: 10px 20px 10px 0px;
+    text-align: left;
+}
+body #headerSection img{
+    height:auto;
+    width: 60px;
+    margin: 0 auto;
+    padding: 0 auto;
+}
 form
 {
-    width: 30%;height: 30%;
+    width: 80%;
+    height: 80%;
     margin: 0 auto;
+    padding: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
     box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.212);
 }
-
+form #firstDiv{
+    width: 40%;
+    height: 90%;
+    padding: 0 auto;
+    margin: 0 auto;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+form #secondDiv{
+    width: 40%;
+    gap: 5px;
+    height: 90%;
+    display: flex;
+    padding: 0 auto;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center ;
+}
+form label{
+    font-weight: 700;
+}
 form input
 {
-    width: 90%;height: 40px;
+    width: 91.5%;
+    background-color: rgb(233, 233, 233);
+    height: 40px;
+    font-family: inherit;
+    border: none;
+    resize: none;
+    outline: none;
+    margin-block: 1%;
+    color: var(--themeColor);
+    padding: 1%;
+}
+form select{
+    width: 91.5%;
+    background-color: rgb(233, 233, 233);
+    height: 40px;
+    font-family: inherit;
+    border: none;
+    resize: none;
+    outline: none;
+    margin-block: 1%;
+    color: var(--themeColor);
+    padding: 1%;
+}
+form textarea{
+    width: 91.5%;
+    background-color: rgb(233, 233, 233);
+    height: 40px;
+    font-family: inherit;
+    border: none;
+    outline: none;
+    margin-block: 1%;
+    color: var(--themeColor);
+    padding: 1%;
+}
+form #btn{
+    position: absolute;
+    bottom:5%;
+    font-size: 100%;
+    font-weight: 500;
+    width: max-content;
+    margin: 0 auto;
+    padding: 10px 30px 10px 30px;
+    right: 5%;
+    border-radius: 25px;
+    background-color:orange ;
+}
+form #btn:hover{
+    background-color: yellow;
+}
+
+
+
+@media screen and (max-width:900px){
+    #form{
+        flex-direction:column;
+        padding: 20px;
+        height: 90%;
+    }
+    #form #firstDiv{
+        width: 100%;
+        height: fit-content;
+    }
+    #form #secondDiv{
+        width: 100%;
+        height: fit-content;
+    }
 }

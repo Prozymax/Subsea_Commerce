@@ -5,18 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="./editlogo.png" type="image/icon"> 
  <script defer src="js/index.js"></script>
  </head>
 <body>
-    <form action="/upload" method="post" enctype="multipart/form-data">
-        <label for="title">Product Name: </label>
-        <input type="text" id="title" name="prodname" required>
-        <br>
-        
-        <label for="description">Product Description: </label>
-        <textarea id="description" name="description" required></textarea>
-        <br>
-        
+    <section id="headerSection">
+        <img src="./editlogo.png">
+        <h1>Welcome Admin</h1>
+    </section>
+    
+    <form action="/upload" method="post" enctype="multipart/form-data" id="form">
+        <div id="firstDiv">
+            <label for="title">Product Name: </label>
+            <input type="text" id="title" name="prodname" required>
+            <br>
+            
+            <label for="description">Product Description: </label>
+            <textarea id="description" name="description" required></textarea>
+            <br>
+            
+        </div>
+       
+        <div id="secondDiv">
         <label for="prodCat">Product Category</label>
         <select name="prodCategory" id="prdc">
             <option value="">--Choose--</option>
@@ -36,8 +46,9 @@
         <label for="image">Select an image:</label>
         <input type="file" id="image" name="image" accept="image/jpeg, image/jpg, image/png, image/gif" required>
         <br>
-        
-        <input type="submit" value="Upload">
+        </div>
+       
+        <input id="btn" type="submit" value="Upload">
       </form>
 </body>
 </html>
