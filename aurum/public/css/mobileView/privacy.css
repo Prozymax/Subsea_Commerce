@@ -1,0 +1,29 @@
+@media screen and (max-width: 950px) {
+    
+.firstSection{
+width:100%;
+height: auto;margin: 3% 0;
+display: grid;place-items: center;
+}
+
+.firstSection section
+{
+    width: 90%;box-shadow: none;
+}
+article{
+    line-height: 200%;
+}
+article > h1{
+font-size: 150%;
+width: 100%;
+text-align:center ;
+font-weight: bold;
+margin: 2% 0;padding: 4% 0;
+}
+
+.firstSection ul
+{
+    width: 90%;margin: 0 auto;;
+}
+
+}

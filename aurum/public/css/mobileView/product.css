@@ -1,0 +1,179 @@
+@media screen and (max-width: 950px) 
+{
+    ::selection
+{
+    background-color: var(--secondaryAccent);
+    color: rgb(100, 100, 100);
+}
+
+.boot-breadcrumbs {
+    width: 90%;margin: 0 auto;line-height: 150%;height: auto;
+    text-align: left;display: block;white-space: nowrap;font-size: 70%;;
+}
+
+
+#product-cont
+{
+    height: fit-content;flex-direction: column;
+}
+
+#product-cont div
+{
+    width: 90%;height: fit-content;padding: 5% 0;
+}
+
+#product-cont div:first-of-type figure
+{
+    width: 100%;height: 400px;
+}
+
+#product-cont div:first-of-type figure img
+{
+    width: 100%;
+}
+
+#product-cont div:first-of-type section
+{
+    width: 80%;margin: 1% auto;;height: 20%;display: none;
+}
+
+#product-cont div:first-of-type section article
+{
+    width: 32%;height: 100%;margin: 0 1%;
+    display: grid;place-items: center;border: 1px solid rgb(224, 224, 224);;
+}
+
+#product-cont div:first-of-type section img
+{
+    width: 50%;height: 90%;object-fit: cover;filter: hue-rotate(200deg);
+}
+
+#product-cont div:first-of-type section article:nth-child(2) img{ filter: hue-rotate(140deg) ;}
+#product-cont div:first-of-type section article:last-child img{ filter: hue-rotate(320deg) ;}
+
+#product-cont div:last-of-type
+{
+    margin-inline-start: 0;height: fit-content;
+}
+
+#product-cont div:last-of-type input[type="text"] { 
+    padding: 3% 0;width: 100%;font-size: 150%;;
+}
+
+#product-cont div:last-of-type form
+{
+    height: 100%;width: 100%;
+}
+
+#product-cont div:last-of-type form p:first-of-type,
+#product-cont div:last-of-type form p:nth-of-type(2)
+{
+    width: 100%;height: 30px;font-size: 100%;;
+}
+
+#product-cont div:last-of-type input[name="color"] 
+{
+    width: 10%;height: 50%;
+}
+
+#product-cont div:last-of-type form p:nth-of-type(2) span 
+{
+    font-size: 80%;;
+}
+
+
+textarea {
+    box-shadow: 0 0 8px 0 rgba(5, 5, 5, 0.137);
+    font-size: 90%;;padding: 4%;
+    margin-block: 5% 0;height: 200px;width: 100%;
+}
+
+
+#product-cont div:last-of-type form p:last-of-type
+{
+    width: 80%;height: 100px;margin: 3% 0;
+}
+
+#product-cont div:last-of-type form p:last-of-type input[type="number"]
+{
+   font-size: 120%;
+}
+
+.related
+{
+    width: 95%;padding-block: 10% 0;text-align: center;
+}
+
+.ph-shop
+{
+    width: 100%;
+}
+
+
+#desc
+{
+    width: 100%;height: fit-content;margin: 0;
+}
+
+.tabs 
+{
+    height: 50px;
+}
+
+.tabs span
+{
+    font-size: 120%;height: 100%;width: 80%;
+}
+
+#desc section
+{
+    height: auto;padding: 2%;
+}
+
+.desc_article, .addInfo
+{
+    box-shadow: none;font-size: 100%;
+}
+
+#desc section ul
+{
+    width: 95%;margin: 0 auto;;
+}
+
+.addInfo {display: none;}
+
+
+#product-cont p:nth-child(5)
+{
+    padding: 1.5% 0;border-top: 1px solid rgba(5, 5, 5, 0.24);
+    margin-block: 2% 0;
+}
+
+#product-cont p:nth-child(5) ~ input
+{
+    width: 50%;
+}
+
+input[type='email'], input[type='tel']
+{
+    height: 30px;font-size: 100%;;
+}
+
+
+.end-mess section
+{
+    width: 100%;height: 35%;background: white;
+    display: flex;align-items: center;justify-content: center;flex-direction: column;
+}
+
+.end-mess article
+{
+    font-size: 150%;
+}
+
+.end-mess i
+{
+    font-size: 250%;
+}
+
+}

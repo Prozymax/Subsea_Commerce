@@ -179,3 +179,29 @@ textarea:hover, textarea:focus
 {
     width: 50%;
 }
+
+.end-mess
+{
+    display: none;
+    position: fixed;width: 100%;height: 100%;
+    background: rgba(0, 0, 0, 0.548);;top: 0;left: 0;
+    place-items: center;
+}
+
+.end-mess section
+{
+    width: 25%;height: 35%;background: white;
+    display: grid;place-content: center;
+}
+
+.end-mess article
+{
+    font-size: 2vw;text-align: center;
+}
+
+.end-mess i
+{
+    font-size: 10vw;
+}
+
+.check-mess, .err-mess {display: none}

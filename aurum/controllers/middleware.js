@@ -24,7 +24,6 @@ const Mailmiddleware = async (request, response, next) => {
         catch (error) {
             console.log(error);
             response.send('Please Check your internet connection')
-            throw new Error(`Error sending this mail. Please check internet connection and also ${error}`)
         }
     }
     
@@ -54,6 +53,7 @@ const Mailmiddleware = async (request, response, next) => {
             color: request.body.color,
             size: request.body.size,
             numnerOfOrder: request.body.qty,
+            ordertype: request.body.ordertype,
             subject: 'Quote Order',
             }
         const quoteMailOptions = { 

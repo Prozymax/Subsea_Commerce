@@ -2,12 +2,12 @@
 #about_intro
 {
     width: 100%;
-    height: 75vh;
-    background-image: url('/img/truck-with-white-trailer-that-says-scania-side.jpg');
-    background-position: right;
+    height: 65vh;
+    background-image: url('../img/business-hands-joined-together-teamwork.jpg');
+    background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
-    background-color: rgba(0, 21, 44, 0.99);;;
+    background-color: rgba(0, 0, 0, 0.5);;;
     color: white;
     background-blend-mode: soft-light;
 }
@@ -40,61 +40,6 @@
     font-size: 5vw;
 }
 
-#about_intro nav
-{
-    width: 100%;
-    height: 10%;
-    border-top: .1px solid grey;
-}
-
-#about_intro ul
-{
-    margin: 0 auto;
-    font-size: 1vw;
-    justify-content: center;
-}
-
-#about_intro ul a {
-    position: relative;
-    margin: 0;
-    height: 100%;
-    overflow-x: hidden; 
-}
-
-#about_intro ul a::before
-{
-    content: "";
-    width: 100%;
-    height: 3px;
-    background-color: var(--accentColor);
-    position: absolute;
-    transform: translateX(-100%);
-    transition: .3s;
-    top: 0%;;
-}
-
-#about_intro a:hover::before
-{
-    animation: enter .2s linear .1s both;
-}
-
-@keyframes enter {
-    from {
-        transform: translateX(-100%);
-    }
-    to {
-        transform: translateX(0);
-    }
-}
-
-@keyframes exit {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(100%);
-    }
-}
 #facts 
 {
     width: 100%;
@@ -134,26 +79,18 @@
 
 #facts div:first-child figure
 {
-    background: url('/img/young-manual-worker-presenting-new-business-strategy-company-managers-his-colleagues-factory.jpg');
-    background-position: top;
-    background-repeat: no-repeat;
-    text-align: justify;
-    background-size: 100%;
+    background: url('../img/top-view-origami-chain-people-with-globe.jpg');
 }
 
 
 #facts div:nth-child(2) figure
 {
-    background: url('/img/happy-courier-handshaking-with-african-american-woman-while-delivering-her-package.jpg');
-    background-position: top;
-    background-repeat: no-repeat;
-    text-align: justify;
-    background-size: 100%;
+    background: url('../img/dark-businesswoman-shaking-hands-with-male-colleague.jpg');
 }
 
 #facts div:last-child figure
 {
-    background: url('/img/business-hands-joined-together-teamwork.jpg');
+    background: url('../img/core-values-word-young-people.jpg');
     background-position: top;
     background-repeat: no-repeat;
     text-align: justify;
@@ -220,11 +157,11 @@
 }
 #mission-cont div:first-of-type figure
 {
-    background-image: url('/img/3d-render-freight-container-forklift.jpg');
+    background-image: url('../img/marketing-concept-with-vision-word-flat-lay.jpg');
 }
 #mission-cont div:last-of-type figure
 {
-    background-image: url('/img/supply-chain-representation-still-life.jpg');
+    background-image: url('../img//front-view-goals-written-note-with-notepad-pen-white-background.jpg');
 }
 
 model-viewer

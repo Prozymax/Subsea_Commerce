@@ -7,8 +7,10 @@
     <title>Home</title>
     <link rel="stylesheet" href="css/index.css">
  <link rel="stylesheet" href="css/shop.css">
-    <link rel="stylesheet" href="css/shop.css">
     <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/mobileView/index.css">
+    <link rel="stylesheet" href="css/mobileView/shop.css">
+    <link rel="stylesheet" href="css/mobileView/services.css">
     <link rel="icon" href="./__webicons/editlogo.png" type="image/icon"> 
     <script defer src="js/index.js"></script>
     <script defer src="js/shop.js"></script>
@@ -81,6 +83,36 @@
             <button id="btn-nav" onclick="window.location = '/shop'">Shop Now</button>
         </nav>
 
+        <div class="mobile-header-cont">
+            <section>
+                <img src="__webicons/editlogo.png" alt="aurum-logo">
+                <h1>Aurum</h1>
+            </section>
+            <section>
+                <div class="nav">
+                        <article></article>
+                        <article></article>
+                        <article></article>
+                        <article></article>
+                    </div>
+                    <ul class="nav-list">
+                        <figure></figure>
+                        <li id="nav-list-item" onclick="window.location = '/'"><i class="fa-solid fa-house"></i> &nbsp;&nbsp;&nbsp;&nbsp;Home</li>
+                <li id="nav-list-item"  class="li-drop-down"><i class="fa-solid fa-book"></i> &nbsp;&nbsp;&nbsp;&nbsp;
+                    Pages
+                    <ul class="addon-list">
+                        <li onclick="window.location = '/company'"><span><i class="fa-solid fa-industry"></i></span>&nbsp;&nbsp;&nbsp;Company</li>
+                        <li onclick="window.location = '/services'"><span><i class="fa-solid fa-hands-holding-circle"></i></span>&nbsp;&nbsp;&nbsp;Services</li>
+                        <li onclick="window.location = '/mission'"><span><i class="fa-solid fa-person-circle-exclamation"></i></span>&nbsp;&nbsp;&nbsp;Mission</li>
+                    </ul>
+                </li>
+                <li id="nav-list-item"  onclick="window.location='/shop'"><i class="fa-solid fa-shop"></i> &nbsp;&nbsp;Shop</li>
+                <li id="nav-list-item"  onclick="window.location='/blog'"><i class="fa-solid fa-blog"></i> &nbsp;&nbsp;Blog</li>
+                <li id="nav-list-item"  onclick="window.location = '/contact-us'"><i class="fa-solid fa-envelope"></i> &nbsp;&nbsp;Contact Us</li>
+                    </ul>
+            </section>
+        </div>
+
         <div class="boot-breadcrumbs">
             <section>
                 <p><span>Home</span>&nbsp;&nbsp&nbsp;<b>&#8250;</b>&nbsp;&nbsp;&nbsp;<span>Aurum Shop</span></p>
@@ -108,12 +140,12 @@
                 <article>
                     <i class="fa-solid fa-screwdriver-wrench"></i><br>
                     <big>Rentals</big>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p>Explore the convenience of our top-tier equipment through Aurum's rental services.</p>
                 </article>
                 <article>
                     <i class="fa-solid fa-screwdriver-wrench"></i><br>
                     <big>Sales</big>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p>Elevate your toolkit with Aurum's premium equipment available for purchase.</p>
                 </article>
             </section>
         </div>
@@ -122,10 +154,11 @@
             <figure></figure>
             <section>
                 <span>Features</span>
-                <h1>Lorem ipsum dolor, sit amet saepe est molestiae </h1>
+                <h1>Unlocking Excellence: Discover the Distinctive Features of Aurum's Solutions</h1>
                 <article>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic autem facilis placeat nisi officia quod labore ex amet vitae nam quia esse ipsam obcaecati blanditiis minima rerum soluta, qui tenetur.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis rerum eaque ratione omnis! In eum quos quas omnis deserunt! Cum ratione quas facere veritatis consectetur unde eum perferendis ipsa adipisci?
+                    Embark on a journey of exploration as we unveil the distinctive features that set Aurum Enterprises apart. 
+                    Our commitment to unlocking excellence is reflected in every facet of our services. From cutting-edge technology in our equipment to flexible solutions tailored to your unique needs, we strive for innovation in every aspect. Join us on our Features page, where we delve into the intricacies that make Aurum the trusted choice for superior equipment solutions. Discover how our commitment to 
+                    excellence transforms every project into a seamless and efficient endeavor, setting new standards in the industry
                 </article>
                 <button>Shop Now&nbsp;&nbsp;&nbsp;<span id="arr">&rightarrow;</span></button>
             </section>
@@ -141,8 +174,8 @@
             <div>
                 <section>
                     <article>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus quia ea quis quam placeat provident nihil maxime, expedita necessitatibus rerum quaerat, asperiores veritatis. Natus, totam. Tempora consequuntur asperiores earum eligendi!
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perspiciatis alias nam adipisci nulla maxime voluptatum expedita corporis odit. Dolor consequuntur eveniet facere omnis dignissimos quam, vel earum tempore quo.
+                        Aurum Enterprises has been an invaluable partner for our construction projects. The quality of the equipment they provide is unmatched, and their commitment to innovation ensures that we always have access to the latest technologies. The flexibility of their rental solutions has been a game-changer, allowing us to scale our operations seamlessly. 
+                        The team at Aurum is not just a supplier; they are collaborators who genuinely care about our success. Highly recommended!
                     </article>
                     <p>
                         <b><i class="fa-solid fa-user"></i></b>
@@ -151,8 +184,8 @@
                 </section>
                 <section>
                     <article>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis ullam omnis libero. Pariatur quod, id, vero delectus sequi corrupti consequuntur mollitia recusandae harum possimus quidem, dicta dignissimos dolorem in maxime.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perspiciatis alias nam adipisci nulla maxime voluptatum expedita corporis odit. Dolor consequuntur eveniet facere omnis dignissimos quam, vel earum tempore quo.
+                        Aurum Enterprises has consistently exceeded our expectations with their top-notch equipment and exceptional service. The diverse range of equipment available for rent, coupled with their responsive support, has significantly contributed to the efficiency of our production processes. Aurum is more than a service provider; 
+                        they are a reliable partner committed to the success of our projects. We look forward to continuing this fruitful collaboration.
                     </article>
                     <p>
                         <b><i class="fa-solid fa-user"></i></b>
@@ -219,8 +252,7 @@
                         <ul>
                     <li onclick="window.location = '/'">Home</li>
                     <li onclick="window.location = '/company'">Company</li>
-                    <li onclick="window.location = '/services'">Services</li>
-                    <li onclick="window.location = '/contact'">Contact Us</li>
+                    <li onclick="window.location = '/contact-us'">Contact Us</li>
                     <li onclick="window.location='/shop'">Shop</li>
                         </ul>
                     </article>
@@ -229,7 +261,7 @@
                     <h3>Information</h3>
                     <article>
                         <ul>
-                            <li onclick="window.location = '/delivery'">Delivery Information</li>
+                            <!-- <li onclick="window.location = '/delivery'">Delivery Information</li> -->
                         <li onclick="window.location = '/privacy'">Privacy Policy</li>
                         <li onclick="window.location = '/quality'">Quality Policy</li>
                         <li onclick="window.location = '/refund'">Refund Policy</li>
@@ -237,12 +269,12 @@
                     </article>
                 </section>
                 <section>
-                    <h3>Store</h3>
+                    <h3>Company</h3>
                     <article>
                         <ul>
-                            <li>Sale</li>
-                            <li>Discount Products</li>
-                            <li>Latest Products</li>
+                            <li onclick="window.location = '/services'">Services</li>
+                            <li onclick="window.location = '/blog'">Blog</li>
+                            <li onclick="window.location = '/mission'">Mission</li>
                            </ul>
                     </article>
                 </section>

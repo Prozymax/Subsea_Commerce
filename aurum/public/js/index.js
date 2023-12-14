@@ -11,6 +11,7 @@ const shBtn = document.getElementsByClassName('sh-btn')[0];
 const btnNV = document.getElementById('btn-nav');
 const readMore = document.getElementsByClassName('read_more');
 
+
 shBtn.addEventListener('click', () =>{
     localStorage.clear()
     window.location = '/shop'
@@ -107,4 +108,43 @@ for(let i = 0; i <= navCategories.length; i++) {
             localStorage.setItem('BlogNumber', i)
             window.location = '/blog'
         })
+        
+
+        if(window.innerWidth <= 950) {
+           const mobileNavBurger = document.getElementsByClassName('nav')[0],
+           navList = document.getElementsByClassName('nav-list')[0],
+           navListItem = document.querySelectorAll('#nav-list-item'),
+           addOn = document.getElementsByClassName('addon-list')[0];
+
+           mobileNavBurger.addEventListener('click', (event) => {
+            navList.style.display = 'block';
+            event.stopPropagation()
+            navList.style.animationDelay = '.05s';
+            navList.style.animationName = 'enter'
+            for(let i = 0; i < navListItem.length; i++) {
+                navListItem[i].style.animationName = 'enter';
+            }
+           })
+
+           navList.addEventListener('click', (event) => {
+            event.stopPropagation()
+           })
+           document.addEventListener('click', () => {
+            navList.style.animationDelay = '.5s';
+            navList.style.animationName = 'exit';
+            addOn.style.animationName = 'exit2'
+            for(let i = 0; i < navListItem.length; i++) {
+             navListItem[i].style.animationName = 'exit';
+         }
+         setTimeout(() => {
+            navList.style.display = 'none';
+         }, 1000)
+           })
+
+
+           navListItem[1].addEventListener('click', () => {
+            addOn.style.animationName = 'enter2';
+           })
+        }
 }
+

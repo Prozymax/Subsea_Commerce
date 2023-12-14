@@ -7,10 +7,12 @@
     <link rel="stylesheet" href="css/index.css">
  <link rel="stylesheet" href="css/shop.css">
     <link rel="stylesheet" href="css/company.css">
+    <link rel="stylesheet" href="css/mobileView/index.css">
+    <link rel="stylesheet" href="css/mobileView/shop.css">
+    <link rel="stylesheet" href="css/mobileView/company.css">
     <link rel="icon" href="./__webicons/editlogo.png" type="image/icon"> 
     <script defer src="js/index.js"></script>
     <script src="https://kit.fontawesome.com/1e3c5331c9.js" crossorigin="anonymous"></script>
- <script defer src="js/index.js"></script>
  </head>
 <body>
     <div id="pre_header">
@@ -78,6 +80,36 @@
             <button id="btn-nav" onclick="window.location = '/shop'">Shop Now</button>
         </nav>
 
+        <div class="mobile-header-cont">
+            <section>
+                <img src="__webicons/editlogo.png" alt="aurum-logo">
+                <h1>Aurum</h1>
+            </section>
+            <section>
+                <div class="nav">
+                        <article></article>
+                        <article></article>
+                        <article></article>
+                        <article></article>
+                    </div>
+                    <ul class="nav-list">
+                        <figure></figure>
+                        <li id="nav-list-item" onclick="window.location = '/'"><i class="fa-solid fa-house"></i> &nbsp;&nbsp;&nbsp;&nbsp;Home</li>
+                <li id="nav-list-item"  class="li-drop-down"><i class="fa-solid fa-book"></i> &nbsp;&nbsp;&nbsp;&nbsp;
+                    Pages
+                    <ul class="addon-list">
+                        <li onclick="window.location = '/company'"><span><i class="fa-solid fa-industry"></i></span>&nbsp;&nbsp;&nbsp;Company</li>
+                        <li onclick="window.location = '/services'"><span><i class="fa-solid fa-hands-holding-circle"></i></span>&nbsp;&nbsp;&nbsp;Services</li>
+                        <li onclick="window.location = '/mission'"><span><i class="fa-solid fa-person-circle-exclamation"></i></span>&nbsp;&nbsp;&nbsp;Mission</li>
+                    </ul>
+                </li>
+                <li id="nav-list-item"  onclick="window.location='/shop'"><i class="fa-solid fa-shop"></i> &nbsp;&nbsp;Shop</li>
+                <li id="nav-list-item"  onclick="window.location='/blog'"><i class="fa-solid fa-blog"></i> &nbsp;&nbsp;Blog</li>
+                <li id="nav-list-item"  onclick="window.location = '/contact-us'"><i class="fa-solid fa-envelope"></i> &nbsp;&nbsp;Contact Us</li>
+                    </ul>
+            </section>
+        </div>
+
         
         <div id="comp_intro">
             <section>
@@ -95,22 +127,20 @@
         <div class="overview-section ov-section">
            <section>
             <span>Company Overview</span>
-            <h2>Helping the Industry with Equipments available for Rentals Anytime</h2>
+            <h2>Helping the Industry with Equipments available for Rentals/Sales Anytime</h2>
             <article>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis repellat doloremque temporibus quas accusamus blanditiis provident pariatur in! Odit 
-                doloribus sit explicabo facere distinctio eius saepe quasi placeat ea illum!
+                At Aurum, we are dedicated to providing comprehensive solutions for your industry needs. With a commitment to excellence and a 
+                focus on customer satisfaction, we offer a wide range of high-quality 
+                equipment available for both rentals and sales. Our mission is to empower businesses with the tools they need, precisely when they need them.
                 <br><br>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ipsum odio officiis rem cumque debitis, voluptates facilis amet distinctio 
-                facere blanditiis saepe quo iure unde aliquid animi ipsa odit laboriosam.
+                Browse through our comprehensive catalog to discover the diverse range of equipment available for rentals and sales. From construction machinery to safety gear, 
+                find everything you need to elevate your projects to new heights.
             </article>
-            <button>Get Started &rightarrow;</button> 
-            <span>
-                <i class="fa-solid fa-eye"></i>
-                <b>Our Vision</b>
-            </span>
+            <button>Explore Our Products &nbsp; &rightarrow;</button> 
+            
             <span>
                 <i class="fa-solid fa-flag"></i>
-                <b>Our Mision</b>
+                <b onclick="setTimeout(() => {window.location = '/mission'}, 1000)">Our Mision</b>
             </span>
            </section>
         </div>
@@ -120,13 +150,14 @@
         <div>
             <section>
                 <h3>
-                    <span>Experienced Equipment Rental Expertise</span><br>
+                    <span>Experienced Equipment Rental/Sales Expertise</span><br>
                     Provide Rent Solutions to Utilize Industry Assistance
                 </h3>
                 <article>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet dignissimos,
-                     sed facilis labore, in nisi autem corporis, perspiciatis impedit excepturi sit magni voluptates quos. 
-                    Quibusdam laboriosam odio enim animi soluta!
+                    At Aurum Enterprises, we understand the crucial impact of industry support in achieving success. 
+                    Embracing this, we are dedicated to empowering your endeavors through our commitment to delivering flexible 
+                    and efficient equipment rental solutions. With our specialized services, we strive to enhance your operational 
+                    efficiency and contribute to the growth of your projects.
                 </article>
             </section>
         </div>
@@ -135,12 +166,12 @@
                 <h3>
                     <i class="fa-solid fa-truck-front"></i>
                     <br>
-                    Comprehensive Rent Fleet
+                    Innovation on Demand
                 </h3>
                 <article>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus veniam 
-                    aliquam corrupti sed aperiam officia accusantium dignissimos dolorem provident eius, natus explicabo numquam distinctio 
-                    voluptatum voluptatibus ipsum quod architecto delectus?
+                    At Aurum Enterprises, we redefine the landscape of equipment solutions with our commitment to "Innovation on Demand." 
+                    This ethos is not just a phrase but a promise we keep,
+                    ensuring that you have access to high quality equipment precisely when you need it.
                 </article>
             </section>
             <section>
@@ -150,9 +181,9 @@
                     Prepare To Serve Your Needs
                 </h3>
                 <article>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus veniam 
-                    aliquam corrupti sed aperiam officia accusantium dignissimos dolorem provident eius, natus explicabo numquam distinctio 
-                    voluptatum voluptatibus ipsum quod architecto delectus?
+                    We are more than just a provider of equipment - we are your dedicated partner in success.
+                    With a commitment to anticipating and meeting your unique needs, we go above and beyond to ensure that you are well-prepared
+                     with the right tools for every task.
                 </article>
             </section>
             <section>
@@ -162,9 +193,8 @@
                     Equipment Perform At Top Levels
                 </h3>
                 <article>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus veniam 
-                    aliquam corrupti sed aperiam officia accusantium dignissimos dolorem provident eius, natus explicabo numquam distinctio 
-                    voluptatum voluptatibus ipsum quod architecto delectus?
+                    At Aurum Enterprises, we take pride in being a leader in providing top-tier equipment solutions for your industry needs. Our commitment to excellence extends beyond just offering equipment - 
+                    we ensure that every piece in our inventory is designed to perform at the highest levels, delivering unparalleled efficiency and reliability.
                 </article>
             </section>
         </div>
@@ -182,7 +212,7 @@
                 <figure></figure>
                 <article>
                     <h4>
-                        Rita Mark
+                        Mr. Daniel E. Osarobo
                         <br> 
                         <span>CEO - Founder</span>
                     </h4>
@@ -294,8 +324,7 @@
                     <ul>
                         <li onclick="window.location = '/'">Home</li>
                     <li onclick="window.location = '/company'">Company</li>
-                    <li onclick="window.location = '/services'">Services</li>
-                    <li onclick="window.location = '/contact'">Contact Us</li>
+                    <li onclick="window.location = '/contact-us'">Contact Us</li>
                     <li onclick="window.location='/shop'">Shop</li>
                     </ul>
                 </article>
@@ -304,7 +333,7 @@
                 <h3>Information</h3>
                 <article>
                     <ul>
-                        <li onclick="window.location = '/delivery'">Delivery Information</li>
+                        <!-- <li onclick="window.location = '/delivery'">Delivery Information</li> -->
                         <li onclick="window.location = '/privacy'">Privacy Policy</li>
                         <li onclick="window.location = '/quality'">Quality Policy</li>
                         <li onclick="window.location = '/refund'">Refund Policy</li>
@@ -312,12 +341,12 @@
                 </article>
             </section>
             <section>
-                <h3>Store</h3>
+                <h3>Company</h3>
                 <article>
                     <ul>
-                        <li>Sale</li>
-                        <li>Discount Products</li>
-                        <li>Latest Products</li>
+                        <li onclick="window.location = '/services'">Services</li>
+                            <li onclick="window.location = '/blog'">Blog</li>
+                            <li onclick="window.location = '/mission'">Mission</li>
                        </ul>
                 </article>
             </section>

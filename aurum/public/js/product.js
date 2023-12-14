@@ -3,7 +3,12 @@ const spanCategory = document.getElementById('sp-category'),
 spanProductname = document.getElementById('sp-prodname'),
 headerProdName = document.getElementById('product_name'),
 descriptionDOM = document.getElementsByClassName('desc_article')[0],
-figProdImage = document.getElementById('fig_prod-image')
+figProdImage = document.getElementById('fig_prod-image'),
+endMessage = document.getElementsByClassName('end-mess')[0],
+checkMessage = document.getElementsByClassName('check-mess')[0],
+errMessage = document.getElementsByClassName('err-mess')[0],
+prodQuoteForm = document.getElementsByClassName('prod-quote-form')[0],
+responseText = document.getElementsByClassName('response_text');
 
 const DOCUMENT = {
     getElements: () => {
@@ -20,12 +25,23 @@ const DOCUMENT = {
             productName[index].value = product.product_name;
         }
         })
+    },
+    showAlert: (args, param, responseAray) => {
+         endMessage.style.display = 'grid';
+            args.style.display = 'block'
+            responseText[param].textContent = responseAray;
+            setTimeout(() => {
+                args.style.display = 'none';
+                endMessage.style.display = 'none'
+            }, 3000)
+            setTimeout(() => { window.location = '#' }, 3000)
     }
 }
 
+
 document.addEventListener('DOMContentLoaded', async () => {
-    const storedData = JSON.parse(localStorage.getItem('ProductData'))
-    const message = (storedData) ? storedData : 'No Data Acquired'
+    const storedData = JSON.parse(localStorage.getItem('ProductData'));console.log(storedData)
+    const message = (storedData) ? storedData : window.location = '/shop'
     console.log(message);
     const prodname = storedData.message;console.log(prodname)
     const endpoint = `product/product_details?prodname=${encodeURIComponent(prodname)}`
@@ -88,7 +104,48 @@ const categoryCallback = fetch('product/product-category', {
     const relatedprod = await categoryCallback;
     console.log(relatedprod)
        DOCUMENT.replaceRelativeProducts(relatedprod)
+
+
+
+       prodQuoteForm.addEventListener('submit', async (event) => {
+        event.preventDefault();
+        document.getElementById('loader').style.display = 'grid'
+            const mailHandlerEndpoint = '/product/quote-sent';
+           const mailResponseHandler = fetch(mailHandlerEndpoint, {
+            method: "POST",
+            headers: {
+                'Content-Type': 'application/json'
+            },
+           })
+           .then(response => {
+            if(!response.ok) {
+                return 'Network Encountered. Please check internet connection';
+            }
+            return response.json()
+           })
+           .then(data => {
+            const message = data.message;
+            return message;
+           })
+           .catch(error => {
+            return 'Sorry we encountered an error';
+           })
+    
+    
+           const HandlerResponse = await mailResponseHandler;
+
+           if(HandlerResponse =='Mail Sent') {
+            document.getElementById('loader').style.display = 'none'
+            DOCUMENT.showAlert(checkMessage, 0, HandlerResponse)
+            }
+           
+           else {
+            document.getElementById('loader').style.display = 'none'
+            DOCUMENT.showAlert(errMessage, 1, HandlerResponse)
+           }
+    })
 })
+
 
 
 window.onbeforeunload = () => {

@@ -9,3 +9,4 @@ Todo:
   add features and description words to the admin form 
   ☐ create a file input for 2 images for the same product 
   uncomment shop.js
+  if there is no saved item in product js then take user to shop back

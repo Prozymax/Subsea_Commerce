@@ -4,6 +4,148 @@
         display: none;
     }
 
+    body {
+        overflow-x: hidden;
+    }
+
+    .mobile-header-cont
+    {
+        display: flex;width: 100%;height: 70px;background: black;
+    }
+
+    .mobile-header-cont section
+    {
+        display: flex;align-items: center;height: 100%;
+    }
+
+    .mobile-header-cont section:first-of-type
+    {
+        width: 80%;
+    }
+    .mobile-header-cont section:last-of-type {width: 20%;}
+    .mobile-header-cont h1
+    {
+        font-size: 150%;margin-inline-start: 0;color: var(--secondaryAccent);
+    }
+
+    .mobile-header-cont figure
+    {
+        width: 100%;height: 200px;background-image: url('../../img/christopher-burns-8KfCR12oeUM-unsplash.jpg');
+        background-repeat: no-repeat;background-size: cover;background-color: rgba(0, 0, 0, 0.349);background-blend-mode: soft-light;
+    }
+
+    .mobile-header-cont img
+    {
+        width: 25%;margin-block-start: -6%;margin-inline-start: 0;padding-block: 8%;
+    }
+
+    .nav 
+    {
+        width: 60%;height: 60%;
+    }
+
+    .nav section
+    {
+        width: 100%;height: 90%;margin: 0 auto;
+    }
+
+    .nav article 
+    {
+    width: 75%;height: 15%;;background: white;
+    margin: 4% auto;border-radius: 1px;
+    }
+
+    .nav-list 
+    {
+        position: absolute;width: 60%;height: 70vh;background: linear-gradient(to bottom, black 85%, orange 15%);
+        top: 0;;right: 0;box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.164);z-index: 10;display: none;
+        transform: translateX(100%);animation-duration: .5s;animation-timing-function: linear;animation-fill-mode: both;
+    }
+
+    .mobile-header-cont section li 
+    {
+        width: 100%;height: 10%;display: flex;align-items: center;padding: 0 8%;background: orange;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.418);list-style-type: none;transition: .5s;
+        animation-duration: .5s;animation-iteration-count: 1;animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+        animation-fill-mode: both;transform: translateX(100%);
+    }
+
+    .mobile-header-cont section li:hover { color: orange; background: black; }
+
+    .mobile-header-cont section li:first-of-type { animation-delay: .2s }
+    .mobile-header-cont section li:nth-of-type(2) { animation-delay: .3s }
+    .mobile-header-cont section li:nth-of-type(3) { animation-delay: .4s }
+    .mobile-header-cont section li:nth-of-type(4) { animation-delay: .5s }
+    .mobile-header-cont section li:last-of-type { animation-delay: .7s }
+
+    @keyframes enter {
+       0% {
+        transform: translateX(100%);
+       }
+       100% {
+        transform: translateX(0%)
+       }
+    }
+
+
+
+    @keyframes exit {
+        0% {
+            transform: translateX(0%);
+           }
+           100% {
+            transform: translateX(100%)
+           }
+    }
+
+    @keyframes enter2 {
+        0% {
+         transform: translateX(300%);
+        }
+        100% {
+         transform: translateX(0%)
+        }
+     }
+ 
+ 
+ 
+     @keyframes exit2 {
+         0% {
+             transform: translateX(0%);
+            }
+            100% {
+             transform: translateX(300%)
+            }
+     }
+    #nav-list-item:nth-of-type(2) 
+    {
+        position: relate;box-shadow: none;overflow: visible;
+    }
+
+    #nav-list-item:nth-of-type(2) ul 
+    {
+        position: absolute;height: 25vh;z-index: 10;width: 60%;padding: 0;
+        background: rgb(39, 32, 20);color: white;top: 0;left: -65%;
+        animation-duration: .5s;animation-iteration-count: 1;animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+        animation-fill-mode: both;transform: translateX(300%);animation-delay: .2s;
+    }
+
+    #nav-list-item:nth-of-type(2) span {font-size: 100%;content: " "; }
+
+    #nav-list-item:nth-of-type(2) ul li
+    {
+        font-size: 100%;height: 28%;list-style-type: none;
+        overflow: visible;
+    }
+
+    #nav-list-item:nth-of-type(2)::after
+    {
+        content: " ";width: 20px;height: 20px;background: rgb(15, 15, 15);
+        transform: translateX(-480%) rotate(45deg);background: inherit;visibility: hidden;
+    }
+
+    #nav-list-item:nth-of-type(2):hover::after {visibility: visible;}
+
     #intro
     {
         height: 60vh;background-color: rgba(0, 0, 0, 0.493);

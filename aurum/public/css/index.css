@@ -7,6 +7,14 @@
     --primaryAccent: black;
 }
 
+::selection
+{
+    background-color: var(--secondaryAccent);
+    color: rgb(100, 100, 100);
+}
+
+.mobile-header-cont {display: none;}
+
 input 
 {
     font-family: inherit;
@@ -39,9 +47,7 @@ buttton
 
 body 
 {
-    margin: 0;
     font-family: 'Nunito', 'sans-serif';
-    padding: 0;
     overflow-x: hidden;
 }
 

@@ -1,29 +1,169 @@
 @media screen and (max-width: 950px) {
-    body {
-       margin: 1%;
-       padding: 0;
-    }
-    * 
+   
+    .boot-breadcrumbs
     {
-    box-sizing: border-box;
+        height: 50px;
     }
-
-    header, nav, #pre_header
+        
+    .boot-breadcrumbs b
+    {
+        font-size: 100%;;
+    }
+    .boot-breadcrumbs span:first-of-type{color: rgb(0, 0, 0);}
+    .boot-breadcrumbs span:last-of-type
+    {
+        font-size: 100%;
+    }
+    
+    .intro-heading-two
+    {
+        padding: 1% 0;font-size: 150%
+    }
+    
+    #shop-layout
+    {
+        width: 95%;height: auto;display: block;margin: 0 auto;
+    }
+    
+    main
+    {
+        width: 100%;margin: 4% auto;
+    }
+    
+    .ph-floatbar 
+    {
+        width: 100%;height: auto;margin: 0 auto;transition: .5s;
+    }
+    
+    .float-categories
+    {
+        height: 400px;padding-block: 5% 0;transition: .5s;
+    }
+    
+    .float-categories p
+    {
+        font-size: 120%;
+    }
+    
+    .float-categories ul{
+        font-size: 90%;transition: .5s;
+    }
+    
+    .float-categories li
+    {
+        height: 18%;
+    }
+        
+    .float-categories span
+    {
+        font-size: 150%;top: 30%;
+    }
+      
+    
+    .new_prod
+    {
+        background-size: 120%;background-position: bottom;padding-block-start: 10%;
+        display: block;height: 400px;margin: 2% 0;
+    }
+    
+    .new_prod section:first-of-type
+    {
+        width: 90%;height: 25%;
+    }
+    
+    .new_prod p
+    {
+        font-size: 100%;width: 90%;
+    }
+    .new_prod small
+    {
+        font-size: 80%;
+    }
+    
+    .new_prod section:last-of-type
+    {
+        width: 90%;;height: 50px;margin: 0 auto;
+    }
+    
+    .new_prod section:last-of-type button
+    {
+        width: 50%;box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.151);
+    }
+        
+    .ph-shop div
+    {
+        width: 50%;height: 300px;
+    }
+    
+    .ph-shop figure
+    {
+        background-size: 70%;
+    }
+    
+    .ph-shop div span
+    {
+        font-size: 80%;
+        padding: 2% 4%;
+    }
+    
+    .ph-shop input[type="text"]
+    {
+        font-size: 100%;width: 95%;
+    }
+    .ph-shop button
+    {
+        width: 60%;height: 100%;
+        border-radius: 30px;
+    }
+        
+    .sticky {
+        margin-left: -3%;padding: 5% 0;transition: .5s;
+        height: 35%;width: 100%;z-index: 2;
+    }
+        
+    .result_number
     {
         display: none;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
+    #loader
+    {
+        position: fixed;width: 100%;;display: none;
+        top: 0;left: 0;;height: 100%;place-items: center;
+        background: rgba(223, 132, 4, 0.315);z-index: 1;
+    }
+    
+    #loader div
+    {
+        width: 50%;height: 25%;
+        background: linear-gradient(to bottom right, rgb(241, 161, 49), rgb(71, 43, 5), rgb(184, 118, 26));
+    }
+    
+    
+    #loader section
+    {
+        border: 8px solid white;animation: spin .5s cubic-bezier(0.575, 1, 0.32, 0.975) .8s infinite;;
+    }   
+    
+    @keyframes spin
+    {
+        from {
+            width: 50px;height: 50px;
+        }
+        to {
+            height: 180px;width: 180px;
+    }
+    }
+    
+    
+    @keyframes colors
+    {
+        from {
+            transform: rotateZ(0deg);
+        }
+        to {
+            transform: rotateZ(360deg);
+    }
+    }
 
 }

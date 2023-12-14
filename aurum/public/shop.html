@@ -8,11 +8,10 @@
     <link rel="stylesheet" href="css/index.css">
  <link rel="stylesheet" href="css/shop.css">
  <link rel="stylesheet" href="css/mobileView/index.css">
- <link rel="stylesheet" href="css/mobileView/shop">
-    <link rel="stylesheet" href="css/shop.css">
-    <link rel="icon" href="./__webicons/editlogo.png" type="image/icon"> 
-    <script defer src="js/index.js"></script>
-    <script defer src="js/shop.js"></script>
+ <link rel="stylesheet" href="css/mobileView/shop.css">
+ <link rel="icon" href="./__webicons/editlogo.png" type="image/icon"> 
+ <script defer src="js/shop.js"></script>
+ <script defer src="js/header.js"></script>
     <script src="https://kit.fontawesome.com/1e3c5331c9.js" crossorigin="anonymous"></script>
  </head>
 <body>
@@ -74,6 +73,36 @@
             <button id="btn-nav" onclick="window.location = '/shop'">Shop Now</button>
         </nav>
 
+        <div class="mobile-header-cont">
+            <section>
+                <img src="__webicons/editlogo.png" alt="aurum-logo">
+                <h1>Aurum</h1>
+            </section>
+            <section>
+                <div class="nav">
+                        <article></article>
+                        <article></article>
+                        <article></article>
+                        <article></article>
+                    </div>
+                    <ul class="nav-list">
+                        <figure></figure>
+                        <li id="nav-list-item" onclick="window.location = '/'"><i class="fa-solid fa-house"></i> &nbsp;&nbsp;&nbsp;&nbsp;Home</li>
+                <li id="nav-list-item"  class="li-drop-down"><i class="fa-solid fa-book"></i> &nbsp;&nbsp;&nbsp;&nbsp;
+                    Pages
+                    <ul class="addon-list">
+                        <li onclick="window.location = '/company'"><span><i class="fa-solid fa-industry"></i></span>&nbsp;&nbsp;&nbsp;Company</li>
+                        <li onclick="window.location = '/services'"><span><i class="fa-solid fa-hands-holding-circle"></i></span>&nbsp;&nbsp;&nbsp;Services</li>
+                        <li onclick="window.location = '/mission'"><span><i class="fa-solid fa-person-circle-exclamation"></i></span>&nbsp;&nbsp;&nbsp;Mission</li>
+                    </ul>
+                </li>
+                <li id="nav-list-item"  onclick="window.location='/shop'"><i class="fa-solid fa-shop"></i> &nbsp;&nbsp;Shop</li>
+                <li id="nav-list-item"  onclick="window.location='/blog'"><i class="fa-solid fa-blog"></i> &nbsp;&nbsp;Blog</li>
+                <li id="nav-list-item"  onclick="window.location = '/contact-us'"><i class="fa-solid fa-envelope"></i> &nbsp;&nbsp;Contact Us</li>
+                    </ul>
+            </section>
+        </div>
+
         <div class="boot-breadcrumbs">
             <section>
                 <p><span>Home</span>&nbsp;&nbsp&nbsp;<b>&#8250;</b>&nbsp;&nbsp;&nbsp;<span>Aurum Shop</span></p>
@@ -121,371 +150,7 @@
                 </section>
             </div>
             <div class="ph-shop">
-                <!-- <div class="items">
-                    <span>Sale</span>
-                    <figure id="fig-prod" class="fig_prod"></figure>
-                    <section>
-                        <form action="shop/product" method="post" class="product-form">
-                        <input type="text" class="prod_name" name="prodname" value="Iron Wrench" id="prodname" readonly/>
-                        <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
-                        <article>
-                            <button>Get Quote</button>
-                        </article>
-                        </form>
-                    </section>
-                </div>
-                <div class="items">
-                    <span>Sale</span>
-                    <figure id="fig-prod" class="fig_prod"></figure>
-                    <section>
-                        <form action="shop/product" method="post" class="product-form">
-                        <input type="text" class="prod_name" name="prodname" value="Blue Safety Coverall" id="prodname" readonly/>
-                        <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
-                        <article>
-                            <button>Get Quote</button>
-                        </article>
-                        </form>
-                    </section>
-                </div>
-                <div class="items">
-                    <span>Sale</span>
-                    <figure id="fig-prod" class="fig_prod"></figure>
-                    <section>
-                        <form action="shop/product" method="post" class="product-form">
-                        <input type="text" class="prod_name" name="prodname" value="Name Description" id="prodname" readonly/>
-                        <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
-                        <article>
-                            <button>Get Quote</button>
-                        </article>
-                        </form>
-                    </section>
-                </div>
-                <div class="items">
-                    <span>Sale</span>
-                    <figure id="fig-prod" class="fig_prod"></figure>
-                    <section>
-                        <form action="shop/product" method="post" class="product-form">
-                        <input type="text" class="prod_name" name="prodname" value="Product Name Description" id="prodname" readonly/>
-                        <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
-                        <article>
-                            <button>Get Quote</button>
-                        </article>
-                        </form>
-                    </section>
-                </div> -->
-                <!-- <div class="items">
-                    <span>Sale</span>
-                    <figure id="fig-prod" class="fig_prod"></figure>
-                    <section>
-                        <form action="shop/product" method="post" class="product-form">
-                        <input type="text" class="prod_name" name="prodname" value="Product Name Description" id="prodname" readonly/>
-                        <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
-                        <article>
-                            <button>Get Quote</button>
-                        </article>
-                        </form>
-                    </section>
-                </div>
-                <div class="items">
-                    <span>Sale</span>
-                    <figure id="fig-prod" class="fig_prod"></figure>
-                    <section>
-                        <form action="shop/product" method="post" class="product-form">
-                        <input type="text" class="prod_name" name="prodname" value="Product Name Description" id="prodname" readonly/>
-                        <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
-                        <article>
-                            <button>Get Quote</button>
-                        </article>
-                        </form>
-                    </section>
-                </div>
-                <div class="items">
-                    <span>Sale</span>
-                    <figure id="fig-prod" class="fig_prod"></figure>
-                    <section>
-                        <form action="shop/product" method="post" class="product-form">
-                        <input type="text" class="prod_name" name="prodname" value="Product Name Description" id="prodname" readonly/>
-                        <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
-                        <article>
-                            <button>Get Quote</button>
-                        </article>
-                        </form>
-                    </section>
-                </div>
-                <div class="items">
-                    <span>Sale</span>
-                    <figure id="fig-prod" class="fig_prod"></figure>
-                    <section>
-                        <form action="shop/product" method="post" class="product-form">
-                        <input type="text" class="prod_name" name="prodname" value="Product Name Description" id="prodname" readonly/>
-                        <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
-                        <article>
-                            <button>Get Quote</button>
-                        </article>
-                        </form>
-                    </section>
-                </div>
-                <div class="items">
-                    <span>Sale</span>
-                    <figure id="fig-prod" class="fig_prod"></figure>
-                    <section>
-                        <form action="shop/product" method="post" class="product-form">
-                        <input type="text" class="prod_name" name="prodname" value="Product Name Description" id="prodname" readonly/>
-                        <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
-                        <article>
-                            <button>Get Quote</button>
-                        </article>
-                        </form>
-                    </section>
-                </div>
-                <div class="items">
-                    <span>Sale</span>
-                    <figure id="fig-prod" class="fig_prod"></figure>
-                    <section>
-                        <form action="shop/product" method="post" class="product-form">
-                        <input type="text" class="prod_name" name="prodname" value="Product Name Description" id="prodname" readonly/>
-                        <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
-                        <article>
-                            <button>Get Quote</button>
-                        </article>
-                        </form>
-                    </section>
-                </div>
-                <div class="items">
-                    <span>Sale</span>
-                    <figure id="fig-prod" class="fig_prod"></figure>
-                    <section>
-                        <form action="shop/product" method="post" class="product-form">
-                        <input type="text" class="prod_name" name="prodname" value="Product Name Description" id="prodname" readonly/>
-                        <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
-                        <article>
-                            <button>Get Quote</button>
-                        </article>
-                        </form>
-                    </section>
-                </div>
-                <div class="items">
-                    <span>Sale</span>
-                    <figure id="fig-prod" class="fig_prod"></figure>
-                    <section>
-                        <form action="shop/product" method="post" class="product-form">
-                        <input type="text" class="prod_name" name="prodname" value="Product Name Description" id="prodname" readonly/>
-                        <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
-                        <article>
-                            <button>Get Quote</button>
-                        </article>
-                        </form>
-                    </section>
-                </div>
-                <div class="items">
-                    <span>Sale</span>
-                    <figure id="fig-prod" class="fig_prod"></figure>
-                    <section>
-                        <form action="shop/product" method="post" class="product-form">
-                        <input type="text" class="prod_name" name="prodname" value="Product Name Description" id="prodname" readonly/>
-                        <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
-                        <article>
-                            <button>Get Quote</button>
-                        </article>
-                        </form>
-                    </section>
-                </div>
-                <div class="items">
-                    <span>Sale</span>
-                    <figure id="fig-prod" class="fig_prod"></figure>
-                    <section>
-                        <form action="shop/product" method="post" class="product-form">
-                        <input type="text" class="prod_name" name="prodname" value="Product Name Description" id="prodname" readonly/>
-                        <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
-                        <article>
-                            <button>Get Quote</button>
-                        </article>
-                        </form>
-                    </section>
-                </div>
-                <div class="items">
-                    <span>Sale</span>
-                    <figure id="fig-prod" class="fig_prod"></figure>
-                    <section>
-                        <form action="shop/product" method="post" class="product-form">
-                        <input type="text" class="prod_name" name="prodname" value="Product Name Description" id="prodname" readonly/>
-                        <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
-                        <article>
-                            <button>Get Quote</button>
-                        </article>
-                        </form>
-                    </section>
-                </div>
-                <div class="items">
-                    <span>Sale</span>
-                    <figure id="fig-prod" class="fig_prod"></figure>
-                    <section>
-                        <form action="shop/product" method="post" class="product-form">
-                        <input type="text" class="prod_name" name="prodname" value="Product Name Description" id="prodname" readonly/>
-                        <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
-                        <article>
-                            <button>Get Quote</button>
-                        </article>
-                        </form>
-                    </section>
-                </div>
-                <div class="items">
-                    <span>Sale</span>
-                    <figure id="fig-prod" class="fig_prod"></figure>
-                    <section>
-                        <form action="shop/product" method="post" class="product-form">
-                        <input type="text" class="prod_name" name="prodname" value="Product Name Description" id="prodname" readonly/>
-                        <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
-                        <article>
-                            <button>Get Quote</button>
-                        </article>
-                        </form>
-                    </section>
-                </div>
-                <div class="items">
-                    <span>Sale</span>
-                    <figure id="fig-prod" class="fig_prod"></figure>
-                    <section>
-                        <form action="shop/product" method="post" class="product-form">
-                        <input type="text" class="prod_name" name="prodname" value="Product Name Description" id="prodname" readonly/>
-                        <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
-                        <article>
-                            <button>Get Quote</button>
-                        </article>
-                        </form>
-                    </section>
-                </div>
-                <div class="items">
-                    <span>Sale</span>
-                    <figure id="fig-prod" class="fig_prod"></figure>
-                    <section>
-                        <form action="shop/product" method="post" class="product-form">
-                        <input type="text" class="prod_name" name="prodname" value="Product Name Description" id="prodname" readonly/>
-                        <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
-                        <article>
-                            <button>Get Quote</button>
-                        </article>
-                        </form>
-                    </section>
-                </div>
-                <div class="items">
-                    <span>Sale</span>
-                    <figure id="fig-prod" class="fig_prod"></figure>
-                    <section>
-                        <form action="shop/product" method="post" class="product-form">
-                        <input type="text" class="prod_name" name="prodname" value="Product Name Description" id="prodname" readonly/>
-                        <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
-                        <article>
-                            <button>Get Quote</button>
-                        </article>
-                        </form>
-                    </section>
-                </div>
-                <div class="items">
-                    <span>Sale</span>
-                    <figure id="fig-prod" class="fig_prod"></figure>
-                    <section>
-                        <form action="shop/product" method="post" class="product-form">
-                        <input type="text" class="prod_name" name="prodname" value="Product Name Description" id="prodname" readonly/>
-                        <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
-                        <article>
-                            <button>Get Quote</button>
-                        </article>
-                        </form>
-                    </section>
-                </div>
-                <div class="items">
-                    <span>Sale</span>
-                    <figure id="fig-prod" class="fig_prod"></figure>
-                    <section>
-                        <form action="shop/product" method="post" class="product-form">
-                        <input type="text" class="prod_name" name="prodname" value="Product Name Description" id="prodname" readonly/>
-                        <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
-                        <article>
-                            <button>Get Quote</button>
-                        </article>
-                        </form>
-                    </section>
-                </div>
-                <div class="items">
-                    <span>Sale</span>
-                    <figure id="fig-prod" class="fig_prod"></figure>
-                    <section>
-                        <form action="shop/product" method="post" class="product-form">
-                        <input type="text" class="prod_name" name="prodname" value="Product Name Description" id="prodname" readonly/>
-                        <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
-                        <article>
-                            <button>Get Quote</button>
-                        </article>
-                        </form>
-                    </section>
-                </div>
-                <div class="items">
-                    <span>Sale</span>
-                    <figure id="fig-prod" class="fig_prod"></figure>
-                    <section>
-                        <form action="shop/product" method="post" class="product-form">
-                        <input type="text" class="prod_name" name="prodname" value="Product Name Description" id="prodname" readonly/>
-                        <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
-                        <article>
-                            <button>Get Quote</button>
-                        </article>
-                        </form>
-                    </section>
-                </div>
-                <div class="items">
-                    <span>Sale</span>
-                    <figure id="fig-prod" class="fig_prod"></figure>
-                    <section>
-                        <form action="shop/product" method="post" class="product-form">
-                        <input type="text" class="prod_name" name="prodname" value="Product Name Description" id="prodname" readonly/>
-                        <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
-                        <article>
-                            <button>Get Quote</button>
-                        </article>
-                        </form>
-                    </section>
-                </div>
-                <div class="items">
-                    <span>Sale</span>
-                    <figure id="fig-prod" class="fig_prod"></figure>
-                    <section>
-                        <form action="shop/product" method="post" class="product-form">
-                        <input type="text" class="prod_name" name="prodname" value="Product Name Description" id="prodname" readonly/>
-                        <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
-                        <article>
-                            <button>Get Quote</button>
-                        </article>
-                        </form>
-                    </section>
-                </div>
-                <div class="items">
-                    <span>Sale</span>
-                    <figure id="fig-prod" class="fig_prod"></figure>
-                    <section>
-                        <form action="shop/product" method="post" class="product-form">
-                        <input type="text" class="prod_name" name="prodname" value="Product Name Description" id="prodname" readonly/>
-                        <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
-                        <article>
-                            <button>Get Quote</button>
-                        </article>
-                        </form>
-                    </section>
-                </div>
-                <div class="items">
-                    <span>Sale</span>
-                    <figure id="fig-prod" class="fig_prod"></figure>
-                    <section>
-                        <form action="shop/product" method="post" class="product-form">
-                        <input type="text" class="prod_name" name="prodname" value="Product Name Description" id="prodname" readonly/>
-                        <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
-                        <article>
-                            <button>Get Quote</button>
-                        </article>
-                        </form>
-                    </section>
-                </div> -->
-                </div>
+              </div>
         </main>
     </div>
     <div class="result_number">
@@ -554,8 +219,7 @@
                 <ul>
                     <li onclick="window.location = '/'">Home</li>
                     <li onclick="window.location = '/company'">Company</li>
-                    <li onclick="window.location = '/services'">Services</li>
-                    <li onclick="window.location = '/contact'">Contact Us</li>
+                    <li onclick="window.location = '/contact-us'">Contact Us</li>
                     <li onclick="window.location='/shop'">Shop</li>
                 </ul>
             </article>
@@ -564,7 +228,7 @@
             <h3>Information</h3>
             <article>
                 <ul>
-                    <li onclick="window.location = '/delivery'">Delivery Information</li>
+                    <!-- <li onclick="window.location = '/delivery'">Delivery Information</li> -->
                         <li onclick="window.location = '/privacy'">Privacy Policy</li>
                         <li onclick="window.location = '/quality'">Quality Policy</li>
                         <li onclick="window.location = '/refund'">Refund Policy</li>
@@ -572,12 +236,12 @@
             </article>
         </section>
         <section>
-            <h3>Store</h3>
+            <h3>Company</h3>
             <article>
                 <ul>
-                    <li>Sale</li>
-                    <li>Discount Products</li>
-                    <li>Latest Products</li>
+                    <li onclick="window.location = '/services'">Services</li>
+                            <li onclick="window.location = '/blog'">Blog</li>
+                            <li onclick="window.location = '/mission'">Mission</li>
                    </ul>
             </article>
         </section>

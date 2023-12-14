@@ -18,9 +18,9 @@
 
  #contact_intro{
   width: 100%;
-  height: 40vh;
+  height: 40vh;background-color: rgba(133, 103, 3, 0.822);
   margin: 0 auto;
-  padding: 0 auto;
+  padding: 0 auto;background-size: cover;
  }
 
  #contact_intro section{
@@ -42,7 +42,7 @@
  #contact_intro section h1{
   width: 100%;
   height: fit-content;
-  font-size: 200%;
+  font-size: 250%;
   margin: 0 auto;
   padding: 0 auto;
  }
@@ -53,7 +53,7 @@
  #contact_intro section article{
   width: 100%;
   height: fit-content;
-  font-size: 110%;
+  font-size: 100%;
   margin: 0 auto;
   line-height: 120%;
   padding: 0 auto;
@@ -82,7 +82,15 @@
   justify-content: center;
 
  }
- #forms form:nth-of-type(1) span,
+
+ #forms form:nth-of-type(1) span 
+ {
+  width: 100%;
+  text-align: left;
+  margin-top: 2px;
+  font-size: 100%;
+ }
+
   #forms form:nth-of-type(1) h2{
   width: 100%;
   text-align: left;
@@ -91,33 +99,40 @@
  }
  #forms form:nth-of-type(1) input{
   width: 100%;
-  height:40px;
+  height:60px;padding: 0 4%;
   font-size: 100%;
  }
 
  
  #forms form:nth-of-type(1) textarea{
   width: 100%;
-  height:100px;
+  height:200px;padding: 4%;
   font-size: 100%;
   font-weight: bold;
  }
 
  
  #forms form:nth-of-type(1) button{
-  width: fit-content;
-  height: fit-content;
-  font-size: 130%;
-  padding: 10px 20px 10px 20px;
+  width: 50%;;color: black;
+  height: 50px;
+  font-size: 100%;border-radius: 30px;;
+  padding: 10px;transition: .5s;
   margin: 0px 0px 10px 0px;
  }
 
- #forms form:nth-of-type(2) span,
+ #forms form:nth-of-type(1) button:hover {background: white;box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.144)}
+
+
+ #forms form:nth-of-type(2) span 
+ {
+  width: 100%;text-align: left;padding: 1% 0;
+  margin-top: 2px;font-size: 100%;
+ }
   #forms form:nth-of-type(2) h2{
    width: 100%;
    text-align: left;
    margin-top: 2px;
-   font-size: 150%;
+   font-size: 180%;
   }
  #forms form:nth-of-type(2) p{
   width: 100%;
@@ -135,91 +150,16 @@
   display: flex;
   align-items: center;
   justify-content: left;
-  margin: 5px 0px 5px 0px;
+  margin: 5px 0px;
  }
 
  
  #forms form:nth-of-type(2) section i{
-  width: auto;
-  height: 100%;
-  font-size: 80%;
+  font-size: 100%;
  }
  #forms form:nth-of-type(2) section article h4{
-  font-size: 60%;
-  margin-bottom: 5px;
- }
- #policy{
-  width: 100%;
-  margin: 0 auto;
-  padding: 20px 5% 20px 5%;
-  height: fit-content;
-  display:flex;
-  flex-direction: column;
-  /* flex-wrap: wrap; */
-  align-items: center;
-  justify-content: left;
-  gap:10px;
-
- }
- #policy section{
-  width: 100%;
-  height: auto;
- }
- #policy section i{
-  font-size: 120%;
- }
-
- footer{
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  margin: 0 auto;
-  padding: 20px 5% 10px 5%;
-  flex-direction: column;
-  align-items: center;
-  justify-content: left;
- }
- footer .links{
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: left;
- }
-footer .links section:nth-of-type(1),
-footer .links section:nth-of-type(2),
-footer .links section:nth-of-type(3),
-footer .links section:nth-of-type(4){
-  width: 100%;
-  height: fit-content;
- }
- #newsletter{
-  width: 100%;
-  border-radius: 15px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: black;
-
-  
- }
- #newsletter section article{
-  display: flex;
-  gap: 5px;
- }
- #newsletter section:nth-of-type(2){
-  font-size: 50%;
-  display: none;
- }
-
- #copy{
- width: 100%;
- height: 20px;
- }
- #copy section article{
   font-size: 100%;
+  margin-bottom: 5px;
  }
 
 
