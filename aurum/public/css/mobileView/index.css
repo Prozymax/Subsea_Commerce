@@ -57,7 +57,7 @@
 
     .nav-list 
     {
-        position: absolute;width: 60%;height: 70vh;background: linear-gradient(to bottom, black 85%, orange 15%);
+        position: fixed;width: 60%;height: 70vh;background: linear-gradient(to bottom, black 85%, orange 15%);
         top: 0;;right: 0;box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.164);z-index: 10;display: none;
         transform: translateX(100%);animation-duration: .5s;animation-timing-function: linear;animation-fill-mode: both;
     }

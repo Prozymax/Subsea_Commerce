@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="css/blog.css">
     <link rel="stylesheet" href="css/mobileView/index.css">
     <link rel="stylesheet" href="css/mobileView/shop.css">
-    <link rel="stylesheet" href="css/mobileView/blogMobileview.css">
+    <link rel="stylesheet" href="css/mobileView/blog.css">
+
     <link rel="icon" href="./__webicons/editlogo.png" type="image/icon"> 
     <script defer src="js/index.js"></script>
+    <script defer src="js/header.js"></script>
     <script defer src="js/blog.js"></script>
     <script src="https://kit.fontawesome.com/1e3c5331c9.js" crossorigin="anonymous"></script>
  </head>
@@ -34,9 +36,9 @@
                 <select name="category" id="category">
                     <option value="All Categories">All Categories</option>
                     <option value="Wears">Wears</option>
-                    <option value="Footwears">FootWears</option>
+                    
                 </select>
-                <input type="text" placeholder="Search here" name="searchquery"><input type="submit" class="sub-btn" value="Search">
+                <input type="text" placeholder="Search here" name="searchquery"><input class="sub-btn" type="submit" value="Search" disabled>
             </form>
         </div>
         <div id="contact">
@@ -52,10 +54,10 @@
 
         <nav>
             <div>
-                <select name="__category" id="__category" value="All Categories">
+                <select name="__category" id="__category" class="__category" value="All Categories">
                     <option hidden value="All Categories">All Categories</option>
                 </select>
-                <ul id="navItem">
+                <ul id="navItem" class="navItem">
                     <li class="nav_Category"><i class="fa-solid fa-screwdriver-wrench"></i>&nbsp;&nbsp;Hand Tools<span>&#8250;</span></li>
                     <li class="nav_Category"><i class="fa-solid fa-helmet-safety"></i>&nbsp;&nbsp;Head Safety Gears<span>&#8250;</span></li>
                     <li class="nav_Category"><i class="fa-solid fa-vest"></i>&nbsp;&nbsp;PPEs<span>&#8250;</span></li>
@@ -254,94 +256,89 @@
 
  </div>
 
+           
+ <footer>
+    <div class="links">
+        <section>
+            <h3>Contact Us</h3>
+            <article>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-location"></i><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d811.9904035996568!2d7.086401002376067!3d4.82508853459708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069cd2e1198b29f%3A0x93ad6065e18fc2d0!2sGlory%20Ave%2C%20Umurolu%2C%20Elelenwa%20501101%2C%20Rivers!5e0!3m2!1sen!2sng!4v1702658047763!5m2!1sen!2sng" target="_blank" rel="noopener noreferrer">No. 9 Pastor Ben Avenue, Akpajo, Rivers State, Nigeria</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i> <b style="font-weight: lighter;"> <a href="tel:+23409129346000">+234 0912 934 6000 </a> <br> <a href="tel:+23408013242160">+234 0801 324 2160</a></b>
+                    </li>
+                    <li onclick="window.location = 'mailto:info@aurumsafety.com'">
+                        <i class="fa-solid fa-envelope"></i>info@aurumsafety.com
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-clock"></i>7 Days a week from 10-00 am to 6-00 pm
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section>
+            <h3>Quick Links</h3>
+            <article>
+                <ul>
+                    <li onclick="window.location = '/'">Home</li>
+                <li onclick="window.location = '/company'">Company</li>
+                <li onclick="window.location = '/contact-us'">Contact Us</li>
+                <li onclick="window.location='/shop'">Shop</li>
+                </ul>
+            </article>
+        </section>
+        <section>
+            <h3>Information</h3>
+            <article>
+                <ul>
+                    <!-- <li onclick="window.location = '/delivery'">Delivery Information</li> -->
+                    <li onclick="window.location = '/privacy'">Privacy Policy</li>
+                    <li onclick="window.location = '/quality'">Quality Policy</li>
+                    <li onclick="window.location = '/refund'">Refund Policy</li>
+                </ul>
+            </article>
+        </section>
+        <section>
+            <h3>Company</h3>
+            <article>
+                <ul>
+                    <li onclick="window.location = '/services'">Services</li>
+                        <li onclick="window.location = '/blog'">Blog</li>
+                        <li onclick="window.location = '/mission'">Mission</li>
+                   </ul>
+            </article>
+        </section>
+    </div>
 
+    <div id="newsletter">
+        <section>
+            <article>
+                <i class="fa-brands fa-facebook"></i><i class="fa-brands fa-linkedin-in"></i><i class="fa-brands fa-twitter"></i>
+            </article>
+        </section>
+        <section>
+            <h3>Sign Up for newsletter</h3>
+            <form action="/newsletter">
+                <input type="email" name="email" id="email">
+                <input type="submit" value="Subscribe">
+            </form>
+        </section>
+    </div>
 
+    <div id="copy">
+        <section>
+            <article>&copy;&nbsp;Aurum. All rights reserved. Designed by PhilTech</article>
+        </section>
+        <section>
+            <article>
+                <span onclick="window.location = '/refund'">Refund Policy</span>&nbsp;<span onclick="window.location = '/privacy'">Privacy Policy</span>&nbsp;<span onclick="window.location = '/quality'">Quality Policy</span>
+            </article>
+        </section>
+    </div>
 
+</footer>
 
-
-
-  <footer>
-        <div class="links">
-            <section>
-                <h3>Contact Us</h3>
-                <article>
-                    <ul>
-                        <li>
-                            <i class="fa-solid fa-location"></i>No.5 Chief Mgba Street, Woji PH, Rivers State, Nigeria
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-phone"></i>+234 0912 934 6000 <br> +234 0801 324 2160
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-envelope"></i>info@aurumsafety.com
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-clock"></i>7 Days a week from 10-00 am to 6-00 pm
-                        </li>
-                    </ul>
-                </article>
-            </section>
-            <section>
-                <h3>Quick Links</h3>
-                <article>
-                    <ul>
-                        <li onclick="window.location = '/'">Home</li>
-                        <li onclick="window.location = '/company'">Company</li>
-                        <li onclick="window.location = '/services'">Services</li>
-                        <li onclick="window.location = '/contact-us'">Contact Us</li>
-                        <li onclick="window.location='/shop'">Shop</li>
-                    </ul>
-                </article>
-            </section>
-            <section>
-                <h3>Information</h3>
-                <article>
-                    <ul>
-                        <!-- <li onclick="window.location = '/delivery'">Delivery Information</li> -->
-                        <li onclick="window.location = '/privacy'">Privacy Policy</li>
-                        <li onclick="window.location = '/quality'">Quality Policy</li>
-                        <li onclick="window.location = '/refund'">Refund Policy</li>
-                    </ul>
-                </article>
-            </section>
-            <section>
-                <h3>Company</h3>
-                <article>
-                    <ul>
-                        <li onclick="window.location = '/services'">Services</li>
-                            <li onclick="window.location = '/blog'">Blog</li>
-                            <li onclick="window.location = '/mission'">Mission</li>
-                       </ul>
-                </article>
-            </section>
-        </div>
-
-        <div id="newsletter">
-            <section>
-                <article>
-                    <i class="fa-brands fa-facebook"></i><i class="fa-brands fa-linkedin-in"></i><i class="fa-brands fa-twitter"></i>
-                </article>
-            </section>
-            <section>
-                <h3>Sign Up for newsletter</h3>
-                <form action="/newsletter">
-                    <input type="email" name="email" id="email">
-                    <input type="submit" value="Subscribe">
-                </form>
-            </section>
-        </div>
-
-        <div id="copy">
-            <section>
-                <article>&copy;&nbsp;Aurum. All rights reserved. Designed by PhilTech</article>
-            </section>
-            <section>
-                <article>
-                    Terms and Conditions&nbsp;<span>Privacy Policy</span>&nbsp;Quality Policy
-                </article>
-            </section>
-        </div>
-
-    </footer>
   </body>
 </html>

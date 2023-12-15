@@ -4,11 +4,6 @@
     --primaryAccent: black;
 }
 
-* {
-    font-size: .9vw;;
-}
-
-
 #comp_intro 
 {
     width: 100%;background-size: 100%;;background-image: url('../img/mufid-majnun-ji0wcfoW7Zc-unsplash.jpg');
