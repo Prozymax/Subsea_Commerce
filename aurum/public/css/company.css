@@ -147,7 +147,7 @@
 
 .exp-info div:last-of-type section
 {
-    width: 20%;height: 100%;box-shadow: 0 0 32px 1px rgba(0, 0, 0, 0.267);
+    width: 20%;height: 100%;box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.096);
     padding: 2%;margin: 0 1.5%;padding-block-start: 4%;border-left: 5px solid white;;
 }
 

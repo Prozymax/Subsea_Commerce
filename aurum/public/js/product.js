@@ -10,6 +10,10 @@ errMessage = document.getElementsByClassName('err-mess')[0],
 prodQuoteForm = document.getElementsByClassName('prod-quote-form')[0],
 responseText = document.getElementsByClassName('response_text');
 
+
+let storeData = JSON.parse(localStorage.getItem('ProductData'));console.log(storeData)
+    const message = (storeData) ? storeData : setTimeout(() => {window.location = '/shop' }, 3)
+
 const DOCUMENT = {
     getElements: () => {
         const figure = document.getElementsByClassName('fig_prod'),
@@ -42,7 +46,6 @@ const DOCUMENT = {
 document.addEventListener('DOMContentLoaded', async () => {
     const storedData = JSON.parse(localStorage.getItem('ProductData'));console.log(storedData)
     const message = (storedData) ? storedData : window.location = '/shop'
-    console.log(message);
     const prodname = storedData.message;console.log(prodname)
     const endpoint = `product/product_details?prodname=${encodeURIComponent(prodname)}`
 
