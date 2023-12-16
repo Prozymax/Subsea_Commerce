@@ -103,13 +103,13 @@ const productList = fetch(endpoint)
 })
 .then(data => {
     const productData =data.result;
-    console.log(data)
-    console.log(productData)
-    console.log(productData)
+    // console.log(data)
+    // console.log(productData)
+    // console.log(productData)
     return productData
 })
 .catch(error => {
-    console.error('There was a problem with the fetch operation:', error);
+    console.log('There was a problem with the fetch operation:', error);
 });
 
 const productListArray = await productList;
@@ -166,10 +166,10 @@ const savedArray = ['Hand Tools', 'Head Safety Gears', 'PPEs', 'Boots', 'Gloves'
 
 if(savedlocal) {
     const savedItem = localStorage.getItem('Category').trim()
-    console.log(true)
+    // console.log(true)
 for(let i = 0; i < savedArray.length; i++) {
     if(savedItem === savedArray[i]) {
-        console.log(savedArray[i])
+        // console.log(savedArray[i])
         switch(savedArray[i]) {
             case 'Hand Tools':
                 DOM.navOperation('hand-tools')
@@ -185,7 +185,7 @@ for(let i = 0; i < savedArray.length; i++) {
 }
 
     const productForm = document.querySelectorAll('.product-form');
-    console.log(productForm)
+    // console.log(productForm)
     productForm.forEach((form) => {
         form.addEventListener('submit', async (event) => {
             if(event.target.classList.contains('product-form')) {
@@ -211,10 +211,10 @@ for(let i = 0; i < savedArray.length; i++) {
             })
             .then(data => {
                 // Handle the data received from the server
-                alert(JSON.stringify(data));
+                // alert(JSON.stringify(data));
                 localStorage.setItem('ProductData', JSON.stringify(data))
-                console.log(data)
-                alert(data)
+                // console.log(data)
+                // alert(data)
                 window.location = '/product'
             })
             .catch(error => {

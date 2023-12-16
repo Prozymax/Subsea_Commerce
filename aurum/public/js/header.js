@@ -10,7 +10,7 @@ selectNavigation.addEventListener('mouseover', (e) => {
 
 for(let i = 0; i <= navCategories.length; i++) {
     const myCategories = ['Head Safety Gears', 'PPEs', 'Hand Tools']
-    console.log(navCategories[i])
+    // console.log(navCategories[i])
     navigationCategories[i].addEventListener('click', (e) => {
         const refinedText = navCategories[i].textContent.replace('›', '')
         localStorage.setItem('Category', String(refinedText))

@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     })
     .then(data => {
         const result = data.result; 
-        console.log(result); // make them send their data to the product page
+        // console.log(result); // make them send their data to the product page
         return result
     })
     .catch(error => {

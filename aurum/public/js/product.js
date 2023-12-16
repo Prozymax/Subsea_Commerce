@@ -58,8 +58,8 @@ document.addEventListener('DOMContentLoaded', async () => {
   })
   .then(data => {
       const productData = data.result;
-      console.log(data)
-      console.log(productData)
+    //   console.log(data)
+    //   console.log(productData)
       return productData
   })
   .catch(error => {
@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 const ProductDetails = await PageProductResponseData;
 if (typeof(ProductDetails) === 'object') {
-    console.log(ProductDetails);
+    // console.log(ProductDetails);
     let pd = ProductDetails
     spanProductname.innerHTML = pd.product_name;
     spanCategory.innerHTML = pd.product_category
@@ -82,7 +82,7 @@ else {
 }
 
 const category = ProductDetails.product_category
-console.log(category)
+// console.log(category)
 const categoryCallback = fetch('product/product-category', {
         method: 'POST',
         headers: {
@@ -97,7 +97,7 @@ const categoryCallback = fetch('product/product-category', {
         return response.json()
     })
     .then(data => {
-        console.log(data.result)
+        // console.log(data.result)
         return data.result
     })
     .catch(error => {
@@ -105,7 +105,7 @@ const categoryCallback = fetch('product/product-category', {
     })
 
     const relatedprod = await categoryCallback;
-    console.log(relatedprod)
+    // console.log(relatedprod)
        DOCUMENT.replaceRelativeProducts(relatedprod)
 
 

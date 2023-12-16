@@ -37,7 +37,7 @@
     
     .float-categories
     {
-        height: 400px;padding-block: 5% 0;transition: .5s;
+        height: 250px;padding-block: 5% 0;transition: .5s;
     }
     
     .float-categories p
