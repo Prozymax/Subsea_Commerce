@@ -32,4 +32,5 @@ const adminIndexRouter = require('./routes/index')
 
 // routes
 app.use('/', adminIndexRouter);
-server.listen(PORT, () => console.log(`App is listening at ${PORT}`))
+// server.listen(PORT, () => console.log(`App is listening at ${PORT}`))
+server.listen()

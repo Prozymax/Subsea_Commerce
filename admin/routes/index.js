@@ -8,7 +8,7 @@ const upload = require('../config/multer'); // Import the Multer configuration
 const connection = require('../config/db');
 
 app.use(cors({
-    origin: 'http://localhost:2000',
+    origin: 'http://app.aurumsafety.com',
     methods: 'GET, POST, DELETE, PUT, PATCH, HEAD',
     credentials: true,
   }))
