@@ -32,7 +32,6 @@ const DOM = {
                 div.id = product.product_category
         }
         
-        console.log(div.id)
         div.innerHTML = `
         <span>Sale</span>
                 <figure id="fig-prod" style="background-image: url('http://localhost:3000${product.productImageUrl}')" class="fig_prod"></figure>
