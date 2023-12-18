@@ -8,12 +8,11 @@ const upload = require('../config/multer'); // Import the Multer configuration
 const connection = require('../config/db');
 
 app.use(cors({
-    origin: 'http://app.aurumsafety.com',
+    origin: 'subsea-commerce-6mkp-prozymaxs-projects.vercel.app',
     methods: 'GET, POST, DELETE, PUT, PATCH, HEAD',
     credentials: true,
   }))
 app.use(express.json());
-app.use(bodyParser.urlencoded({ extended: true }));
 
 // Serve static files from the 'uploads' folder
 app.use('/uploads', express.static('uploads'));
