@@ -1,7 +1,7 @@
 const express = require('express')
 const path = require('path')
 const dotenv = require('dotenv')
-const PORT = process.env.PORT || 3000;
+const PORT = 3000;
 const bodyParser = require('body-parser');
 const connection = require('./config/db');
 const http = require('http')
@@ -32,5 +32,4 @@ const adminIndexRouter = require('./routes/index')
 
 // routes
 app.use('/', adminIndexRouter);
-// server.listen(PORT, () => console.log(`App is listening at ${PORT}`))
-server.listen()
+server.listen(PORT, () => console.log(`App is listening at ${PORT}`))
