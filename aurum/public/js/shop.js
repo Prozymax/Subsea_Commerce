@@ -34,7 +34,7 @@ const DOM = {
         
         div.innerHTML = `
         <span>Sale</span>
-                <figure id="fig-prod" style="background-image: url('http://localhost:3000${product.productImageUrl}')" class="fig_prod"></figure>
+                <figure id="fig-prod" style="background-image: url('https://admin-aurum.vercel.app${product.productImageUrl}')" class="fig_prod"></figure>
                 <section>
                     <form action="shop/product" method="post" class="product-form">
                     <input type="text" class="prod_name" name="prodname" value="${product.product_name}" id="prodname" readonly/>

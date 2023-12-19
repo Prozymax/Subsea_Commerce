@@ -8,7 +8,7 @@ const upload = require('../config/multer'); // Import the Multer configuration
 const connection = require('../config/db');
 
 app.use(cors({
-    origin: 'subsea-commerce-6mkp-prozymaxs-projects.vercel.app',
+    origin: 'https://aurum-2q3zeeuz1-prozymax901-s-team.vercel.app',
     methods: 'GET, POST, DELETE, PUT, PATCH, HEAD',
     credentials: true,
   }))

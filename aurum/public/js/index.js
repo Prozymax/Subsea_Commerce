@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const featuredProducts = await featProd;
     featuredProducts.forEach((product, index) => {
                 fTitle[index].innerHTML = product.product_name;
-        fImg[index].src = `http://localhost:3000${product.productImageUrl}`
+        fImg[index].src = `https://admin-aurum.vercel.app${product.productImageUrl}`
     })
 })
 

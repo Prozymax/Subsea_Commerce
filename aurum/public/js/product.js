@@ -25,7 +25,7 @@ const DOCUMENT = {
     const { figure, productName } = DOCUMENT.getElements()
         productList.forEach((product, index) => {
             if(productList.length <= figure.length ) {
-            figure[index].style.backgroundImage = `url('http://localhost:3000${product.productImageUrl}')`
+            figure[index].style.backgroundImage = `url('https://admin-aurum.vercel.app${product.productImageUrl}')`
             productName[index].value = product.product_name;
         }
         })
@@ -75,7 +75,7 @@ if (typeof(ProductDetails) === 'object') {
     spanCategory.innerHTML = pd.product_category
     headerProdName.value = pd.product_name
     descriptionDOM.innerHTML = pd.productImageDescription
-    figProdImage.src = `http://localhost:3000${pd.productImageUrl}`
+    figProdImage.src = `https://admin-aurum.vercel.app${pd.productImageUrl}`
 }
 else {
     console.log('This isnt an object')
