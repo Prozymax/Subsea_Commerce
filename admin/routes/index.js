@@ -8,7 +8,7 @@ const upload = require('../config/multer'); // Import the Multer configuration
 const connection = require('../config/db');
 
 app.use(cors({
-    origin: 'https://aurum-2q3zeeuz1-prozymax901-s-team.vercel.app',
+    origin: 'https://aurum-kappa.vercel.app',
     methods: 'GET, POST, DELETE, PUT, PATCH, HEAD',
     credentials: true,
   }))
