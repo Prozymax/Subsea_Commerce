@@ -12,7 +12,7 @@ require('dotenv').config()
 
 app.use(express.json())
 app.use(cors({
-    origin: 'http://localhost:2000',
+    origin: 'https://aurum-60o3hf0j1-prozymax901-s-team.vercel.app',
     methods: 'GET, POST, DELETE, PUT, PATCH, HEAD',
     credentials: true,
   }))
