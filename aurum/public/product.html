@@ -12,13 +12,10 @@
     <link rel="stylesheet" href="css/mobileView/shop.css">
     <link rel="stylesheet" href="css/mobileView/product.css">
     <link rel="icon" href="./__webicons/editlogo.png" type="image/icon"> 
-    <script defer src="js/index.js"></script>
     <script defer src="js/header.js"></script>
     <script async src="js/shop.js"></script>
     <script defer src="js/product.js"></script>
     <script src="https://kit.fontawesome.com/1e3c5331c9.js" crossorigin="anonymous"></script>
- <script defer src="js/index.js"></script>
-    <script defer src="js/header.js"></script>
  </head>
 <body>
     <div id="pre_header">
@@ -141,7 +138,7 @@
                     </section>
             </div>
             <div>
-                <form action="product/quote-sents" method="post" autocomplete="off" class="prod-quote-form">
+                <form action="product/quote-sent" method="post" autocomplete="off" class="prod-quote-form">
                 <input type="text" name="quoteprod_name" readonly id="product_name" value="Product Name"/>
                 <p>
                     <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
@@ -156,13 +153,13 @@
                         
                         <label for="#size">Size:</label>&nbsp;&nbsp;&nbsp;
                     Small&nbsp;&nbsp;<input type="radio" name="size" id="size" value="small">
-                    &nbsp;&nbsp;Medium&nbsp;&nbsp;<input type="radio" name="size" id="size" value="mmedium">
+                    &nbsp;&nbsp;Medium&nbsp;&nbsp;<input type="radio" name="size" id="size" value="medium">
                     &nbsp;&nbsp;Big&nbsp;&nbsp;<input type="radio" name="size" id="size" value="big">
-                    <textarea name="message" id="" placeholder="Special Order Request/Message........."></textarea>
+                    <textarea required name="message" id="" placeholder="Special Order Request/Message........."></textarea>
                     <p>User/Recipient Information:</p>
-                    <input type="text" name="name" placeholder="Full Name"/>
-                    <input type="email" name="email" id="email" placeholder="Email Address"/>
-                    <input type="tel" name="phone" id="phone" placeholder="Mobile Number">    
+                    <input required type="text" name="name" placeholder="Full Name"/>
+                    <input require type="email" name="email" id="email" placeholder="Email Address"/>
+                    <input reequired type="tel" name="phone" id="phone" placeholder="Mobile Number">    
                     </p>
 
                     <p>
@@ -172,7 +169,7 @@
                     </p>
 
                     <p>
-                        <input type="number" placeholder="Qty" name="qty"><input type="submit" value="Get Quote">
+                        <input required type="number" placeholder="Qty" name="qty"><input type="submit" value="Get Quote">
                     </p>
 
                 </form>

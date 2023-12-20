@@ -75,7 +75,7 @@ if (typeof(ProductDetails) === 'object') {
     spanCategory.innerHTML = pd.product_category
     headerProdName.value = pd.product_name
     descriptionDOM.innerHTML = pd.productImageDescription
-    figProdImage.src = `https://admin-aurum-4arjlwsoq-prozymax901-s-team.vercel.app/${product.productImageUrl}`
+    figProdImage.src = `https://admin-aurum.vercel.app${pd.productImageUrl}`
 }
 else {
     console.log('This isnt an object')

@@ -5,13 +5,19 @@ const bodyParser = require('body-parser');
 const cors = require('cors')
 const path = require('path')
 const upload = require('../config/multer'); // Import the Multer configuration
-const connection = require('../config/db');
+const pool = require('../config/db');
+
+const allowedOrigins = [
+  'http://localhost:2000',
+  'https://aurum-kappa.vercel.app',
+  'https://aurumsafety.com',
+];
 
 app.use(cors({
-    origin: 'https://aurum-60o3hf0j1-prozymax901-s-team.vercel.app',
-    methods: 'GET, POST, DELETE, PUT, PATCH, HEAD',
-    credentials: true,
-  }))
+  origin: allowedOrigins,
+  methods: 'GET, POST, DELETE, PUT, PATCH, HEAD',
+  credentials: true,
+}));
 app.use(express.json());
 
 // Serve static files from the 'uploads' folder
@@ -19,7 +25,7 @@ app.use('/uploads', express.static('uploads'));
 
 router.post('/upload', upload.single('image'), (request, response) => {
   const { prodname, description, prodCategory, featured } = request.body;
-  const imageUrl = `/uploads/${request.file.filename}`;
+  const imageUrl = path.join(__dirname, `/uploads/${request.file.filename}`);
 
   const productData = {
     product_name: prodname,
@@ -32,14 +38,19 @@ router.post('/upload', upload.single('image'), (request, response) => {
   // Handle other form data and the image URL as needed
   console.log(`Title: ${prodname}, Description: ${description}, Other Form Data: ${prodCategory}, Image URL: ${imageUrl}, Featured: ${featured}`);
 
-  let insertQuery = 'INSERT INTO all_products SET ?'
-  connection.query(insertQuery, [productData], (err, result) => {
-    if (err) response.json('Error');
-    else if(result.affectedRows > 0) response.status(200).json(result)
-    else response.json('No Internet Connection..')
-  })
+  let insertQuery = 'INSERT INTO all_products SET ?';
 
-  // response.status(200).send('Image uploaded and form data received successfully');
+  pool.query(insertQuery, [productData], (err, result) => {
+      if (err) {
+          response.json({ error: 'Error' });
+      } else if (result.affectedRows > 0) {
+          response.status(200).send('Image uploaded and form data received successfully');
+      } else {
+          response.json({ error: 'No rows affected' });
+      }
+  });
+  
+
 });
 
 

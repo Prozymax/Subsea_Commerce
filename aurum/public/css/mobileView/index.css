@@ -203,13 +203,18 @@
     
     #featured 
     {
-        width: 100%;height: 80%;
+        width: 100%;height: 50%;
     }
     
     #featured div
     {
         width: 47%;height:200px;text-align: center;
         margin: 1%;
+    }
+
+    #featured section 
+    {
+    height: 40%;
     }
     
     #featured div figure
@@ -219,7 +224,8 @@
     
     #featured div figure img
     {
-        width: 100%;
+        width: 75%;
+        object-fit: cover;
     }
         
     #featured h2

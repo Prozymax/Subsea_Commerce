@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aurum - Contact Us</title>
-    <script defer src="js/index.js"></script>
     <script defer src="js/header.js"></script>
     <link rel="stylesheet" href="css/index.css">
  <link rel="stylesheet" href="css/shop.css">
@@ -36,7 +35,7 @@
                     <option value="Wears">Wears</option>
                     
                 </select>
-                <input type="text" placeholder="Search here" name="searchquery"><input class="sub-btn" type="submit" value="Search" disabled>
+                <input required type="text" placeholder="Search here" name="searchquery"><input required class="sub-btn" type="submit" value="Search" disabled>
             </form>
         </div>
         <div id="contact">
@@ -139,11 +138,11 @@
                     <span>Contact Us</span>
                     <h2>Write a message</h2>
     
-                    <input type="text" placeholder="Your Name" id="name" name="name">
-                    <input type="email" placeholder="Email Address" name="email" id="email">
-                    <input type="tel" placeholder="Phone Number" name="phone" id="phone">
-                    <input type="text" placeholder="Subject" id="subject" name="subject">
-                    <textarea name="message" placeholder="Message" id="mess" name="message"></textarea><br>
+                    <input required type="text" placeholder="Your Name" id="name" name="name">
+                    <input required type="email" placeholder="Email Address" name="email" id="email">
+                    <input required type="tel" placeholder="Phone Number" name="phone" id="phone">
+                    <input required type="text" placeholder="Subject" id="subject" name="subject">
+                    <textarea required name="message" placeholder="Message" id="mess" name="message"></textarea><br>
                     <button id="btn">Submit</button>
                 </form>
                 
@@ -290,8 +289,8 @@
             <section>
                 <h3>Sign Up for newsletter</h3>
                 <form action="/newsletter">
-                    <input type="email" name="email" id="email">
-                    <input type="submit" value="Subscribe">
+                    <input required type="email" name="email" id="email">
+                    <input required type="submit" value="Subscribe">
                 </form>
             </section>
         </div>

@@ -11,23 +11,30 @@ const server = http.createServer(app)
 require('dotenv').config()
 
 app.use(express.json())
+const allowedOrigins = [
+  'http://localhost:2000',
+  'https://aurum-kappa.vercel.app',
+  'https://aurumsafety.com',
+];
+
 app.use(cors({
-    origin: 'https://aurum-60o3hf0j1-prozymax901-s-team.vercel.app',
-    methods: 'GET, POST, DELETE, PUT, PATCH, HEAD',
-    credentials: true,
-  }))
+  origin: allowedOrigins,
+  methods: 'GET, POST, DELETE, PUT, PATCH, HEAD',
+  credentials: true,
+}));
 app.use(express.static(path.join(__dirname, 'public')))
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')))
 app.use(bodyParser.urlencoded({ extended: true }))
 
 // db connectioon check
-connection.connect((err) => {
-    if(err) console.log(err)
-    else console.log('Connection Succesfull')
-})
+// pool.connect((err) => {
+//     if(err) console.log(err)
+//     else console.log('Connection Succesfull')
+// })
 
 // routers
-const adminIndexRouter = require('./routes/index')
+const adminIndexRouter = require('./routes/index');
+const pool = require('./config/db');
 
 
 // routes
