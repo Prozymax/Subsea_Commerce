@@ -131,6 +131,7 @@ const categoryCallback = fetch('product/product-category', {
             return message;
            })
            .catch(error => {
+            console.log(error)
             return 'Sorry we encountered an error';
            })
     

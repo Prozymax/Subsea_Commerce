@@ -7,15 +7,9 @@ const fImg = document.getElementsByClassName('f-img');
 const spBtn = document.getElementsByClassName('sp-btn')[0];
 const viewBtn = document.querySelectorAll('.view-btn');
 const fDiv = document.querySelectorAll('.f-div');
-const shBtn = document.getElementsByClassName('sh-btn')[0];
 const btnNV = document.getElementById('btn-nav');
 const readMore = document.getElementsByClassName('read_more');
 
-
-shBtn.addEventListener('click', () =>{
-    localStorage.clear()
-    window.location = '/shop'
-})
 
 setTimeout(() => {
     if(localStorage.length > 0) {

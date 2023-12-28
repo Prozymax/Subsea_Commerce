@@ -5,7 +5,8 @@ const app = express()
 const Transporter = require('../config/mail');
 const Mail = require('nodemailer/lib/mailer');
 const { error } = require('console');
-const { json } = require('body-parser');
+app.use(express.json())
+
 
 const Mailmiddleware = async (request, response, next) => {
         const tryCatchMailException = async (mailOptions) => {
@@ -16,14 +17,14 @@ const Mailmiddleware = async (request, response, next) => {
                 response.json({ message: 'Mail Sent' })
             }
             else if(error) {
-                console.log(MailResponse.response)
+                console.log('line 20' + ' ' + MailResponse.response)
                 response.json({ message: 'Error Encountered' })
             }
             next()
         }
         catch (error) {
             console.log(error);
-            response.send('Please Check your internet connection')
+            response.json({ message: 'Please Check your internet connection'})
         }
     }
     
@@ -52,9 +53,10 @@ const Mailmiddleware = async (request, response, next) => {
             orderName: request.body.quoteprod_name,
             color: request.body.color,
             size: request.body.size,
-            numnerOfOrder: request.body.qty,
+            numberOfOrder: request.body.qty,
             ordertype: request.body.ordertype,
             subject: 'Quote Order',
+            message: request.body.message
             }
         const quoteMailOptions = { 
             from: quoteData.email,

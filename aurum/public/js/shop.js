@@ -76,7 +76,6 @@ const DOM = {
         // })
         
         const divCategory = document.querySelectorAll(`#${category}`)
-        console.log(divCategory)
         for (let i = 0; i < divCategory.length; i++) {
             divCategory[i].style.display = 'block'
             dbCount.innerHTML = document.getElementsByClassName('items').length
@@ -123,6 +122,11 @@ const appendProduct = () => {
 
 document.getElementsByClassName('all_Category')[0].addEventListener('click', () => {
     localStorage.clear();
+    for(let y = 0; y < 5; y++) {
+        navCategory[y].style.backgroundColor = 'white';
+        document.getElementsByClassName('all_Category')[0].style.backgroundColor = 'var(--themeColor)'
+
+    }
     document.getElementById('loader').style.display = 'grid'
         document.body.style.overflow = 'hidden'
         setTimeout(() => {
@@ -141,22 +145,32 @@ navCategory[0].addEventListener('click', async () =>{
     DOM.navOperation('hand-tools')
     // appendProducts()
     DOM.backgroundManipulation(0);
+    document.getElementsByClassName('all_Category')[0].style.backgroundColor = 'white'
+
 })
 navCategory[1].addEventListener('click', () =>{
     DOM.navOperation('hsg')
     DOM.backgroundManipulation(1)
+
+document.getElementsByClassName('all_Category')[0].style.backgroundColor = 'white'
 })
 navCategory[2].addEventListener('click', () =>{
     DOM.navOperation('PPEs')
     DOM.backgroundManipulation(2)
+
+document.getElementsByClassName('all_Category')[0].style.backgroundColor = 'white'
 })
 navCategory[3].addEventListener('click', () =>{
     DOM.navOperation('Boots')
     DOM.backgroundManipulation(3)
+
+document.getElementsByClassName('all_Category')[0].style.backgroundColor = 'white'
 })
 navCategory[4].addEventListener('click', () =>{
     DOM.navOperation('Gloves')
     DOM.backgroundManipulation(4)
+
+document.getElementsByClassName('all_Category')[0].style.backgroundColor = 'white'
 })
 
 appendProduct()
@@ -172,12 +186,18 @@ for(let i = 0; i < savedArray.length; i++) {
         switch(savedArray[i]) {
             case 'Hand Tools':
                 DOM.navOperation('hand-tools')
+                console.log(navCategory[i])
+                navCategory[i].style.backgroundColor = 'var(--themeColor)'
                 break;
                 case 'Head Safety Gears':
                     DOM.navOperation('hsg')
+                    console.log(navCategory[i])
+                    navCategory[i].style.backgroundColor = 'var(--themeColor)'
                     break;
             default:
                 DOM.navOperation(savedArray[i])
+                console.log(navCategory[i])
+                navCategory[i].style.backgroundColor = 'var(--themeColor)'
         }
     }
 }

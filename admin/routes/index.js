@@ -25,7 +25,7 @@ app.use('/uploads', express.static('uploads'));
 
 router.post('/upload', upload.single('image'), (request, response) => {
   const { prodname, description, prodCategory, featured } = request.body;
-  const imageUrl = path.join(__dirname, `/uploads/${request.file.filename}`);
+  const imageUrl = `/uploads/${request.file.filename}`;
 
   const productData = {
     product_name: prodname,
