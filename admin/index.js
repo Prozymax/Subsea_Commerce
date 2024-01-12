@@ -13,8 +13,7 @@ require('dotenv').config()
 app.use(express.json())
 const allowedOrigins = [
   'http://localhost:2000',
-  'https://aurum-kappa.vercel.app',
-  'https://aurumsafety.com',
+  'https://www.aurumsafety.com',
 ];
 
 app.use(cors({
@@ -24,7 +23,8 @@ app.use(cors({
 }));
 app.use(express.static(path.join(__dirname, 'public')))
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')))
-app.use(bodyParser.urlencoded({ extended: true }))
+app.use(express.json())
+// app.use(bodyParser.urlencoded({ extended: true }))
 
 // db connectioon check
 // pool.connect((err) => {
@@ -39,4 +39,5 @@ const pool = require('./config/db');
 
 // routes
 app.use('/', adminIndexRouter);
-server.listen(PORT, () => console.log(`App is listening at ${PORT}`))
+// server.listen(PORT, () => console.log(`App is listening at ${PORT}`))
+server.listen()

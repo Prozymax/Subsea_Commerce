@@ -9,8 +9,7 @@ const pool = require('../config/db');
 
 const allowedOrigins = [
   'http://localhost:2000',
-  'https://aurum-kappa.vercel.app',
-  'https://aurumsafety.com',
+  'https://www.aurumsafety.com',
 ];
 
 app.use(cors({
