@@ -63,18 +63,8 @@ const DOM = {
                 behavior: 'smooth'
             })
         }, 3000)
-        // while(phSop.firstChild) {
-        //     phSop.removeChild(phSop.firstChild)
-        // }
-        // productListArray.forEach((product) => {
-        //     if(product.product_category == category) {
-        //         console.log(product.product_name + product.product_category)
-        //         const catDiv = DOM.createProductDiv(product);
-        //         phSop.appendChild(catDiv);
-        //         dbCount.innerHTML = document.getElementsByClassName('items').length
-        //     }
-        // })
-        
+
+
         const divCategory = document.querySelectorAll(`#${category}`)
         for (let i = 0; i < divCategory.length; i++) {
             divCategory[i].style.display = 'block'
@@ -101,9 +91,6 @@ const productList = fetch(endpoint)
 })
 .then(data => {
     const productData =data.result;
-    // console.log(data)
-    // console.log(productData)
-    // console.log(productData)
     return productData
 })
 .catch(error => {
@@ -113,7 +100,7 @@ const productList = fetch(endpoint)
 const productListArray = await productList;
 
 const appendProduct = () => {
-    productListArray.forEach((product) => {
+    productListArray.map(product => {
         const productDiv = DOM.createProductDiv(product);
         phSop.appendChild(productDiv);
         dbCount.innerHTML = document.getElementsByClassName('items').length

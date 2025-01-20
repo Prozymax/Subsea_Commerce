@@ -11,7 +11,7 @@ prodQuoteForm = document.getElementsByClassName('prod-quote-form')[0],
 responseText = document.getElementsByClassName('response_text');
 
 
-let storeData = JSON.parse(localStorage.getItem('ProductData'));console.log(storeData)
+let storeData = JSON.parse(localStorage.getItem('ProductData'));
     const message = (storeData) ? storeData : setTimeout(() => {window.location = '/shop' }, 3)
 
 const DOCUMENT = {
@@ -44,9 +44,9 @@ const DOCUMENT = {
 
 
 document.addEventListener('DOMContentLoaded', async () => {
-    const storedData = JSON.parse(localStorage.getItem('ProductData'));console.log(storedData)
+    const storedData = JSON.parse(localStorage.getItem('ProductData'));
     const message = (storedData) ? storedData : window.location = '/shop'
-    const prodname = storedData.message;console.log(prodname)
+    const prodname = storedData.message;
     const endpoint = `product/product_details?prodname=${encodeURIComponent(prodname)}`
 
   const PageProductResponseData = fetch(endpoint)

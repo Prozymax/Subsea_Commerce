@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const featProd = fetch('/get-featured')
     .then(response => {
         if(!response.ok) {
-            throw new Error('Network Error. Pleae check internet connection and try again')
+            throw new Error('Network Error. Please check internet connection and try again')
         }
         return response.json()
     })
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         return result
     })
     .catch(error => {
-        console.log(`Error  encountered while fetching featureed data... ${error}`)
+        console.log(`Error  encountered while fetching featured data... ${error}`)
     })
 
     const featuredProducts = await featProd;

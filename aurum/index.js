@@ -11,11 +11,6 @@ dotenv.configDotenv();
 app.use(express.static(path.join(__dirname, 'public')))
 app.use(bodyParser.urlencoded({ extended: true }))
 
-//database config 
-connection.connect((err) => {
-    if (err) console.log(err)
-    else console.log('Connection Succesfull')
-})
 
 // middlewares
 // const Mailmiddleware = require('./controllers/middleware')

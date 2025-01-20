@@ -5,41 +5,31 @@ productRoutes.use(express.json())
 const connection = require('../config/db')
 const Mailmiddleware = require('../controllers/middleware')
 
-productRoutes.get('/product_details', (request, response) => {
+productRoutes.get('/product_details', async (request, response) => {
     const productname = request.query.prodname;
     let selectQuery = 'SELECT * from all_products where product_name = ?'
-    connection.query(selectQuery, [productname], (selectError, selectResult) => {
-        if (selectError) {
-                console.log('Error while connecting to database') 
-                response.json({ result: 'Error while connecting to database'})
-                return;
-        }
-       else if(selectResult.length > 0) {
-        response.json({ result: selectResult[0]})
+    const [allProducts] = await connection.query(selectQuery, [productname])
+        
+       if(allProducts.length > 0) {
+        response.json({ result: allProducts[0]})
        }
        else {
-        response.json({ result: 'This data doesnt exist' })
+        response.json({ result: 'This data doesn\'t exist' })
        }
-    })
 })
 
 
-productRoutes.post('/product-category', (request, response) => {
+productRoutes.post('/product-category', async (request, response) => {
     const category = request.body.category
     let catQuery = 'SELECT * FROM all_products where product_category = ?'
-    connection.query(catQuery, [category], (err, catResult) => {
-        if (err) {
-        console.log('Error')
-        response.json({ result: 'Error Connecting to database' })
-        }
-        else if(catResult.length > 0) {
-            console.log(catResult)
-            response.json({ result: catResult })
+    const [categoryProduct] = await connection.query(catQuery, [category])
+        
+        if(categoryProduct.length > 0) {
+            response.json({ result: categoryProduct })
         }
         else {
             response.json({ result: 'No data found' })
         }
-    })
 })
 
 productRoutes.post('/quote-sent', Mailmiddleware)

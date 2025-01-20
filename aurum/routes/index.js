@@ -53,23 +53,17 @@ router.get('/product', (request, response) => {
     response.sendFile(path.join(__dirname, '../public/product.html'))
 })
 
-router.get('/get-featured', (request, response) => {
+router.get('/get-featured', async (request, response) => {
     let getFeaturedQuery = `SELECT * FROM all_products WHERE isFeatured = ?`
-    connection.query(getFeaturedQuery, ['Yes'], (err, result) => {
-        if (err) {
-            console.log('Error Connection with Database....');
-            // response.json({ result: 'Error Connecting with Database...' })
-            throw err
-        }
-        else if(result.length > 0) {
-            console.log(result)
-            response.json({ result: result });
+    const [featuredProducts] = await connection.query(getFeaturedQuery, ['Yes'])
+
+        if(featuredProducts.length > 0) {
+            response.json({ result: featuredProducts });
         }
         else {
             console.log('Error getting featured products available');
             response.json('Error getting featured products available');
         }
-    })
 })
 
 router.post('mail-us,', )
